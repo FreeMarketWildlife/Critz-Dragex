@@ -5,8 +5,8 @@
 | # | Age | Starts when | Ends when | Key developments |
 |---|---|---|---|---|
 | 1 | **Creation** | Allohim creates the universe and commissions the designers of worlds | Dragex **fully falls asleep under Mount Yokai**, encased in obsidian | Dragex and Moana shape their world; the earlier creation narrative includes the conflict with Moana. |
-| 2 | **Fall** | At the precise instant Dragex sleeps | The **last Fey dies** at the **Battle of Mount Yokai** | Allohim entrusts stewardship to the Fey; related Fey seek power, divide and annihilate each other; their blood soaks the mountain. |
-| 3 | **Redemptive Opportunity** | Last Fey's death | **Koric returns Moana's Tear** | The Dragex book series' events, including Koric and Veratus's quest; the Tear restores rain and life. The return frees Koric to die. |
+| 2 | **Fall** | At the precise instant Dragex sleeps | The **last Fey fighting at Mount Yokai dies** (the battle's terminal event; worldwide Fey survive) | Allohim entrusts stewardship to the Fey; related Fey seek power, divide, and suffer civilization-ending losses; their blood soaks the mountain. A few abstain, young Fey remain, and Fey elsewhere on Libriam survive. |
+| 3 | **Redemptive Opportunity** | Death of the final Fey fighter at Mount Yokai, **not worldwide extinction** | **Koric returns Moana's Tear** | The Dragex book series' events, including Koric and Veratus's quest; the Tear restores rain and life. The return frees Koric to die. |
 | 4 | **Arcane** | **Veratus's reign** over the restored **Kingdom of Moana** begins | The devastating **arcane wars** occur and end the age | Archaíos writes *Moana's Tear*; arcane technology rapidly progresses; two distant continents are discovered; war technology ultimately devastates the world. |
 | 5 | **Fallout** | After the arcane wars | **Allohim judges and cleanses Hokkaido** | Horrific post-apocalyptic ruin, mutation, disease, zombies, few survivors, weakening Fey blood and partial reversion to ordinary animals. |
 | 6 | **Man** | Allohim has purified and raised Hokkaido from the ocean and established the first humans on Eden's Isle | **The last enemy on Libriam is defeated**, ending sin and death | Mankind (men and women) is commissioned to **fill and subdue Libriam**, conquering its **three landmasses** with Allohim's indispensable help, battling mutated Fallout creatures and figures called ancient Fey; humanity stumbles repeatedly before fulfilling the mission. |
@@ -15,7 +15,7 @@
 ## Boundary notes and precise semantics
 
 - Age 1 ends **at the moment** Dragex is completely asleep, not simply when Moana dies or when Fey arrive.
-- Age 2 ends **at the last Fey's death**, not at the earlier start of its great battle. Age 3 begins at that same instant.
+- Age 2 ends **at the death of the last Fey fighting at Mount Yokai**, not the global extinction of the species. The battle virtually wipes out the participating Fey and destroys their dominant civilization. **Some nonparticipants, including young/newborn Fey, and Fey on the other two landmasses survive**; even complete death among battle participants is described with some intentional hyperbole. Age 3 begins at this transition.
 - The Fey-blooded animals arise from the blood-stained water **after** the Fey's final battle. The first generation includes **Archaíos**, who personally drinks the water. The precise date of Koric's curse and other events within Age 3 awaits further author explanation.
 - Age 3 ends **with restoration of the Tear**; that allows Koric eventually to die, but the author did not specify whether he dies at the transition.
 - Age 4 begins with the **reign of Veratus** over the reborn Kingdom of Moana; do not assume a specific coronation ceremony or dates.
@@ -25,7 +25,7 @@
 - The defining distinction is now author-confirmed: **Age 6 has relative peace but repeated failure and conflict; Age 7 is sinless, deathless and everlasting**. The precise Sixth/Seventh transition is **the defeat of the last enemy on Libriam**, aided by Allohim, after humanity has filled and subdued all three great landmasses.
 - Allohim's **Kingdom descends to Libriam** upon final victory; all its creatures submit to him and do his will. Mankind rules there, secure from any renewed sin by Allohim's explicit promise.
 - **Age-7 cosmic exploration** reaches other created planets, where sin remains a problem and Libriam's explorers help inhabitants know and obey Allohim. **Earth remains permanently beyond contact**, as earlier established; the mission must not be rewritten as visiting Earth.
-- The Age-6 enemies include Fallout-mutated creatures and entities the author calls **ancient Fey**. Since the last Fey's death is also the established end of Age 2, their exact nature (return, preservation, imitation, or something else) must be clarified; do not invent one.
+- The Age-6 enemies include Fallout-mutated creatures and **ancient Fey**. Their presence no longer contradicts Age 2, because Fey survive the Mount Yokai catastrophe on Libriam. Their exact identities, generations, causes, and allegiances are not established.
 
 ## The book's two periods
 
@@ -46,3 +46,7 @@ See [book narrative frame](../books/moanas-tear-frame.md). Do not assume Olive p
 ## Games
 
 All ten current Critz game concepts are listed in [game registry](../games/registry.md), with **age positions awaiting Phil's direction**. A game may span eras with flashbacks or historical missions. Do not assume new game dates based on this table.
+
+## The Battle of Mount Yokai is not a species-wide extinction
+
+**Latest clarification (October 12, 2026):** “every Fey died” means the Fey civilization was destroyed by an exceptionally deadly battle. The author estimates **about 99.99%** of Fey participated as an evocative approximation, **not an exact population count**. Many, perhaps almost all, participants died; even the absolute wording about every combatant is acknowledged as rhetorical. **Fey who abstained**, especially **young Fey**, and **Fey living on the other two great landmasses of Libriam**, remained alive. The end-of-Age-2 boundary is the **death of the last Fey fighting at Mount Yokai**, not the death of the last Fey globally.

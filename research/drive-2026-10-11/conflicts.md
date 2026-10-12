@@ -1,3 +1,7 @@
+> **RESOLVED — OCTOBER 12, 2026 (later clarification):** The apparent contradiction between the last Fey dying at Mount Yokai in Age 2 and ancient Fey appearing in Age 6 is **resolved**. The Mount Yokai losses and “all Fey died” phrasing describe near-total losses and the *fall of the civilization*, **not global biological extinction**. The age transition is marked by the death of the last Fey fighting on Mount Yokai; some Fey abstained (including very young Fey), while Fey on the other two landmasses survived. The **99.99% participation** figure is illustrative hyperbole, not audited demography. Do not invent resurrection. Earlier conflict notes are preserved as historical snapshots below.
+
+---
+
 > **FURTHER AUTHOR DECISION — OCTOBER 12, 2026.** The world is now officially named **Libriam**. **Age 6** commissions mankind to fill and subdue all three continents, eventually defeating sin, death and the last enemy with Allohim's help. **Age 7 is eternal Peace / Perfection**, commencing precisely when the last enemy is defeated, with Allohim's Kingdom on Libriam and interplanetary exploration/assistance. Previous “Seventh Age unresolved” and “planet unnamed” passages below are obsolete historical snapshots. Potential unresolved point: how the **ancient Fey** appear as Age-6 enemies if the **last Fey died at the end of Age 2**. See [master timeline](../../timeline/seven-ages.md) and [Libriam](../../world/libriam.md).
 
 ---

@@ -15,11 +15,11 @@ The planet is much smaller than Earth. Hokkaido roughly resembles real-world Hok
 ## History
 
 - **Age 1 Creation:** Allohim creates the universe and commissions Dragex and Moana to shape Libriam.
-- **Age 2 Fall:** Fey stewardship and their destruction in the Battle of Mount Yokai.
+- **Age 2 Fall:** Fey stewardship, a near-total catastrophe among those fighting at Mount Yokai, and the collapse of Fey civilization. Surviving Fey remain outside that battle, including young Fey and populations on the two other continents.
 - **Age 3 Redemptive Opportunity:** Koric and Veratus return Moana's Tear to Death's Valley on Hokkaido.
 - **Age 4 Arcane:** Veratus's Kingdom of Moana, rapid magical technology, discovery of two distant continents, and catastrophic arcane war.
 - **Age 5 Fallout:** devastation, disease, zombies/mutations and weakening inherited Fey blood. Ends when Allohim judges and cleanses Hokkaido.
-- **Age 6 Man:** a man and woman are placed on Eden's Isle; humanity's mission is to **fill and subdue all of Libriam**, including the three continents. They fail repeatedly, confront mutated creatures and enemies described as ancient Fey, and need Allohim's intervention and support to succeed. The exact nature of the “ancient Fey” is unresolved, given the earlier complete Fey death.
+- **Age 6 Man:** a man and woman are placed on Eden's Isle; humanity's mission is to **fill and subdue all of Libriam**, including the three continents. They fail repeatedly, confront mutated creatures and enemies described as ancient Fey, and need Allohim's intervention and support to succeed. Ancient Fey are possible because the Mount Yokai disaster did not exterminate Fey worldwide; their specific identities and allegiances are still unestablished.
 - **Age 7 Peace / Perfection:** begins **at the instant the last enemy on Libriam is defeated** and all its creatures submit to Allohim. Sin and death are definitively abolished. **Allohim's Kingdom descends to Libriam**, and he promises that no sin will ever return. Humanity rules Libriam in perfect balance and everlasting peace, develops resources and technology for **space exploration**, and helps inhabitants of **other created planets** struggling with sin to know and obey Allohim.
 
 ## Interplanetary boundaries
@@ -28,6 +28,6 @@ Allohim designed Earth personally, in the Milky Way, while other worlds were sha
 
 ## Still undecided
 
-Names and cultures of the two distant landmasses, what caused past explorers' disappearance, the identities/origin of Age-6 ancient Fey adversaries, the precise last enemy, planet dimensions, dates, other-world destinations, the means of interplanetary travel, and whether or how any other world becomes perfected.
+Names and cultures of the two distant landmasses, what caused past explorers' disappearance, the identities and factions of Age-6 ancient Fey adversaries, the precise last enemy, planet dimensions, dates, other-world destinations, the means of interplanetary travel, and whether or how any other world becomes perfected.
 
 See [author-confirmed canon](../canon/author-confirmed.md), [master timeline](../timeline/seven-ages.md), and [creation cosmology](allohim-and-cosmic-creation.md).
