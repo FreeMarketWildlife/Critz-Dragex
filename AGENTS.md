@@ -4,7 +4,7 @@ Phil is the author. This repository is a continuity and research system, not per
 
 ## Reading order
 
-Read `canon/author-confirmed.md`, `timeline/seven-ages.md`, `books/moanas-tear-frame.md`, `world/allohim-and-cosmic-creation.md`, and the relevant topic files. For recovered details, consult `research/drive-2026-10-11/sources.md` and the original source when the distinction matters. Read `research/drive-2026-10-11/conflicts.md` before resolving apparent contradictions.
+Read `canon/author-confirmed.md`, `timeline/seven-ages.md`, `world/libriam.md`, `books/moanas-tear-frame.md`, `world/allohim-and-cosmic-creation.md`, and the relevant topic files. For recovered details, consult `research/drive-2026-10-11/sources.md` and the original source when the distinction matters. Read `research/drive-2026-10-11/conflicts.md` before resolving apparent contradictions.
 
 ## Source precedence
 
@@ -24,7 +24,9 @@ Official spellings explicitly given: **Dragex**, **Critz**, **Koric**, **Veratus
 ## Timeline discipline
 
 - **There are seven ages**. Author's latest account puts **the events of Moana's Tear in Age 3** and **Archaíos's writing of the book in Age 4**. Age 3 ends with the Tear's return; Age 4 opens with Veratus's reign over the Kingdom of Moana. The earlier Age-4 novel event placement is superseded.
-- **Judgement ends Age 5**; the Sixth Age is **Man**, with humans directly placed by Allohim on Eden's Isle. The older “Age of Judgement” label is superseded. **The Seventh Age remains undecided**, even though “Peace” is a provisional old label.
+- **Judgement ends Age 5**; the Sixth Age is **Man**, with humans directly placed by Allohim on Eden's Isle. The older “Age of Judgement” label is superseded. **The Seventh Age is confirmed eternal Peace / Perfection:** it begins the instant the **last enemy** is defeated after humanity, helped by Allohim, has filled and subdued **all three continents** of **Libriam**.
+- **Libriam is the official planet name; Hokkaido is a landmass.** At the end of Age 6, sin and death are defeated on Libriam; Allohim's Kingdom descends; all creatures obey him. Age 7 is everlasting, but its people explore **other reachable planets** to help them fight sin. **Earth is excluded from contact** under the earlier cosmic rule. Do not casually introduce renewed sin on Libriam, space contact with Earth, or unsanctioned eighth ages.
+- **The “ancient Fey” enemies of Age 6 have not been explained** despite the last Fey's death ending Age 2. Flag, don't invent resurrection or survivors.
 - **No humans live in Hokkaido in the novels**. The first local humans are placed by Allohim on Eden's Isle in Age 6. A prior western-seafaring origin claim is not to be repeated as current canon; its relationship to the later account is unresolved.
 - Do not assign games to ages from their genre, weapons, technology, boss appearances, or atmosphere. Phil explicitly reserved those assignments.
 - A game can have a main setting and separate historical missions, flashbacks, or framing narration. Record those separately.
