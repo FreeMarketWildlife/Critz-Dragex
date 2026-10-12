@@ -1,3 +1,4 @@
+import {sculptCoast,normalizeLandmass,geographyRegions} from './coast-design.js';
 import { geoArea } from 'd3-geo';
 import { SURFACE_AREA,RADIUS,EARTH_RADIUS,rad } from './model.js';
 import alaskaReference from './data/alaska.json' with {type:'json'};
@@ -27,6 +28,6 @@ export function makeLandmass(design){
  const target=SURFACE_AREA*design.fraction;let lo=0,hi=1.999*RADIUS/rhoMax;
  if(geoArea({type:'MultiPolygon',coordinates:mapped(hi)})*RADIUS**2<target)throw Error('Reference silhouette cannot reach the requested area without exceeding its spherical projection.');
  for(let i=0;i<55;i++){const m=(lo+hi)/2,area=geoArea({type:'MultiPolygon',coordinates:mapped(m)})*RADIUS**2;if(area<target)lo=m;else hi=m;}
- return {type:'Feature',properties:{...design,areaKm2:target,source:source.properties.source,sourceUrl:source.properties.url},geometry:{type:'MultiPolygon',coordinates:mapped((lo+hi)/2)}};
+ return {type:'Feature',properties:{...design,areaKm2:target,source:source.properties.source,sourceUrl:source.properties.url},geometry:normalizeLandmass(sculptCoast({type:'MultiPolygon',coordinates:mapped((lo+hi)/2)},geographyRegions[design.reference==='alaska'?1:0],design.reference==='alaska'?2:1),design.center,target)};
 }
 export const otherLandmasses=LANDMASS_DESIGNS.map(makeLandmass);
