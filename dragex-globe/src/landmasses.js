@@ -1,11 +1,11 @@
-import {poseAlaska,rotateGeometry,pointRotation} from './continent-pose.js';
+import {poseAlaska,rotateGeometry,pointRotation,rotateThenFlipNorthSouth} from './continent-pose.js';
 import {sculptCoast,normalizeLandmass,geographyRegions} from './coast-design.js';
 import { geoArea } from 'd3-geo';
 import { SURFACE_AREA,RADIUS,EARTH_RADIUS,rad } from './model.js';
 import alaskaReference from './data/alaska.json' with {type:'json'};
 import newZealandReference from './data/new-zealand.json' with {type:'json'};
 export const LANDMASS_DESIGNS=[
- {id:'landmass-ii',name:'Zealand',center:{lat:-40,lon:124},overview:{lat:-32,lon:124},fraction:.0325,rotationDeg:15,referenceCenter:{lat:-41,lon:173},reference:'new-zealand',status:'author-requested New Zealand reference; rotated and rescaled design'},
+ {id:'landmass-ii',name:'Zealand',rotate90FlipNS:true,center:{lat:-40,lon:124},overview:{lat:-32,lon:124},fraction:.0325,rotationDeg:15,referenceCenter:{lat:-41,lon:173},reference:'new-zealand',status:'author-requested New Zealand reference; rotated and rescaled design'},
  {id:'landmass-iii',name:'Alaska',center:{lat:21.5,lon:-124.3},overview:{lat:45,lon:-95},fraction:.04675,rotationDeg:65,referenceCenter:{lat:64,lon:-152},reference:'alaska',status:'author-confirmed name; rotated/rescaled Alaska coastline; proposed exact placement'}
 ];
 export const geometryPolygons=feature=>feature.geometry.type==='Polygon'?[feature.geometry.coordinates]:feature.geometry.coordinates;
@@ -33,7 +33,7 @@ export function makeReferenceLandmass(design){
 }
 export function makeLandmass(design){
  const alaska=design.reference==='alaska',originalCenter=alaska?{lat:43,lon:-140}:{lat:-25,lon:124},baseline=makeReferenceLandmass({...design,center:originalCenter,fraction:alaska?.055:.065});
- const resized=normalizeLandmass(baseline.geometry,originalCenter,SURFACE_AREA*design.fraction),geometry=alaska?poseAlaska(resized):rotateGeometry(resized,pointRotation([originalCenter.lon,originalCenter.lat],[design.center.lon,design.center.lat]));
+ const resized=normalizeLandmass(baseline.geometry,originalCenter,SURFACE_AREA*design.fraction),posed=alaska?poseAlaska(resized):rotateGeometry(resized,pointRotation([originalCenter.lon,originalCenter.lat],[design.center.lon,design.center.lat])),geometry=!alaska&&design.rotate90FlipNS?rotateThenFlipNorthSouth(posed,design.center):posed;
  return {...baseline,properties:{...baseline.properties,...design,areaKm2:SURFACE_AREA*design.fraction,status:alaska?'15% smaller; southern mainland with author-directed northern island chain':'author-named Zealand; 50% smaller; southern placement proposal'},geometry};
 }
 export const otherLandmasses=LANDMASS_DESIGNS.map(makeLandmass);

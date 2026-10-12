@@ -66,3 +66,5 @@ The Tear’s return ends Age 3; life returns during the opening of Age 4. Fallou
 **Latest terminology (October 12):** the three major regions of Libriam are **continents**: Hokkaido, Alaska and the New Zealand-inspired continent. This changes their geographic label, not the Age-4 discovery or Age-6 mission. The program is now **Libriam Globe**.
 
 **Latest continental revision (October 12):** the second continent is now **Zealand**, with half its earlier app area (**3.25% of Libriam**). Alaska loses **15% of its earlier app area** (**4.675%**) and receives a southern mainland and northern island chain along the author’s arc toward Hokkaido’s northern tip. The supplied Age-5/unit-4564 context does not date these shapes or establish a new historical event.
+
+**Latest Zealand orientation (October 12):** rotate 90° and then flip north–south. The app uses a clockwise quarter-turn around its existing reference center; area stays 3.25%. The new east–west orientation supersedes its preceding polar-reaching layout without dating a geographic-change event.

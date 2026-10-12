@@ -19,3 +19,12 @@ export function poseAlaska(geometry){
  const missing=originalArea-geoArea(posed)*RADIUS**2,mainland={type:'MultiPolygon',coordinates:[posed.coordinates[0]]},mainCenter=centroid(posed.coordinates[0]);posed.coordinates[0]=normalizeLandmass(mainland,{lat:mainCenter[1],lon:mainCenter[0]},geoArea(mainland)*RADIUS**2+missing).coordinates[0];
  return posed;
 }
+// A clockwise quarter-turn followed by a N/S reflection swaps local east/north.
+// Reflect in Zealand's tangent frame, rather than across the planet's equator.
+export function rotateThenFlipNorthSouth(geometry,center){
+ const lat=center.lat*Math.PI/180,lon=center.lon*Math.PI/180,up=toVector(center.lat,center.lon),east=[Math.cos(lon),0,-Math.sin(lon)],north=[-Math.sin(lat)*Math.sin(lon),Math.cos(lat),-Math.sin(lat)*Math.cos(lon)];
+ const transform=p=>{const v=vector(p),x=dot(v,east),y=dot(v,north),z=dot(v,up),q=up.map((_,i)=>east[i]*y+north[i]*x+up[i]*z),c=fromVector(...q);return [c.lon,c.lat];};
+ const result=rotateGeometry(geometry,transform);
+ // The reflection changes handedness; reverse shell and hole winding together.
+ return {...result,coordinates:result.coordinates.map(poly=>poly.map(r=>r.toReversed()))};
+}
