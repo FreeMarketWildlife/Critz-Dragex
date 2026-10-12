@@ -94,3 +94,9 @@ The preceding refined reference outlines are resized before posing, retaining th
 ## Zealand orientation revision
 
 Zealand receives a **clockwise 90° turn followed by a north–south reflection** in a local frame at its existing 40 S, 124 E reference center. `rotateThenFlipNorthSouth` in `src/continent-pose.js` applies an orthogonal spherical transform: local east/north components swap, radial distance and spherical area stay unchanged, and all ring windings reverse to compensate for reflection. The new broadly east–west outline no longer reaches the south pole; it supersedes the older polar-reaching orientation. Its current 54,224.443 km² area and other continents are preserved. Tests verify the transformation sequence, exact area, unchanged center distances, valid winding and no continental overlaps.
+
+## Terrain exaggeration
+
+The gear’s **Terrain exaggeration** slider runs from **0× (flat)** to **10×**, with **1×** as the default. It scales the existing illustrative mountain ridge and Hokkaido undulations; it does not place new named mountains. The setting saves on this device and in project JSON under optional `terrain.exaggeration`; old project files default to 1×. Turning off Illustrative relief disables the slider and flattens the geometric relief without discarding its saved value.
+
+Relief now updates the actual sphere vertex positions and normals, so raycast coordinate picking uses the raised surface. Pins, geographic lines and annotation outlines drape over it; camera clearance grows with the highest bumps. Planetary scale calculations still use the confirmed reference sphere. The settings panel leaves the globe visible while you adjust the slider. `src/terrain.js` holds the deterministic height multiplier and validation; terrain tests cover scale, flattening, history states and persistence. Exact mountain locations and elevations beyond existing anchors remain author decisions.
