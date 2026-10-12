@@ -1,4 +1,5 @@
 import './style.css';
+import {installAnnotations} from './annotation-ui.js';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { geoContains,geoPath,geoEquirectangular } from 'd3-geo';
@@ -12,6 +13,7 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const fmt=(n,d=2)=>n.toLocaleString('en-US',{maximumFractionDigits:d,minimumFractionDigits:d});
 const coords=p=>`${fmt(Math.abs(p.lat))}° ${p.lat>=0?'N':'S'} · ${fmt(Math.abs(p.lon))}° ${p.lon>=0?'E':'W'}`;
 const STORAGE='dragex-globe-project-v1';
+let annotationUI=null;
 let project=newProject(),storageOK=true,mode='atlas',tool=null,measurePoints=[],pendingPin=null,selectedBody='libriam',fly=null;
 try{const saved=localStorage.getItem(STORAGE);if(saved)project=validateProject(JSON.parse(saved));}catch{storageOK=false;}
 function toast(s){$('#toast').textContent=s;$('#toast').classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').classList.remove('visible'),4200);}
@@ -91,18 +93,19 @@ function hit(e){const b=renderer.domElement.getBoundingClientRect();pointer.set(
 renderer.domElement.addEventListener('pointerdown',e=>{mouseDown={x:e.clientX,y:e.clientY};});
 renderer.domElement.addEventListener('pointermove',e=>{if(mode!=='atlas')return;const h=hit(e);if(h){const p=fromVector(h.point.x,h.point.y,h.point.z);$('#cursor').textContent=coords(p);renderer.domElement.style.cursor=tool?'crosshair':'grab';}else renderer.domElement.style.cursor='default';});
 renderer.domElement.addEventListener('pointerup',e=>{
- if(mode!=='atlas'||timelineState(currentFrame).emergence<.05||e.button!==0||!mouseDown||Math.hypot(e.clientX-mouseDown.x,e.clientY-mouseDown.y)>5)return;mouseDown=null;const h=hit(e);if(!h)return;
+ if(annotationUI?.enabled||mode!=='atlas'||timelineState(currentFrame).emergence<.05||e.button!==0||!mouseDown||Math.hypot(e.clientX-mouseDown.x,e.clientY-mouseDown.y)>5)return;mouseDown=null;const h=hit(e);if(!h)return;
  const p=fromVector(h.point.x,h.point.y,h.point.z);
  if(tool==='pin'){pendingPin=p;$('#pin-coordinates').textContent=coords(p);$('#pin-name').value='';$('#pin-dialog').showModal();setTimeout(()=>$('#pin-name').focus(),50);}
  else if(tool==='measure'){if(measurePoints.length===2)measurePoints=[];measurePoints.push(p);renderMeasurement();}
  else {selectCoordinate(p);const found=project.pins.find(q=>distance(p,q)<8);if(found)$('#selected-place').textContent=found.name;}
 });
-function setTool(value){tool=value;if(tool)$('#coordinate-panel').hidden=true;measurePoints=[];measureGroup.children.slice().forEach(disposeObject);$('#measure').classList.toggle('active',tool==='measure');$('#tool-panel').hidden=!tool;if(tool==='measure')renderMeasurement();else if(tool==='pin')$('#tool-panel').innerHTML='<h3>Place a pin</h3><p>Click any point on the globe, then name your location.</p><button id="cancel-tool">Cancel</button>';if(tool)$('#cancel-tool').onclick=()=>setTool(null);}
+function setTool(value){annotationUI?.deactivate();controls.enabled=true;tool=value;if(tool)$('#coordinate-panel').hidden=true;measurePoints=[];measureGroup.children.slice().forEach(disposeObject);$('#measure').classList.toggle('active',tool==='measure');$('#tool-panel').hidden=!tool;if(tool==='measure')renderMeasurement();else if(tool==='pin')$('#tool-panel').innerHTML='<h3>Place a pin</h3><p>Click any point on the globe, then name your location.</p><button id="cancel-tool">Cancel</button>';if(tool)$('#cancel-tool').onclick=()=>setTool(null);}
 function renderMeasurement(){measureGroup.children.slice().forEach(disposeObject);measurePoints.forEach(p=>measureGroup.add(pinMarker(p,'#f2ce8b',.01)));
  if(measurePoints.length===2){const a=new THREE.Vector3(...toVector(measurePoints[0].lat,measurePoints[0].lon)),b=new THREE.Vector3(...toVector(measurePoints[1].lat,measurePoints[1].lon)),theta=a.angleTo(b);let axis=new THREE.Vector3().crossVectors(a,b);if(axis.length()<1e-8)axis.crossVectors(a,Math.abs(a.y)<.9?new THREE.Vector3(0,1,0):new THREE.Vector3(1,0,0));axis.normalize();const pts=[];for(let i=0;i<=160;i++)pts.push(a.clone().applyAxisAngle(axis,theta*i/160).multiplyScalar(1.008));measureGroup.add(line(pts,'#f2ce8b',1));}
  const box=$('#tool-panel');box.innerHTML=`<h3>Surface distance</h3>${measurePoints.length===2?`<strong>${fmt(distance(...measurePoints))} km</strong><p>Shortest great-circle route. Relief and roads are excluded.<br>Click again to start another route.</p>`:`<p>${measurePoints.length?'Select the destination.':'Select two points on the globe.'}<br>Distances use Libriam’s 364.38 km radius.</p>`}<button id="clear-measure">Start again</button><button id="cancel-tool">Done</button>`;
  $('#clear-measure').onclick=()=>{measurePoints=[];renderMeasurement();};$('#cancel-tool').onclick=()=>setTool(null);
 }
+annotationUI=installAnnotations({canvas:renderer.domElement,camera,globe,atlas,controls,getProject:()=>project,getFrame:()=>Math.round(currentFrame),save,flyTo,toast,onActivate:()=>{setTool(null);fly=null;historyPlaying=false;controls.autoRotate=false;$('#rotation').checked=false;$('#play-history').textContent='▶';$('#play-history').setAttribute('aria-label','Play history');}});
 $('#measure').onclick=()=>setTool(tool==='measure'?null:'measure');$('#add-pin').onclick=()=>{if(project.pins.length>=500){toast('This project supports up to 500 saved places.');return;}setTool('pin');toast('Click the globe to place your new location.');};
 $('#pin-form').onsubmit=e=>{e.preventDefault();const name=$('#pin-name').value.trim();if(!name||!pendingPin)return;project.pins.push({id:crypto.randomUUID(),name,...pendingPin});save();renderPins();$('#pin-dialog').close();setTool(null);toast(`Saved ${name} as a design proposal.`);};
 $('#hokkaido').onclick=()=>flyTo(project.placement,Math.max(2.05,fitDistance()*.75));
@@ -121,8 +124,8 @@ $('#download-project').onclick=()=>{download(new Blob([JSON.stringify(project,nu
 $('#copy-project').onclick=async()=>{try{await navigator.clipboard.writeText($('#export-json').value);toast('Project JSON copied.');}catch{$('#export-json').focus();$('#export-json').select();toast('Select all and copy the project text to keep a backup.');}};
 $('#import-btn').onclick=()=>{$('#import-json').value='';$('#import-dialog').showModal();};$('#choose-file').onclick=()=>$('#import-file').click();
 function importProject(text){const imported=validateProject(JSON.parse(text));if(!window.confirm('Replace this device’s project? Export first to preserve your current design.'))return;const previous=project;project=imported;save();if(storageOK)location.reload();else{project=previous;throw Error('Import requires local storage. Enable it and try again.');}}
-$('#import-form').onsubmit=e=>{e.preventDefault();try{if($('#import-json').value.length>2e6)throw Error('Project exceeds 2 MB.');importProject($('#import-json').value);}catch(error){toast(`Import failed: ${error.message}`);}};
-$('#import-file').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{if(f.size>2e6)throw Error('Project file exceeds 2 MB.');importProject(await f.text());}catch(error){toast(`Import failed: ${error.message}`);}finally{e.target.value='';}};
+$('#import-form').onsubmit=e=>{e.preventDefault();try{if($('#import-json').value.length>32e6)throw Error('Project exceeds 32 MB.');importProject($('#import-json').value);}catch(error){toast(`Import failed: ${error.message}`);}};
+$('#import-file').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{if(f.size>32e6)throw Error('Project file exceeds 32 MB.');importProject(await f.text());}catch(error){toast(`Import failed: ${error.message}`);}finally{e.target.value='';}};
 $('#shot').onclick=()=>{renderer.render(scene,camera);renderer.domElement.toBlob(blob=>{if(blob)download(blob,`dragex-${mode}-view.png`);else toast('Could not capture the view.');},'image/png');};
 function populateBodies(){const box=$('#bodies');box.replaceChildren();for(const b of project.bodies){const row=document.createElement('button');row.className='body-row'+(b.id===selectedBody?' active':'');const dot=document.createElement('span');dot.className='body-dot';dot.style.background=b.color;const label=document.createElement('span');label.textContent=b.name;const sm=document.createElement('small');sm.textContent=`${b.type.toUpperCase()} · ${fmt(b.radiusKm)} km radius${b.id==='libriam'?'':' · PROPOSAL'}`;label.append(sm);row.append(dot,label);row.onclick=()=>{selectedBody=b.id;populateBodies();fillBodyForm();};box.append(row);}}
 function fillBodyForm(){const b=project.bodies.find(x=>x.id===selectedBody),f=$('#body-form');f.elements.name.value=b.name;f.elements.type.value=b.type;f.elements.radiusKm.value=b.radiusKm;f.elements.orbitAU.value=b.orbitAU??'';f.elements.color.value=b.color;f.elements.parentId.replaceChildren();const none=document.createElement('option');none.value='';none.textContent='Not decided / no parent';f.elements.parentId.append(none);for(const p of project.bodies.filter(p=>p.id!==b.id)){const op=document.createElement('option');op.value=p.id;op.textContent=p.name;f.elements.parentId.append(op);}f.elements.parentId.value=b.parentId??'';f.elements.radiusKm.readOnly=b.id==='libriam';f.elements.type.disabled=b.id==='libriam';f.elements.name.readOnly=b.id==='libriam';$('#delete-body').hidden=b.id==='libriam';}
@@ -177,7 +180,7 @@ updateTimelineText();
 let last=performance.now();
 function animate(now){requestAnimationFrame(animate);const dt=Math.min(.1,(now-last)/1000);last=now;
  if(fly){const t=Math.min(1,(now-fly.t)/fly.duration),e=t*t*(3-2*t);const rotation=new THREE.Quaternion().slerp(fly.rotation,e);camera.position.copy(fly.start).normalize().applyQuaternion(rotation).multiplyScalar(THREE.MathUtils.lerp(fly.start.length(),fly.end.length(),e));controls.target.lerpVectors(fly.startTarget,fly.endTarget,e);if(t===1)fly=null;}
- updateHistory(dt,now);controls.update(dt);renderer.render(scene,camera);
+ updateHistory(dt,now);annotationUI.update(mode==='atlas'&&timelineState(currentFrame).emergence>.05);controls.update(dt);renderer.render(scene,camera);
  if(mode==='atlas'){
   $('#altitude').textContent=`Altitude ${fmt((camera.position.length()-1)*RADIUS,0)} km`;
   const v=new THREE.Vector3(...toVector(project.placement.lat+12,project.placement.lon-7,1.02)),front=v.clone().normalize().dot(camera.position.clone().sub(v).normalize())>.05,screen=v.project(camera);
