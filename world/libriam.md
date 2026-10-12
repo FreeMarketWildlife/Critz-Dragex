@@ -43,3 +43,17 @@ The author requests draft shapes for the other two landmasses near **24° S, 124
 The latest author request replaces the two small procedural shapes. **Alaska**, the named third landmass, is modeled on a rotated Alaska outline, enlarged to **5–6%** of Libriam, and moved west. The app proposes **5.5%**, a **65° rotation**, and a center at **43° N, 140° W**. The second landmass is modeled on rotated **New Zealand** at **6–7%**, stretching toward the south pole; the app proposes **6.5%**, **15° rotation**, and **25° S, 124° E**, with a coastline near **85° S**. These exact implementation values remain design choices within the requested ranges. “New Zealand” is a working reference label, whereas “Alaska” is explicitly author-named.
 
 The north and south poles are **mostly ice-covered ocean**, with land possible but unspecified. The renderer supplies pack ice and broken marginal floes over the mapped surface; it does not add polar continents. This supersedes the earlier 1.1% / 0.9% proposals and combined 2% limit. Hokkaido remains **5%** at **83,422.22 km²**.
+
+## Great rivers and the small lake island — latest October 12, 2026 decision
+
+The author specifies three rivers flowing from the lake at **19.75° N, 9.98° E** to these exact ocean outlets:
+
+- **11.37192° N, 31.43740° E**.
+- **14.78480° N, 18.33008° W** (longitude **−18.33008**).
+- **36.54197° N, 13.66136° W** (longitude **−13.66136**).
+
+The routes should bend naturally. These endpoints supersede the earlier automatically chosen outlet directions; intermediate bends and widths remain visualization proposals. The current coastline puts the supplied outlets a short distance offshore; the app preserves the exact coordinates with channels meeting the ocean there.
+
+A small island inside the lake has opposite edge points **19.95031° N, 9.15032° E** and **19.25278° N, 11.37802° E**. Their derived great-circle separation on spherical Libriam is **about 14.064 km**. The author requests a pool inside this island, **about 1 km wide**. The app proposes a narrow irregular outline, approximately **3.2 km across**, and a central pool near **19.601545° N, 10.26417° E**. Only the supplied edge anchors and approximate pool size are confirmed; the width, outline and pool center are design choices.
+
+The accompanying **Age 7 / design unit 6999** describes the supplied map-coordinate context; it does not establish that the island first forms in Age 7. The visualization keeps the island in place, gives its pool water during the existing lake's wet periods, and dries it with the existing drought. That earlier pool history is a proposal, not a new author-confirmed event. This island is not identified as Eden's Isle.
