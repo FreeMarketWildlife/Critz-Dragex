@@ -31,3 +31,9 @@ Allohim designed Earth personally, in the Milky Way, while other worlds were sha
 Names and cultures of the two distant landmasses, what caused past explorers' disappearance, the identities and factions of Age-6 ancient Fey adversaries, the precise last enemy, planet shape beyond the spherical visualization model, mass/gravity, rotation and orbital properties, dates, other-world destinations, the means of interplanetary travel, and whether or how any other world becomes perfected.
 
 See [author-confirmed canon](../canon/author-confirmed.md), [master timeline](../timeline/seven-ages.md), and [creation cosmology](allohim-and-cosmic-creation.md).
+
+## Globe geography design — October 12, 2026
+
+Hokkaido’s great freshwater lake / later Death’s Valley is anchored at **19.75° N, 9.98° E**. Three rivers drain outward in Ages 1–2; theft of Moana’s Tear near the Age-2/3 transition dries the lake and causes an expanding Age-3 drought. A reference edge is **17.69° N, 1.33° E**. The western mountain range runs **9.97° N, 8.18° W → 2.10° N, 0.79° W**, slowing western drying relative to the east. See the dated [author account](../canon/author-confirmed.md) for attribution and unresolved details.
+
+The author requests draft shapes for the other two landmasses near **24° S, 124° E** and **46° N, 96° W**. The Globe program proposes **1.1%** and **0.9%** of Libriam’s surface respectively. These draft outlines and sizes are an implementation proposal under a conservative combined 2% cap; the names, cultures, histories, mountain heights, and detailed geography remain undecided. Their depiction in earlier ages does not change the confirmed Age-4 discovery by Hokkaido’s critters.
