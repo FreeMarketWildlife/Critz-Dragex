@@ -6,7 +6,7 @@
 
 **Libriam** is the entire world on which the Dragex book series and Critz games occur. **Hokkaido** is only one of its **three major landmasses**, with a few small nearby islands; there are **two other great landmasses**, first discovered by Hokkaido's critters in Age 4. Their explorers never return, for unknown reasons. Birds (hosts of heaven) travel between the lands; certain great ocean creatures have seen them.
 
-The planet is much smaller than Earth. Hokkaido roughly resembles real-world Hokkaido in outline and size, and is estimated to cover **5% of Libriam's entire surface area**. There is no Honshu-like country south of Hokkaido. Other continent names, surface maps, geology, and total planetary measurements remain open.
+The planet is much smaller than Earth. Hokkaido roughly resembles real-world Hokkaido in outline and size, and, under the author’s October 12 scale decision, occupies **83,422.22 km²**, exactly **5% of Libriam’s 1,668,444.4 km² surface**. There is no Honshu-like country south of Hokkaido. Other continent names, surface maps and geology remain open. Assuming a spherical model, the specified area gives a radius of **364.38 km**, diameter of **728.75 km**, and circumference of **2,289.45 km**. These derived dimensions supersede the previous unspecified planetary size; they do not establish physical mass or gravity. See [Dragex Globe](../dragex-globe/README.md).
 
 ## Name and linguistic caution
 
@@ -28,6 +28,6 @@ Allohim designed Earth personally, in the Milky Way, while other worlds were sha
 
 ## Still undecided
 
-Names and cultures of the two distant landmasses, what caused past explorers' disappearance, the identities and factions of Age-6 ancient Fey adversaries, the precise last enemy, planet dimensions, dates, other-world destinations, the means of interplanetary travel, and whether or how any other world becomes perfected.
+Names and cultures of the two distant landmasses, what caused past explorers' disappearance, the identities and factions of Age-6 ancient Fey adversaries, the precise last enemy, planet shape beyond the spherical visualization model, mass/gravity, rotation and orbital properties, dates, other-world destinations, the means of interplanetary travel, and whether or how any other world becomes perfected.
 
 See [author-confirmed canon](../canon/author-confirmed.md), [master timeline](../timeline/seven-ages.md), and [creation cosmology](allohim-and-cosmic-creation.md).

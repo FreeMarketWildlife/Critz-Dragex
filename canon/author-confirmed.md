@@ -56,3 +56,9 @@
 - **Some Fey abstained from the battle**, including **newborn/young Fey** who were not there; **Fey also existed on the other two great landmasses of Libriam**.
 - For chronological purposes, **Age 2 ends at the death of the last Fey fighting on Mount Yokai**, marking the end of the battle, collapse of the old Fey civilization, and start of **Age 3**. This marker should not be read as the death of the last Fey alive anywhere in Libriam.
 - **Ancient Fey can therefore remain into later ages**, including as adversaries during the Age of Man, **without requiring an invented resurrection or retcon**. Specific individuals, numbers, lineages, survivorship, motives, and how long they live still need author decisions.
+
+## Exact planetary scale — author decision, October 12, 2026
+
+- The author specifies **Hokkaido at 83,422.22 km²**, roughly its real-world size, and **5% of Libriam’s total surface**. The resulting specified total surface is **1,668,444.4 km²**. This makes the previous approximate 5% relationship exact for the Dragex Globe model.
+- Assuming a **spherical planet**, these inputs imply a **364.376984409 km radius**, **728.753968818 km diameter**, and **2,289.448114713 km circumference**. These are mathematical derivations, not independent measurements or claims about mass, gravity, atmosphere or habitability.
+- The author requested a **Dragex Globe** program, with future expansion to designing Libriam’s solar system. Its globe placement, illustrated terrain, new location pins and celestial-body designs are proposals until explicitly confirmed. No star or planetary orbit is established by this request.

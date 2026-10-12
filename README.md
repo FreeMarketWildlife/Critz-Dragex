@@ -22,3 +22,7 @@ The lore and continuity repository for Phil's **Dragex** books and **Critz** gam
 **Current timeline anchors (latest author decisions):** Events of *Moana's Tear* are in **Age 3**, ending as Koric returns the Tear. **Archaíos writes the book in Age 4** for Olivia. Age 4 opens with Veratus reigning over the Kingdom of Moana. **Age 5 ends in Judgement**, **Age 6 is Man**, and **Age 7 is everlasting Peace/Perfection**, beginning at the defeat of the last enemy on Libriam. Allohim's Kingdom descends; mankind explores other reachable planets while Libriam remains sinless. First local humans are placed by Allohim on Eden's Isle in Age 6, not established as migrants from the western continent. The original October Age-4 event placement was superseded.
 
 The Google Drive originals were read, not edited. This repository contains organized research and source links, not a complete binary backup of the Drive or all its illustrations. Research date: October 11, 2026, author's local date.
+
+## Dragex Globe
+
+The [Dragex Globe program](dragex-globe/README.md) provides an interactive 3D Libriam atlas, an area-calibrated Hokkaido silhouette, surface-distance measurement, saved proposed places, and a solar-system design workspace. The October 12 author decision sets Hokkaido at **83,422.22 km²**, exactly **5%** of a **1,668,444.4 km²** Libriam. Run it with `npm ci` and `npm run dev` inside `dragex-globe/`. Design choices in the app remain proposals until author-confirmed.

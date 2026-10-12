@@ -1,0 +1,142 @@
+import './style.css';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { geoContains } from 'd3-geo';
+import { HOKKAIDO_AREA,SURFACE_AREA,RADIUS,EARTH_RADIUS,planet,rad,distance,toVector,fromVector,makeHokkaido,newProject,validateProject } from './model.js';
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const fmt=(n,d=2)=>n.toLocaleString('en-US',{maximumFractionDigits:d,minimumFractionDigits:d});
+const coords=p=>`${fmt(Math.abs(p.lat))}° ${p.lat>=0?'N':'S'} · ${fmt(Math.abs(p.lon))}° ${p.lon>=0?'E':'W'}`;
+const STORAGE='dragex-globe-project-v1';
+let project=newProject(),storageOK=true,mode='atlas',tool=null,measurePoints=[],pendingPin=null,selectedBody='libriam',fly=null;
+try{const saved=localStorage.getItem(STORAGE);if(saved)project=validateProject(JSON.parse(saved));}catch{storageOK=false;}
+function toast(s){$('#toast').textContent=s;$('#toast').classList.add('visible');clearTimeout(toast.timer);toast.timer=setTimeout(()=>$('#toast').classList.remove('visible'),4200);}
+function save(){try{localStorage.setItem(STORAGE,JSON.stringify(project));storageOK=true;$('#save-state').textContent='● Saved on this device · export to keep a copy';}catch{storageOK=false;$('#save-state').textContent='Local storage unavailable · export your project to save';toast('Export your project to keep these changes. Local storage is unavailable.');}}
+if(!storageOK)$('#save-state').textContent='Previous save could not be loaded · export changes to keep a copy';
+const outline=await fetch('./data/hokkaido.geojson').then(r=>{if(!r.ok)throw Error('Coastline data unavailable');return r.json();}).catch(e=>{$('#scene-error').hidden=false;$('#scene-error').textContent=e.message;throw e;});
+let hokkaido=makeHokkaido(outline,project.placement);
+const host=$('#scene'),scene=new THREE.Scene();
+let renderer;
+try{renderer=new THREE.WebGLRenderer({antialias:true,alpha:true,preserveDrawingBuffer:true});}catch{ $('#scene-error').hidden=false;$('#scene-error').textContent='The atlas needs WebGL. Enable hardware acceleration or use a browser with WebGL support. Your scale reference and saved project are still available.';throw Error('WebGL unavailable'); }
+renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));renderer.outputColorSpace=THREE.SRGBColorSpace;host.append(renderer.domElement);
+renderer.domElement.setAttribute('aria-label','Libriam globe. Drag to rotate, scroll to zoom. Use the Hokkaido and saved-place buttons to navigate.');renderer.domElement.tabIndex=0;
+const camera=new THREE.PerspectiveCamera(40,1,.001,200);camera.position.set(0,1.2,3.5);
+const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.dampingFactor=.07;controls.enablePan=false;controls.minDistance=1.06;controls.maxDistance=7;controls.rotateSpeed=.5;controls.zoomSpeed=.65;
+const atlas=new THREE.Group(),system=new THREE.Group();scene.add(atlas,system);system.visible=false;
+const ambient=new THREE.AmbientLight('#bedee5',2.2),sun=new THREE.DirectionalLight('#fff1d0',2.4);sun.position.set(-3,3,5);scene.add(ambient,sun);
+const surfaceGeometry=new THREE.SphereGeometry(1,160,100);surfaceGeometry.rotateY(-Math.PI/2);
+const material=new THREE.MeshStandardMaterial({roughness:.92,metalness:.05});
+const globe=new THREE.Mesh(surfaceGeometry,material);atlas.add(globe);
+const atmos=new THREE.Mesh(new THREE.SphereGeometry(1.025,80,48),new THREE.ShaderMaterial({transparent:true,side:THREE.BackSide,depthWrite:false,uniforms:{glow:{value:new THREE.Color('#518c9e')}},vertexShader:'varying vec3 n; varying vec3 v; void main(){vec4 p=modelViewMatrix*vec4(position,1.);n=normalize(normalMatrix*normal);v=normalize(-p.xyz);gl_Position=projectionMatrix*p;}',fragmentShader:'varying vec3 n;varying vec3 v;uniform vec3 glow;void main(){float a=pow(1.-abs(dot(n,v)),3.);gl_FragColor=vec4(glow,a*.42);}'}));atlas.add(atmos);
+function texture(relief){
+ const W=4096,H=2048,c=document.createElement('canvas');c.width=W;c.height=H;const ctx=c.getContext('2d');
+ const grad=ctx.createLinearGradient(0,0,0,H);grad.addColorStop(0,'#0e2636');grad.addColorStop(.45,'#174254');grad.addColorStop(.7,'#173c4c');grad.addColorStop(1,'#0d2938');ctx.fillStyle=grad;ctx.fillRect(0,0,W,H);
+ // Subtle bathymetry-like color is illustrative, not a mapped seabed.
+ let seed=54321;const random=()=>{seed=(seed*16807)%2147483647;return seed/2147483647;};
+ for(let i=0;i<1600;i++){let x=random()*W,y=random()*H,r=10+random()*85;const g=ctx.createRadialGradient(x,y,0,x,y,r);g.addColorStop(0,'rgba(103,160,168,0.025)');g.addColorStop(1,'rgba(103,160,168,0)');ctx.fillStyle=g;ctx.fillRect(x-r,y-r,2*r,2*r);}
+ const ring=hokkaido.geometry.coordinates[0],path=new Path2D();ring.forEach(([lon,lat],i)=>{const x=(lon+180)/360*W,y=(90-lat)/180*H;if(i===0)path.moveTo(x,y);else path.lineTo(x,y);});path.closePath();
+ ctx.strokeStyle='#3c7079';ctx.lineWidth=17;ctx.stroke(path);ctx.strokeStyle='#5a9690';ctx.lineWidth=5;ctx.stroke(path);
+ ctx.save();ctx.clip(path);ctx.fillStyle=relief?'#647e5c':'#8fba90';ctx.fillRect(0,0,W,H);
+ if(relief){
+  const img=ctx.getImageData(0,0,W,H),d=img.data;
+  const bounds=ring.reduce((b,[lo,la])=>[Math.min(b[0],lo),Math.min(b[1],la),Math.max(b[2],lo),Math.max(b[3],la)],[180,90,-180,-90]);
+  const x1=Math.max(0,Math.floor((bounds[0]+180)/360*W)),x2=Math.min(W,Math.ceil((bounds[2]+180)/360*W)),y1=Math.max(0,Math.floor((90-bounds[3])/180*H)),y2=Math.min(H,Math.ceil((90-bounds[1])/180*H));
+  const hash=(x,y)=>{const v=Math.sin(x*127.1+y*311.7)*43758.5453123;return v-Math.floor(v);};
+  const noise2=(x,y)=>{const i=Math.floor(x),j=Math.floor(y),a=x-i,b=y-j,u=a*a*(3-2*a),v=b*b*(3-2*b);return (hash(i,j)*(1-u)+hash(i+1,j)*u)*(1-v)+(hash(i,j+1)*(1-u)+hash(i+1,j+1)*u)*v;};
+  const noise=(x,y)=>noise2(x*.014,y*.014)*.32+noise2(x*.035,y*.035)*.16+noise2(x*.085,y*.085)*.09+noise2(x*.19,y*.19)*.045-.3;
+  for(let y=y1;y<y2;y++)for(let x=x1;x<x2;x++){
+   const n=noise(x,y),ridge=Math.exp(-Math.pow((x-(x1+x2)/2-(y-(y1+y2)/2)*.27)/(80+35*Math.sin(y*.012)),2))*.52;
+   const h=n+ridge*.55,v=noise(x-2,y-2)-n,j=(y*W+x)*4;
+   let color=h>.51?[171,173,151]:h>.31?[132,142,112]:h>.12?[103,130,91]:[78,116,77];
+   const shade=1+v*3;for(let k=0;k<3;k++)d[j+k]=Math.min(255,color[k]*shade);
+  }
+  const tmp=document.createElement('canvas');tmp.width=W;tmp.height=H;tmp.getContext('2d').putImageData(img,0,0);ctx.drawImage(tmp,0,0);
+ }
+ ctx.restore();ctx.strokeStyle='rgba(218,233,186,.55)';ctx.lineWidth=1.1;ctx.stroke(path);
+ const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=Math.min(8,renderer.capabilities.getMaxAnisotropy());return t;
+}
+let textured=texture(true),flat=texture(false);material.map=textured;
+const gridGroup=new THREE.Group();atlas.add(gridGroup);
+function line(points,color,opacity=.25){return new THREE.Line(new THREE.BufferGeometry().setFromPoints(points),new THREE.LineBasicMaterial({color,transparent:true,opacity,depthWrite:false}));}
+for(let lat=-75;lat<=75;lat+=15){let pts=[];for(let lon=-180;lon<=180;lon+=2)pts.push(new THREE.Vector3(...toVector(lat,lon,1.003)));gridGroup.add(line(pts,'#81b8c2',lat===0?.3:.12));}
+for(let lon=-180;lon<180;lon+=30){let pts=[];for(let lat=-90;lat<=90;lat+=2)pts.push(new THREE.Vector3(...toVector(lat,lon,1.003)));gridGroup.add(line(pts,'#81b8c2',.12));}
+const coastGroup=new THREE.Group();atlas.add(coastGroup);function updateCoast(){coastGroup.children.slice().forEach(disposeObject);coastGroup.add(line(hokkaido.geometry.coordinates[0].map(([lo,la])=>new THREE.Vector3(...toVector(la,lo,1.004))),'#d0dcb2',.65));}updateCoast();
+const pinGroup=new THREE.Group(),measureGroup=new THREE.Group();atlas.add(pinGroup,measureGroup);
+const starGeo=new THREE.BufferGeometry(),starPos=[];for(let i=0;i<850;i++){let v=new THREE.Vector3(Math.sin(i*78.123),Math.sin(i*43.52),Math.cos(i*92.21)).normalize().multiplyScalar(35);starPos.push(v.x,v.y,v.z);}starGeo.setAttribute('position',new THREE.Float32BufferAttribute(starPos,3));const stars=new THREE.Points(starGeo,new THREE.PointsMaterial({color:'#9cb2c1',size:.027,transparent:true,opacity:.55}));scene.add(stars);
+function disposeObject(obj){obj.parent?.remove(obj);obj.traverse(o=>{o.geometry?.dispose();if(Array.isArray(o.material))o.material.forEach(m=>m.dispose());else o.material?.dispose();});}
+function pinMarker(p,color='#e6bc79',size=.009){const v=new THREE.Vector3(...toVector(p.lat,p.lon));const dot=new THREE.Mesh(new THREE.SphereGeometry(size,12,8),new THREE.MeshBasicMaterial({color}));dot.position.copy(v.multiplyScalar(1.013));return dot;}
+function renderPins(){pinGroup.children.slice().forEach(disposeObject);const box=$('#pins');box.replaceChildren();if(!project.pins.length){const p=document.createElement('p');p.className='fine';p.textContent='Mark the places you imagine. Click the globe to set a location.';box.append(p);}for(const p of project.pins){pinGroup.add(pinMarker(p));const row=document.createElement('div');row.className='pin-row';const go=document.createElement('button');go.className='pin-go';go.textContent=`⌖ ${p.name}`;const small=document.createElement('small');small.textContent=`${coords(p)} · proposal`;go.append(small);go.onclick=()=>flyTo(p,1.6);const rm=document.createElement('button');rm.className='remove';rm.textContent='×';rm.setAttribute('aria-label',`Delete ${p.name}`);rm.onclick=()=>{project.pins=project.pins.filter(x=>x.id!==p.id);save();renderPins();};row.append(go,rm);box.append(row);}}
+renderPins();
+function flyTo(p,d=3.25){fly={start:camera.position.clone(),end:new THREE.Vector3(...toVector(p.lat,p.lon,d)),startTarget:controls.target.clone(),endTarget:new THREE.Vector3(),t:performance.now(),duration:window.matchMedia('(prefers-reduced-motion: reduce)').matches?1:850};controls.autoRotate=false;$('#rotation').checked=false;}
+controls.addEventListener('start',()=>{fly=null;});
+function fitDistance(){const half=Math.atan(Math.tan(20*rad)*Math.min(1,host.clientWidth/host.clientHeight));return Math.max(3.5,1.12/Math.sin(half));}
+function resize(){const w=host.clientWidth,h=host.clientHeight;renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();}new ResizeObserver(resize).observe(host);resize();flyTo(project.placement,fitDistance());
+const ray=new THREE.Raycaster(),pointer=new THREE.Vector2();let mouseDown=null;
+function hit(e){const b=renderer.domElement.getBoundingClientRect();pointer.set((e.clientX-b.left)/b.width*2-1,-(e.clientY-b.top)/b.height*2+1);ray.setFromCamera(pointer,camera);return ray.intersectObject(globe)[0];}
+renderer.domElement.addEventListener('pointerdown',e=>{mouseDown={x:e.clientX,y:e.clientY};});
+renderer.domElement.addEventListener('pointermove',e=>{if(mode!=='atlas')return;const h=hit(e);if(h){const p=fromVector(h.point.x,h.point.y,h.point.z);$('#cursor').textContent=coords(p);renderer.domElement.style.cursor=tool?'crosshair':'grab';}else renderer.domElement.style.cursor='default';});
+renderer.domElement.addEventListener('pointerup',e=>{
+ if(mode!=='atlas'||e.button!==0||!mouseDown||Math.hypot(e.clientX-mouseDown.x,e.clientY-mouseDown.y)>5)return;mouseDown=null;const h=hit(e);if(!h)return;
+ const p=fromVector(h.point.x,h.point.y,h.point.z);
+ if(tool==='pin'){pendingPin=p;$('#pin-coordinates').textContent=coords(p);$('#pin-name').value='';$('#pin-dialog').showModal();setTimeout(()=>$('#pin-name').focus(),50);}
+ else if(tool==='measure'){if(measurePoints.length===2)measurePoints=[];measurePoints.push(p);renderMeasurement();}
+ else {const found=project.pins.find(q=>distance(p,q)<8);if(found)toast(`${found.name} · ${coords(found)}`);else if(geoContains(hokkaido,[p.lon,p.lat]))toast(`Hokkaido · ${fmt(HOKKAIDO_AREA)} km² · 5% of Libriam`);}
+});
+function setTool(value){tool=value;measurePoints=[];measureGroup.children.slice().forEach(disposeObject);$('#measure').classList.toggle('active',tool==='measure');$('#tool-panel').hidden=!tool;if(tool==='measure')renderMeasurement();else if(tool==='pin')$('#tool-panel').innerHTML='<h3>Place a pin</h3><p>Click any point on the globe, then name your location.</p><button id="cancel-tool">Cancel</button>';if(tool)$('#cancel-tool').onclick=()=>setTool(null);}
+function renderMeasurement(){measureGroup.children.slice().forEach(disposeObject);measurePoints.forEach(p=>measureGroup.add(pinMarker(p,'#f2ce8b',.01)));
+ if(measurePoints.length===2){const a=new THREE.Vector3(...toVector(measurePoints[0].lat,measurePoints[0].lon)),b=new THREE.Vector3(...toVector(measurePoints[1].lat,measurePoints[1].lon)),theta=a.angleTo(b);let axis=new THREE.Vector3().crossVectors(a,b);if(axis.length()<1e-8)axis.crossVectors(a,Math.abs(a.y)<.9?new THREE.Vector3(0,1,0):new THREE.Vector3(1,0,0));axis.normalize();const pts=[];for(let i=0;i<=160;i++)pts.push(a.clone().applyAxisAngle(axis,theta*i/160).multiplyScalar(1.008));measureGroup.add(line(pts,'#f2ce8b',1));}
+ const box=$('#tool-panel');box.innerHTML=`<h3>Surface distance</h3>${measurePoints.length===2?`<strong>${fmt(distance(...measurePoints))} km</strong><p>Shortest great-circle route. Relief and roads are excluded.<br>Click again to start another route.</p>`:`<p>${measurePoints.length?'Select the destination.':'Select two points on the globe.'}<br>Distances use Libriam’s 364.38 km radius.</p>`}<button id="clear-measure">Start again</button><button id="cancel-tool">Done</button>`;
+ $('#clear-measure').onclick=()=>{measurePoints=[];renderMeasurement();};$('#cancel-tool').onclick=()=>setTool(null);
+}
+$('#measure').onclick=()=>setTool(tool==='measure'?null:'measure');$('#add-pin').onclick=()=>{if(project.pins.length>=500){toast('This project supports up to 500 saved places.');return;}setTool('pin');toast('Click the globe to place your new location.');};
+$('#pin-form').onsubmit=e=>{e.preventDefault();const name=$('#pin-name').value.trim();if(!name||!pendingPin)return;project.pins.push({id:crypto.randomUUID(),name,...pendingPin});save();renderPins();$('#pin-dialog').close();setTool(null);toast(`Saved ${name} as a design proposal.`);};
+$('#hokkaido').onclick=()=>flyTo(project.placement,Math.max(2.05,fitDistance()*.75));
+$('#home').onclick=()=>{setTool(null);if(mode==='atlas')flyTo(project.placement,fitDistance());else{controls.target.set(0,0,0);camera.position.set(0,7,12);controls.update();}};
+$('#zoom-in').onclick=()=>zoom(.8);$('#zoom-out').onclick=()=>zoom(1.25);
+function zoom(f){fly=null;const v=camera.position.clone().sub(controls.target);v.setLength(THREE.MathUtils.clamp(v.length()*f,controls.minDistance,controls.maxDistance));camera.position.copy(controls.target).add(v);controls.update();}
+renderer.domElement.addEventListener('keydown',e=>{if(['+','=','-','ArrowLeft','ArrowRight','ArrowUp','ArrowDown','Home','Escape'].includes(e.key)){e.preventDefault();if(e.key==='+'||e.key==='=')zoom(.85);else if(e.key==='-')zoom(1.18);else if(e.key==='Home')$('#home').click();else if(e.key==='Escape')setTool(null);else{fly=null;const v=camera.position.clone().sub(controls.target);if(e.key==='ArrowLeft'||e.key==='ArrowRight')v.applyAxisAngle(new THREE.Vector3(0,1,0),e.key==='ArrowLeft'?-.08:.08);else {const axis=new THREE.Vector3().crossVectors(v,new THREE.Vector3(0,1,0)).normalize();v.applyAxisAngle(axis,e.key==='ArrowUp'?-.08:.08);}camera.position.copy(controls.target).add(v);controls.update();}}});
+const placementForm=$('#placement-form');placementForm.elements.lat.value=project.placement.lat;placementForm.elements.lon.value=project.placement.lon;
+placementForm.onsubmit=e=>{e.preventDefault();const p={lat:Number(placementForm.elements.lat.value),lon:Number(placementForm.elements.lon.value)};try{validateProject({...project,placement:p});project.placement=p;hokkaido=makeHokkaido(outline,p);textured.dispose();flat.dispose();textured=texture(true);flat=texture(false);material.map=$('#relief').checked?textured:flat;material.needsUpdate=true;updateCoast();setTool(null);save();flyTo(p,fitDistance());toast('Hokkaido placement saved as a proposal; area stays 5%.');}catch(e){toast(e.message);}};
+$('#grid').onchange=e=>gridGroup.visible=e.target.checked;$('#relief').onchange=e=>{material.map=e.target.checked?textured:flat;material.needsUpdate=true;};$('#lighting').onchange=e=>{ambient.intensity=e.target.checked?.24:2.2;sun.intensity=e.target.checked?3.2:2.4;};$('#rotation').onchange=e=>{controls.autoRotate=e.target.checked;controls.autoRotateSpeed=.45;};
+$('#scale-btn').onclick=()=>$('#scale-dialog').showModal();$$('.dialog-close').forEach(b=>b.onclick=()=>b.closest('dialog').close());
+$('#search').oninput=e=>{const q=e.target.value.trim().toLowerCase(),box=$('#search-results');box.replaceChildren();if(!q)return;const places=[{name:'Hokkaido',...project.placement},...project.pins].filter(p=>p.name.toLowerCase().includes(q));if(!places.length){const p=document.createElement('p');p.className='fine';p.textContent='No saved places match.';box.append(p);}places.forEach(p=>{const b=document.createElement('button');b.className='search-result';b.textContent=p.name;b.onclick=()=>{flyTo(p,2);box.replaceChildren();$('#search').value='';};box.append(b);});};
+function download(blob,name){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);}
+$('#project-menu').onclick=()=>{$('#export-json').value=JSON.stringify(project,null,2);$('#export-dialog').showModal();};
+$('#download-project').onclick=()=>{download(new Blob([JSON.stringify(project,null,2)],{type:'application/json'}),'dragex-globe-project.json');toast('Download requested. Copy JSON if your browser blocks it.');};
+$('#copy-project').onclick=async()=>{try{await navigator.clipboard.writeText($('#export-json').value);toast('Project JSON copied.');}catch{$('#export-json').focus();$('#export-json').select();toast('Select all and copy the project text to keep a backup.');}};
+$('#import-btn').onclick=()=>{$('#import-json').value='';$('#import-dialog').showModal();};$('#choose-file').onclick=()=>$('#import-file').click();
+function importProject(text){const imported=validateProject(JSON.parse(text));if(!window.confirm('Replace this device’s project? Export first to preserve your current design.'))return;const previous=project;project=imported;save();if(storageOK)location.reload();else{project=previous;throw Error('Import requires local storage. Enable it and try again.');}}
+$('#import-form').onsubmit=e=>{e.preventDefault();try{if($('#import-json').value.length>2e6)throw Error('Project exceeds 2 MB.');importProject($('#import-json').value);}catch(error){toast(`Import failed: ${error.message}`);}};
+$('#import-file').onchange=async e=>{const f=e.target.files[0];if(!f)return;try{if(f.size>2e6)throw Error('Project file exceeds 2 MB.');importProject(await f.text());}catch(error){toast(`Import failed: ${error.message}`);}finally{e.target.value='';}};
+$('#shot').onclick=()=>{renderer.render(scene,camera);renderer.domElement.toBlob(blob=>{if(blob)download(blob,`dragex-${mode}-view.png`);else toast('Could not capture the view.');},'image/png');};
+function populateBodies(){const box=$('#bodies');box.replaceChildren();for(const b of project.bodies){const row=document.createElement('button');row.className='body-row'+(b.id===selectedBody?' active':'');const dot=document.createElement('span');dot.className='body-dot';dot.style.background=b.color;const label=document.createElement('span');label.textContent=b.name;const sm=document.createElement('small');sm.textContent=`${b.type.toUpperCase()} · ${fmt(b.radiusKm)} km radius${b.id==='libriam'?'':' · PROPOSAL'}`;label.append(sm);row.append(dot,label);row.onclick=()=>{selectedBody=b.id;populateBodies();fillBodyForm();};box.append(row);}}
+function fillBodyForm(){const b=project.bodies.find(x=>x.id===selectedBody),f=$('#body-form');f.elements.name.value=b.name;f.elements.type.value=b.type;f.elements.radiusKm.value=b.radiusKm;f.elements.orbitAU.value=b.orbitAU??'';f.elements.color.value=b.color;f.elements.parentId.replaceChildren();const none=document.createElement('option');none.value='';none.textContent='Not decided / no parent';f.elements.parentId.append(none);for(const p of project.bodies.filter(p=>p.id!==b.id)){const op=document.createElement('option');op.value=p.id;op.textContent=p.name;f.elements.parentId.append(op);}f.elements.parentId.value=b.parentId??'';f.elements.radiusKm.readOnly=b.id==='libriam';f.elements.type.disabled=b.id==='libriam';f.elements.name.readOnly=b.id==='libriam';$('#delete-body').hidden=b.id==='libriam';}
+$('#new-body').onclick=()=>{if(project.bodies.length>=50){toast('This project supports up to 50 celestial bodies.');return;}const b={id:crypto.randomUUID(),name:`New body ${project.bodies.length}`,type:'planet',radiusKm:100,orbitAU:null,parentId:null,color:'#c0a984',status:'design proposal'};project.bodies.push(b);selectedBody=b.id;save();populateBodies();fillBodyForm();rebuildSystem();$('#body-form').elements.name.focus();};
+$('#body-form').onsubmit=e=>{e.preventDefault();const f=e.target,b=project.bodies.find(b=>b.id===selectedBody),next={...b,name:f.elements.name.value.trim(),type:b.id==='libriam'?'planet':f.elements.type.value,radiusKm:Number(f.elements.radiusKm.value),parentId:f.elements.parentId.value||null,orbitAU:f.elements.orbitAU.value===''?null:Number(f.elements.orbitAU.value),color:f.elements.color.value};const draft={...project,bodies:project.bodies.map(x=>x.id===b.id?next:x)};try{project=validateProject(draft);save();populateBodies();rebuildSystem();toast('Solar-system design saved.');}catch(error){toast(error.message);}};
+$('#delete-body').onclick=()=>{if(selectedBody==='libriam')return;project.bodies=project.bodies.filter(b=>b.id!==selectedBody);project.bodies.forEach(b=>{if(b.parentId===selectedBody){b.parentId=null;b.orbitAU=null;}});selectedBody='libriam';save();populateBodies();fillBodyForm();rebuildSystem();};
+function textSprite(text){const c=document.createElement('canvas');c.width=512;c.height=80;const x=c.getContext('2d');x.font='24px sans-serif';x.textAlign='center';x.fillStyle='#bfd5de';x.fillText(text,256,45);const tex=new THREE.CanvasTexture(c);const s=new THREE.Sprite(new THREE.SpriteMaterial({map:tex,transparent:true,depthTest:false}));s.scale.set(2.5,.4,1);s.userData.labelTexture=tex;return s;}
+function rebuildSystem(){system.children.slice().forEach(o=>{o.traverse(p=>p.userData.labelTexture?.dispose());disposeObject(o);});const positions=new Map(),radiusFor=b=>.12+Math.log10(b.radiusKm+1)*.11;let orphan=0;
+ function pos(b,depth=0){if(positions.has(b.id))return positions.get(b.id);if(depth>50)return new THREE.Vector3();let p;if(b.parentId&&b.orbitAU!==null){const parent=project.bodies.find(x=>x.id===b.parentId);const origin=pos(parent,depth+1);const r=.8+Math.log10(1+b.orbitAU*30)*2.6;const phase=project.bodies.indexOf(b)*2.39996;p=origin.clone().add(new THREE.Vector3(Math.cos(phase)*r,0,Math.sin(phase)*r));const pts=[];for(let i=0;i<=180;i++)pts.push(origin.clone().add(new THREE.Vector3(Math.cos(i/180*Math.PI*2)*r,0,Math.sin(i/180*Math.PI*2)*r)));system.add(line(pts,'#67959b',.35));}else{p=new THREE.Vector3(orphan*2.4,0,0);orphan++;}positions.set(b.id,p);return p;}
+ for(const b of project.bodies){const p=pos(b),r=radiusFor(b);const mat=b.type==='star'?new THREE.MeshBasicMaterial({color:b.color}):new THREE.MeshStandardMaterial({color:b.color,roughness:.75});const mesh=new THREE.Mesh(new THREE.SphereGeometry(r,40,24),mat);mesh.position.copy(p);system.add(mesh);const label=textSprite(`${b.name}${b.orbitAU!==null&&b.parentId?` · ${b.orbitAU} AU`:' · orbit undecided'}`);label.position.copy(p).add(new THREE.Vector3(0,r+.4,0));system.add(label);}
+ if(project.bodies.length===1){const label=textSprite('Your solar system begins here.');label.position.set(0,-1,0);label.scale.multiplyScalar(1.5);system.add(label);}
+ const extent=Math.max(6,...[...positions.values()].map(p=>p.length()+2));controls.maxDistance=mode==='system'?Math.max(30,extent*4):7;
+}
+populateBodies();fillBodyForm();rebuildSystem();
+$$('[data-mode]').forEach(button=>button.onclick=()=>{
+ mode=button.dataset.mode;setTool(null);fly=null;$('#app').classList.toggle('system-mode',mode==='system');$('#system-sidebar').hidden=mode!=='system';$$('[data-mode]').forEach(b=>b.classList.toggle('active',b===button));atlas.visible=mode==='atlas';system.visible=mode==='system';controls.autoRotate=false;$('#rotation').checked=false;controls.minDistance=mode==='atlas'?1.06:.5;controls.maxDistance=mode==='atlas'?7:40;controls.enablePan=mode==='system';controls.target.set(0,0,0);
+ $('#view-kind').textContent=mode==='atlas'?'THE LIBRIAM ATLAS':'SOLAR SYSTEM / DESIGN SCHEMATIC';$('#view-title').textContent=mode==='atlas'?'A new perspective.':'Room for a universe.';$('#view-subtitle').textContent=mode==='atlas'?'Drag to explore · scroll to move closer':'Drag to orbit · right-drag to pan · scroll to zoom';$('#unmapped-note').hidden=mode!=='atlas';$('#hud-mode').textContent=mode==='atlas'?'LIBRIAM':'SYSTEM STUDIO';$('#scale-unit').textContent=mode==='atlas'?'1° ≈ 6.36 km at equator':'Compressed scale · proposals';
+ if(mode==='atlas')flyTo(project.placement,fitDistance());else{camera.position.set(0,7,12);rebuildSystem();}controls.update();resize();
+});
+let last=performance.now();
+function animate(now){requestAnimationFrame(animate);const dt=Math.min(.1,(now-last)/1000);last=now;
+ if(fly){const t=Math.min(1,(now-fly.t)/fly.duration),e=t*t*(3-2*t);camera.position.lerpVectors(fly.start,fly.end,e);controls.target.lerpVectors(fly.startTarget,fly.endTarget,e);if(t===1)fly=null;}
+ controls.update(dt);renderer.render(scene,camera);
+ if(mode==='atlas'){
+  $('#altitude').textContent=`Altitude ${fmt((camera.position.length()-1)*RADIUS,0)} km`;
+  const v=new THREE.Vector3(...toVector(project.placement.lat,project.placement.lon,1.02)),front=v.clone().normalize().dot(camera.position.clone().sub(v).normalize())>.05,screen=v.project(camera);
+  $('#map-label').style.display=$('#labels').checked&&front&&Math.abs(screen.x)<1&&Math.abs(screen.y)<1?'block':'none';$('#map-label').style.left=`${(screen.x+1)*host.clientWidth/2}px`;$('#map-label').style.top=`${(1-screen.y)*host.clientHeight/2}px`;$('#map-label').style.transform='translate(-50%,-50%)';
+ }else{$('#altitude').textContent='Orbital geometry · schematic';$('#cursor').textContent=`${project.bodies.length} ${project.bodies.length===1?'body':'bodies'}`;}
+}
+requestAnimationFrame(animate);
+window.addEventListener('pagehide',()=>{renderer.dispose();controls.dispose();});
+// Exposed read-only diagnostics for geometry verification, not application state mutation.
+window.dragexDiagnostics=()=>({radiusKm:RADIUS,surfaceAreaKm2:SURFACE_AREA,hokkaidoAreaKm2:HOKKAIDO_AREA,coastline:hokkaido.geometry,mode,pins:project.pins.length,bodies:project.bodies.length,webgl:renderer.capabilities.isWebGL2});
