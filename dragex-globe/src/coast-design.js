@@ -15,7 +15,7 @@ export function normalizeLandmass(geometry,center,target){
  const p0=center.lat*rad,l0=center.lon*rad;
  const plane=geometry.coordinates.map(poly=>poly.map(r=>r.map(([lo,la])=>{const p=la*rad,l=lo*rad-l0,k=Math.sqrt(2/(1+Math.sin(p0)*Math.sin(p)+Math.cos(p0)*Math.cos(p)*Math.cos(l)));return [RADIUS*k*Math.cos(p)*Math.sin(l),RADIUS*k*(Math.cos(p0)*Math.sin(p)-Math.sin(p0)*Math.cos(p)*Math.cos(l))];})));
  function mapped(s){return {type:'MultiPolygon',coordinates:plane.map(poly=>poly.map(r=>r.map(([xx,yy])=>{const x=xx*s,y=yy*s,rho=Math.hypot(x,y),c=2*Math.asin(Math.min(1,rho/(2*RADIUS)));if(rho<1e-10)return [center.lon,center.lat];const lat=Math.asin(Math.cos(c)*Math.sin(p0)+y*Math.sin(c)*Math.cos(p0)/rho),lon=l0+Math.atan2(x*Math.sin(c),rho*Math.cos(p0)*Math.cos(c)-y*Math.sin(p0)*Math.sin(c));return [((lon/rad+540)%360)-180,lat/rad];}))) };}
- let low=.95,high=1.05;for(let i=0;i<48;i++){const mid=(low+high)/2;if(geoArea(mapped(mid))*RADIUS**2<target)low=mid;else high=mid;}return mapped((low+high)/2);
+ let low=.1,high=1.05;for(let i=0;i<48;i++){const mid=(low+high)/2;if(geoArea(mapped(mid))*RADIUS**2<target)low=mid;else high=mid;}return mapped((low+high)/2);
 }
 export const EDEN_CENTER={lat:.522562,lon:-46.091918};
 const edenRing=Array.from({length:96},(_,i)=>{const a=i/96*Math.PI*2,shape=1+.095*Math.sin(a*3+.6)+.045*Math.cos(a*7),x=Math.cos(a)*5.2*shape,y=Math.sin(a)*6.2*shape;return [EDEN_CENTER.lon+x/(rad*RADIUS),EDEN_CENTER.lat+y/(rad*RADIUS)];});edenRing.push([...edenRing[0]]);if(geoArea({type:'Polygon',coordinates:[edenRing]})>2*Math.PI)edenRing.reverse();

@@ -1,14 +1,15 @@
+import {poseAlaska,rotateGeometry,pointRotation} from './continent-pose.js';
 import {sculptCoast,normalizeLandmass,geographyRegions} from './coast-design.js';
 import { geoArea } from 'd3-geo';
 import { SURFACE_AREA,RADIUS,EARTH_RADIUS,rad } from './model.js';
 import alaskaReference from './data/alaska.json' with {type:'json'};
 import newZealandReference from './data/new-zealand.json' with {type:'json'};
 export const LANDMASS_DESIGNS=[
- {id:'landmass-ii',name:'New Zealand',center:{lat:-25,lon:124},overview:{lat:-17,lon:124},fraction:.065,rotationDeg:15,referenceCenter:{lat:-41,lon:173},reference:'new-zealand',status:'author-requested New Zealand reference; rotated and rescaled design'},
- {id:'landmass-iii',name:'Alaska',center:{lat:43,lon:-140},overview:{lat:12,lon:-110},fraction:.055,rotationDeg:65,referenceCenter:{lat:64,lon:-152},reference:'alaska',status:'author-confirmed name; rotated/rescaled Alaska coastline; proposed exact placement'}
+ {id:'landmass-ii',name:'Zealand',center:{lat:-40,lon:124},overview:{lat:-32,lon:124},fraction:.0325,rotationDeg:15,referenceCenter:{lat:-41,lon:173},reference:'new-zealand',status:'author-requested New Zealand reference; rotated and rescaled design'},
+ {id:'landmass-iii',name:'Alaska',center:{lat:21.5,lon:-124.3},overview:{lat:45,lon:-95},fraction:.04675,rotationDeg:65,referenceCenter:{lat:64,lon:-152},reference:'alaska',status:'author-confirmed name; rotated/rescaled Alaska coastline; proposed exact placement'}
 ];
 export const geometryPolygons=feature=>feature.geometry.type==='Polygon'?[feature.geometry.coordinates]:feature.geometry.coordinates;
-export function makeLandmass(design){
+export function makeReferenceLandmass(design){
  const source=design.reference==='alaska'?alaskaReference:newZealandReference;
  const p0=design.referenceCenter.lat*rad,l0=design.referenceCenter.lon*rad,angle=design.rotationDeg*rad;
  const plane=geometryPolygons(source).map(p=>p.map(r=>r.map(([lon,lat])=>{
@@ -29,5 +30,10 @@ export function makeLandmass(design){
  if(geoArea({type:'MultiPolygon',coordinates:mapped(hi)})*RADIUS**2<target)throw Error('Reference silhouette cannot reach the requested area without exceeding its spherical projection.');
  for(let i=0;i<55;i++){const m=(lo+hi)/2,area=geoArea({type:'MultiPolygon',coordinates:mapped(m)})*RADIUS**2;if(area<target)lo=m;else hi=m;}
  return {type:'Feature',properties:{...design,areaKm2:target,source:source.properties.source,sourceUrl:source.properties.url},geometry:normalizeLandmass(sculptCoast({type:'MultiPolygon',coordinates:mapped((lo+hi)/2)},geographyRegions[design.reference==='alaska'?1:0],design.reference==='alaska'?2:1),design.center,target)};
+}
+export function makeLandmass(design){
+ const alaska=design.reference==='alaska',originalCenter=alaska?{lat:43,lon:-140}:{lat:-25,lon:124},baseline=makeReferenceLandmass({...design,center:originalCenter,fraction:alaska?.055:.065});
+ const resized=normalizeLandmass(baseline.geometry,originalCenter,SURFACE_AREA*design.fraction),geometry=alaska?poseAlaska(resized):rotateGeometry(resized,pointRotation([originalCenter.lon,originalCenter.lat],[design.center.lon,design.center.lat]));
+ return {...baseline,properties:{...baseline.properties,...design,areaKm2:SURFACE_AREA*design.fraction,status:alaska?'15% smaller; southern mainland with author-directed northern island chain':'author-named Zealand; 50% smaller; southern placement proposal'},geometry};
 }
 export const otherLandmasses=LANDMASS_DESIGNS.map(makeLandmass);
