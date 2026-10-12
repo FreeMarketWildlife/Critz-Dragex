@@ -19,7 +19,7 @@ export function annotationGeometry(annotation){
 }
 export function annotationText(annotations){
  const n=x=>Number(x.toFixed(6)),p=x=>`latitude ${n(x.lat)}, longitude ${n(x.lon)}`;
- return ['DRAGEX GLOBE — LIBRIAM ANNOTATIONS','Coordinates: decimal degrees; north/east positive, south/west negative. Outlines are closed geographic areas on spherical Libriam. Notes are design requests, not established canon.',...annotations.map((a,i)=>{
+ return ['LIBRIAM GLOBE — LIBRIAM ANNOTATIONS','Coordinates: decimal degrees; north/east positive, south/west negative. Outlines are closed geographic areas on spherical Libriam. Notes are design requests, not established canon.',...annotations.map((a,i)=>{
   const g=annotationGeometry(a),[[west,south],[east,north]]=g.bounds;
   return `\nAnnotation ${i+1} — ${a.type==='box'?'Box':'Freehand outline'}\nAge ${Math.floor(a.frame/1000)+1}, design unit ${a.frame} (age viewing unit ${a.frame%1000+1}/1000)\nNote: ${a.note||'(No note)'}\nCenter: ${p(g.center)}\nApproximate spherical area: ${g.areaKm2.toFixed(3)} km²\nBounds: south ${n(south)}, north ${n(north)}, west ${n(west)}, east ${n(east)}${west>east?' (crosses ±180° longitude)':''}\nExact outline vertices [latitude, longitude], in drawing order; join last to first:\n${JSON.stringify(a.points.map(x=>[n(x.lat),n(x.lon)]))}`;
  })].join('\n');

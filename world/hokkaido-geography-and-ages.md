@@ -4,13 +4,13 @@
 
 ## Geography
 
-Hokkaido is a landmass closely resembling the outline and approximate size of real-world Hokkaido, accompanied by a few islands. There is no larger Japan-like landmass to its south. It exists on a much smaller world; the author's rough scale puts Hokkaido at **5% of the world's total surface**.
+Hokkaido is a continent closely resembling the outline and approximate size of real-world Hokkaido, accompanied by a few islands. There is no larger Japan-like continent to its south. It exists on a much smaller world; the author's rough scale puts Hokkaido at **5% of the world's total surface**.
 
-**Two other landmasses on this same planet** are discovered in Age 4, though critters exploring them do not return. The reason is unknown. Only the hosts of heaven (birds) travel to and fro, and some great sea creatures have seen them. Their names and positions are unknown. The entire planet is officially named **Libriam**. No exact radius, gravity, geography of the two other continents, or travel-time model is established. The real-world map is a shape reference, not permission to import modern roads, cities, national borders, or neighboring Japanese landmasses.
+**Two other continents on this same planet** are discovered in Age 4, though critters exploring them do not return. The reason is unknown. Only the hosts of heaven (birds) travel to and fro, and some great sea creatures have seen them. Their names and positions are unknown. The entire planet is officially named **Libriam**. No exact radius, gravity, geography of the two other continents, or travel-time model is established. The real-world map is a shape reference, not permission to import modern roads, cities, national borders, or neighboring Japanese continents.
 
 ## Humans and chronology
 
-No humans live in Hokkaido or are known there during the Dragex novels (**Age 3**). At the beginning of **Age 6**, after Allohim's cleansing of Hokkaido, **Allohim places the first man in a garden on Eden's Isle and then gives him a woman**. Their family eventually expands from the isle to the mainland. The older statement that humans arrive from a western land is **superseded as their origin account**; possible later western voyages are unconfirmed. Allohim commissions mankind to **fill and subdue all three landmasses on Libriam**, which humanity eventually accomplishes by the end of Age 6 with his help. In Age 7 mankind explores other reachable planets. *Moana's Tear* **takes place in Age 3** and **is written by Archaíos in Age 4**. See [seven ages](../timeline/seven-ages.md).
+No humans live in Hokkaido or are known there during the Dragex novels (**Age 3**). At the beginning of **Age 6**, after Allohim's cleansing of Hokkaido, **Allohim places the first man in a garden on Eden's Isle and then gives him a woman**. Their family eventually expands from the isle to the mainland. The older statement that humans arrive from a western land is **superseded as their origin account**; possible later western voyages are unconfirmed. Allohim commissions mankind to **fill and subdue all three continents on Libriam**, which humanity eventually accomplishes by the end of Age 6 with his help. In Age 7 mankind explores other reachable planets. *Moana's Tear* **takes place in Age 3** and **is written by Archaíos in Age 4**. See [seven ages](../timeline/seven-ages.md).
 
 ## Supplied maps
 
@@ -23,7 +23,7 @@ The image bytes have **not** been copied into this repository. The following is 
 |---|---|
 | Samurai's Graveyard | Small island off the northwestern/northern mainland coast |
 | Death's Valley | Circled inland area in the east-central portion |
-| Sapporo | Southwest/central-west part of the main landmass |
+| Sapporo | Southwest/central-west part of the main continent |
 | Mount Yokai | Southwest of Sapporo |
 | Prairie Bridge | Two arrows around the western/southwestern approach |
 | Grimroot Grove | Southwestern peninsula, west of the bay |

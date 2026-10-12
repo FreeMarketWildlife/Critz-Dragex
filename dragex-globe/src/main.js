@@ -1,3 +1,4 @@
+import {searchPlaces} from './search.js';
 import {edenIsle,EDEN_CENTER,paintBiomes} from './coast-design.js';
 import './style.css';
 import {installAnnotations} from './annotation-ui.js';
@@ -27,7 +28,7 @@ const host=$('#scene'),scene=new THREE.Scene();
 let renderer;
 try{renderer=new THREE.WebGLRenderer({antialias:true,alpha:true,preserveDrawingBuffer:true});}catch{ $('#scene-error').hidden=false;$('#scene-error').textContent='The atlas needs WebGL. Enable hardware acceleration or use a browser with WebGL support. Your scale reference and saved project are still available.';throw Error('WebGL unavailable'); }
 renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));renderer.outputColorSpace=THREE.SRGBColorSpace;host.append(renderer.domElement);
-renderer.domElement.setAttribute('aria-label','Libriam globe. Drag to rotate, scroll to zoom. Use the Hokkaido and saved-place buttons to navigate.');renderer.domElement.tabIndex=0;
+renderer.domElement.setAttribute('aria-label','Libriam globe. Drag to rotate, scroll to zoom. Use Search to find continents and places.');renderer.domElement.tabIndex=0;
 const camera=new THREE.PerspectiveCamera(40,1,.001,200);camera.position.set(0,1.2,3.5);
 const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.dampingFactor=.07;controls.enablePan=false;controls.minDistance=1.06;controls.maxDistance=7;controls.rotateSpeed=.5;controls.zoomSpeed=.65;
 const atlas=new THREE.Group(),system=new THREE.Group();scene.add(atlas,system);system.visible=false;
@@ -108,9 +109,8 @@ function renderMeasurement(){measureGroup.children.slice().forEach(disposeObject
  $('#clear-measure').onclick=()=>{measurePoints=[];renderMeasurement();};$('#cancel-tool').onclick=()=>setTool(null);
 }
 annotationUI=installAnnotations({canvas:renderer.domElement,camera,globe,atlas,controls,getProject:()=>project,getFrame:()=>Math.round(currentFrame),save,flyTo,toast,onActivate:()=>{setTool(null);fly=null;historyPlaying=false;controls.autoRotate=false;$('#rotation').checked=false;$('#play-history').textContent='▶';$('#play-history').setAttribute('aria-label','Play history');}});
-$('#measure').onclick=()=>setTool(tool==='measure'?null:'measure');$('#add-pin').onclick=()=>{if(project.pins.length>=500){toast('This project supports up to 500 saved places.');return;}setTool('pin');toast('Click the globe to place your new location.');};
+$('#measure').onclick=()=>setTool(tool==='measure'?null:'measure');$('#add-pin').onclick=()=>{if(project.pins.length>=500){toast('This project supports up to 500 saved places.');return;}$('#settings-dialog').close();setTool('pin');toast('Click the globe to place your new location.');};
 $('#pin-form').onsubmit=e=>{e.preventDefault();const name=$('#pin-name').value.trim();if(!name||!pendingPin)return;project.pins.push({id:crypto.randomUUID(),name,...pendingPin});save();renderPins();$('#pin-dialog').close();setTool(null);toast(`Saved ${name} as a design proposal.`);};
-$('#hokkaido').onclick=()=>flyTo(project.placement,Math.max(2.05,fitDistance()*.75));
 $('#home').onclick=()=>{setTool(null);if(mode==='atlas')flyTo(project.placement,fitDistance());else{controls.target.set(0,0,0);camera.position.set(0,7,12);controls.update();}};
 $('#zoom-in').onclick=()=>zoom(.8);$('#zoom-out').onclick=()=>zoom(1.25);
 function zoom(f){fly=null;const v=camera.position.clone().sub(controls.target);v.setLength(THREE.MathUtils.clamp(v.length()*f,controls.minDistance,controls.maxDistance));camera.position.copy(controls.target).add(v);controls.update();}
@@ -118,11 +118,14 @@ renderer.domElement.addEventListener('keydown',e=>{if(['+','=','-','ArrowLeft','
 const placementForm=$('#placement-form');placementForm.elements.lat.value=project.placement.lat;placementForm.elements.lon.value=project.placement.lon;
 placementForm.onsubmit=e=>{e.preventDefault();const p={lat:Number(placementForm.elements.lat.value),lon:Number(placementForm.elements.lon.value)};try{validateProject({...project,placement:p});project.placement=p;hokkaido=makeHokkaido(outline,p);textured.dispose();flat.dispose();textured=texture(true);flat=texture(false);material.map=$('#relief').checked?textured:flat;material.needsUpdate=true;ageRendering.replaceMap(hokkaido);updateCoast();setTool(null);save();flyTo(p,fitDistance());toast('Hokkaido placement saved as a proposal; area stays 5%.');}catch(e){toast(e.message);}};
 $('#grid').onchange=e=>gridGroup.visible=e.target.checked;$('#relief').onchange=e=>{material.map=e.target.checked?textured:flat;material.needsUpdate=true;};$('#lighting').onchange=e=>{ambient.intensity=e.target.checked?.24:2.2;sun.intensity=e.target.checked?3.2:2.4;};$('#rotation').onchange=e=>{controls.autoRotate=e.target.checked;controls.autoRotateSpeed=.45;};
-$('#scale-btn').onclick=()=>$('#scale-dialog').showModal();$$('.dialog-close').forEach(b=>b.onclick=()=>b.closest('dialog').close());
-$('#search').oninput=e=>{const q=e.target.value.trim().toLowerCase(),box=$('#search-results');box.replaceChildren();if(!q)return;const places=[{name:'Hokkaido',...project.placement},{name:'Great lake / Death’s Valley',...LAKE},{name:'Lake island and inner pool',...ISLAND_CENTER},{name:'Eden’s Isle',...EDEN_CENTER},...RIVER_MOUTHS,...otherLandmasses.map(f=>({name:f.properties.name,...f.properties.center})),...project.pins].filter(p=>p.name.toLowerCase().includes(q));if(!places.length){const p=document.createElement('p');p.className='fine';p.textContent='No saved places match.';box.append(p);}places.forEach(p=>{const b=document.createElement('button');b.className='search-result';b.textContent=p.name;b.onclick=()=>{flyTo(p,2);box.replaceChildren();$('#search').value='';};box.append(b);});};
+$$('.dialog-close').forEach(b=>b.onclick=()=>b.closest('dialog').close());
+$('#settings').onclick=()=>$('#settings-dialog').showModal();
+function renderSearch(){const q=$('#search').value,box=$('#search-results');box.replaceChildren();if(!q.trim())return;const matches=searchPlaces(q,project,otherLandmasses);if(!matches.length){const p=document.createElement('p');p.className='fine';p.textContent='No places found.';box.append(p);}for(const p of matches){const b=document.createElement('button');b.className='search-result';b.textContent=p.name;const small=document.createElement('small');small.textContent=p.category;b.append(small);b.onclick=()=>{setTool(null);flyTo(p,p.zoom);box.replaceChildren();$('#search').value='';};box.append(b);}}
+$('#search').oninput=renderSearch;$('#search').onkeydown=e=>{if(e.key==='Escape'){$('#search').value='';renderSearch();}else if(e.key==='Enter'){$('#search-results button')?.click();}}
+
 function download(blob,name){const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);}
 $('#project-menu').onclick=()=>{$('#export-json').value=JSON.stringify(project,null,2);$('#export-dialog').showModal();};
-$('#download-project').onclick=()=>{download(new Blob([JSON.stringify(project,null,2)],{type:'application/json'}),'dragex-globe-project.json');toast('Download requested. Copy JSON if your browser blocks it.');};
+$('#download-project').onclick=()=>{download(new Blob([JSON.stringify(project,null,2)],{type:'application/json'}),'libriam-globe-project.json');toast('Download requested. Copy JSON if your browser blocks it.');};
 $('#copy-project').onclick=async()=>{try{await navigator.clipboard.writeText($('#export-json').value);toast('Project JSON copied.');}catch{$('#export-json').focus();$('#export-json').select();toast('Select all and copy the project text to keep a backup.');}};
 $('#import-btn').onclick=()=>{$('#import-json').value='';$('#import-dialog').showModal();};$('#choose-file').onclick=()=>$('#import-file').click();
 function importProject(text){const imported=validateProject(JSON.parse(text));if(!window.confirm('Replace this device’s project? Export first to preserve your current design.'))return;const previous=project;project=imported;save();if(storageOK)location.reload();else{project=previous;throw Error('Import requires local storage. Enable it and try again.');}}
@@ -152,16 +155,9 @@ function selectCoordinate(p){selectedCoordinate=p;$('#cursor').textContent=coord
 $('#close-coords').onclick=()=>{$('#coordinate-panel').hidden=true;selectionGroup.children.slice().forEach(disposeObject);};
 $('#copy-coords').onclick=async()=>{if(!selectedCoordinate)return;const p=selectedCoordinate,text=`${coords(p)} (latitude ${p.lat.toFixed(5)}, longitude ${p.lon.toFixed(5)}) · Age ${timelineState(currentFrame).age+1}, design unit ${Math.round(currentFrame)}`;try{await navigator.clipboard.writeText(text);$('#copy-coords-status').textContent='Copied. Paste these coordinates into the chat.';}catch{$('#copy-coords-status').textContent=text;}};
 $('#pin-selected').onclick=()=>{if(!selectedCoordinate)return;if(project.pins.length>=500){toast('This project supports up to 500 saved places.');return;}pendingPin={...selectedCoordinate};$('#pin-coordinates').textContent=coords(pendingPin);$('#pin-name').value='';$('#pin-dialog').showModal();};
-$('#nz-coast-go').onclick=()=>flyTo({lat:36.566075,lon:111.397129},2.6);
-$('#alaska-coast-go').onclick=()=>flyTo({lat:64.797594,lon:-136.34473},2.6);
-$('#eden-go').onclick=()=>flyTo(EDEN_CENTER,1.14);
-$('#island-go').onclick=()=>flyTo(ISLAND_CENTER,1.14);
-$('#lake-go').onclick=()=>flyTo(LAKE,Math.max(1.65,fitDistance()*.55));$('#north-pole').onclick=()=>flyTo({lat:89.9,lon:0},Math.max(2.5,fitDistance()*.75));$('#south-pole').onclick=()=>flyTo({lat:-89.9,lon:124},Math.max(2.5,fitDistance()*.75));
-$('#mountain-go').onclick=()=>flyTo({lat:6.035,lon:-4.485},Math.max(1.65,fitDistance()*.55));
-otherLandmasses.forEach(f=>{$('#'+f.properties.id).onclick=()=>flyTo(f.properties.overview??f.properties.center,Math.max(5.6,fitDistance()));});
 function historyTarget(frame,immediate=false){targetFrame=Math.max(0,Math.min(6999,Math.round(frame)));if(immediate||window.matchMedia('(prefers-reduced-motion: reduce)').matches)currentFrame=targetFrame;project.timeline.frame=targetFrame;clearTimeout(historyTarget.timer);historyTarget.timer=setTimeout(save,250);updateTimelineText();}
 function updateTimelineText(){const state=timelineState(currentFrame),age=AGES[state.age];$('#age-slider').value=Math.round(currentFrame);if(document.activeElement!==$('#frame-input'))$('#frame-input').value=Math.round(currentFrame);$('#age-slider').setAttribute('aria-valuetext',`Age ${state.age+1}, ${age.name}, unit ${state.unit} of 1000`);$('#timeline-readout').textContent=`AGE ${state.age+1} · UNIT ${state.unit.toLocaleString()} / 1,000`;
- $('#age-badge').textContent=`AGE ${state.age+1}`;$('#age-moment').textContent=age.title;$('#timeline-caption').textContent=age.title;$('#age-description').textContent=age.description;$('#age-provenance').textContent=age.status;$$('.age-button').forEach((b,i)=>{b.classList.toggle('active',state.age===i);b.setAttribute('aria-pressed',state.age===i?'true':'false');});if(mode==='atlas'){$('#view-kind').textContent=`AGE ${state.age+1} / ${age.name.toUpperCase()}`;$('#view-title').textContent=age.title;$('#view-subtitle').textContent='Click a place to share its coordinates · drag to explore';}
+ $('#timeline-caption').textContent=age.title;$$('.age-button').forEach((b,i)=>{b.classList.toggle('active',state.age===i);b.setAttribute('aria-pressed',state.age===i?'true':'false');});if(mode==='atlas'){$('#view-kind').textContent=`AGE ${state.age+1} / ${age.name.toUpperCase()}`;$('#view-title').textContent=age.title;$('#view-subtitle').textContent='Click a place to share its coordinates · drag to explore';}
 }
 AGES.forEach((age,i)=>{const button=$$('.age-button')[i];button.setAttribute('aria-label',`Age ${i+1}: ${age.name}`);button.title=age.title;button.onclick=()=>{historyPlaying=false;$('#play-history').textContent='▶';$('#play-history').setAttribute('aria-label','Play history');historyTarget(age.moment);};});
 $('#age-slider').oninput=e=>{historyPlaying=false;$('#play-history').textContent='▶';$('#play-history').setAttribute('aria-label','Play history');historyTarget(Number(e.target.value),true);};

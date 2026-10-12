@@ -33,7 +33,7 @@ export function makeHokkaido(feature, center={lat:20,lon:0}) {
 }
 export function newProject(){return {schemaVersion:1,name:'Libriam atlas',annotations:emptyAnnotations(),pins:[],bodies:[{...planet}],placement:{lat:20,lon:0},timeline:{frame:2900}};}
 export function validateProject(value){
- if(!value||value.schemaVersion!==1||!Array.isArray(value.pins)||!Array.isArray(value.bodies)||value.pins.length>500||value.bodies.length>50)throw new Error('Use a Dragex Globe project file (version 1, up to 500 pins / 50 bodies).');
+ if(!value||value.schemaVersion!==1||!Array.isArray(value.pins)||!Array.isArray(value.bodies)||value.pins.length>500||value.bodies.length>50)throw new Error('Use a Libriam Globe project file (version 1, up to 500 pins / 50 bodies).');
  const str=(s,n=80)=>typeof s==='string'&&s.trim().length>0&&s.length<=n;
  const coord=(p)=>p&&Number.isFinite(p.lat)&&Math.abs(p.lat)<=90&&Number.isFinite(p.lon)&&Math.abs(p.lon)<=180;
  if(!coord(value.placement)||Math.abs(value.placement.lat)>40||Math.abs(value.placement.lon)>100)throw new Error('Hokkaido placement must be within ±40° latitude and ±100° longitude in this version.');

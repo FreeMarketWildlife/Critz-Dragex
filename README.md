@@ -1,6 +1,6 @@
 # Critz–Dragex
 
-The lore and continuity repository for Phil's **Dragex** books and **Critz** games, set on **Libriam**, the three-landmass planet that includes **Hokkaido**.
+The lore and continuity repository for Phil's **Dragex** books and **Critz** games, set on **Libriam**, the three-continent planet that includes **Hokkaido**.
 
 ## Start here
 
@@ -23,6 +23,6 @@ The lore and continuity repository for Phil's **Dragex** books and **Critz** gam
 
 The Google Drive originals were read, not edited. This repository contains organized research and source links, not a complete binary backup of the Drive or all its illustrations. Research date: October 11, 2026, author's local date.
 
-## Dragex Globe
+## Libriam Globe
 
-The [Dragex Globe program](dragex-globe/README.md) provides an interactive 3D Libriam atlas, an area-calibrated Hokkaido silhouette, surface-distance measurement, saved proposed places, and a solar-system design workspace. The October 12 author decision sets Hokkaido at **83,422.22 km²**, exactly **5%** of a **1,668,444.4 km²** Libriam. Run it with `npm ci` and `npm run dev` inside `dragex-globe/`. Design choices in the app remain proposals until author-confirmed.
+The [Libriam Globe program](dragex-globe/README.md) provides an interactive 3D Libriam atlas, an area-calibrated Hokkaido silhouette, surface-distance measurement, saved proposed places, and a solar-system design workspace. The October 12 author decision sets Hokkaido at **83,422.22 km²**, exactly **5%** of a **1,668,444.4 km²** Libriam. Run it with `npm ci` and `npm run dev` inside `dragex-globe/`. Design choices in the app remain proposals until author-confirmed.

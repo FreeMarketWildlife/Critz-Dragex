@@ -4,7 +4,7 @@
 
 ## Planet and geography
 
-**Libriam** is the entire world on which the Dragex book series and Critz games occur. **Hokkaido** is only one of its **three major landmasses**, with a few small nearby islands; there are **two other great landmasses**, first discovered by Hokkaido's critters in Age 4. Their explorers never return, for unknown reasons. Birds (hosts of heaven) travel between the lands; certain great ocean creatures have seen them.
+**Libriam** is the entire world on which the Dragex book series and Critz games occur. **Hokkaido** is only one of its **three major continents**, with a few small nearby islands; there are **two other great continents**, first discovered by Hokkaido's critters in Age 4. Their explorers never return, for unknown reasons. Birds (hosts of heaven) travel between the lands; certain great ocean creatures have seen them.
 
 The planet is much smaller than Earth. Hokkaido roughly resembles real-world Hokkaido in outline and size, and, under the author’s October 12 scale decision, occupies **83,422.22 km²**, exactly **5% of Libriam’s 1,668,444.4 km² surface**. There is no Honshu-like country south of Hokkaido. Other continent names, surface maps and geology remain open. Assuming a spherical model, the specified area gives a radius of **364.38 km**, diameter of **728.75 km**, and circumference of **2,289.45 km**. These derived dimensions supersede the previous unspecified planetary size; they do not establish physical mass or gravity. See [Dragex Globe](../dragex-globe/README.md).
 
@@ -28,7 +28,7 @@ Allohim designed Earth personally, in the Milky Way, while other worlds were sha
 
 ## Still undecided
 
-Names and cultures of the two distant landmasses, what caused past explorers' disappearance, the identities and factions of Age-6 ancient Fey adversaries, the precise last enemy, planet shape beyond the spherical visualization model, mass/gravity, rotation and orbital properties, dates, other-world destinations, the means of interplanetary travel, and whether or how any other world becomes perfected.
+Names and cultures of the two distant continents, what caused past explorers' disappearance, the identities and factions of Age-6 ancient Fey adversaries, the precise last enemy, planet shape beyond the spherical visualization model, mass/gravity, rotation and orbital properties, dates, other-world destinations, the means of interplanetary travel, and whether or how any other world becomes perfected.
 
 See [author-confirmed canon](../canon/author-confirmed.md), [master timeline](../timeline/seven-ages.md), and [creation cosmology](allohim-and-cosmic-creation.md).
 
@@ -36,11 +36,11 @@ See [author-confirmed canon](../canon/author-confirmed.md), [master timeline](..
 
 Hokkaido’s great freshwater lake / later Death’s Valley is anchored at **19.75° N, 9.98° E**. Three rivers drain outward in Ages 1–2; theft of Moana’s Tear near the Age-2/3 transition dries the lake and causes an expanding Age-3 drought. A reference edge is **17.69° N, 1.33° E**. The western mountain range runs **9.97° N, 8.18° W → 2.10° N, 0.79° W**, slowing western drying relative to the east. See the dated [author account](../canon/author-confirmed.md) for attribution and unresolved details.
 
-The author requests draft shapes for the other two landmasses near **24° S, 124° E** and **46° N, 96° W**. The Globe program proposes **1.1%** and **0.9%** of Libriam’s surface respectively. These draft outlines and sizes are an implementation proposal under a conservative combined 2% cap; the names, cultures, histories, mountain heights, and detailed geography remain undecided. Their depiction in earlier ages does not change the confirmed Age-4 discovery by Hokkaido’s critters.
+The author requests draft shapes for the other two continents near **24° S, 124° E** and **46° N, 96° W**. The Globe program proposes **1.1%** and **0.9%** of Libriam’s surface respectively. These draft outlines and sizes are an implementation proposal under a conservative combined 2% cap; the names, cultures, histories, mountain heights, and detailed geography remain undecided. Their depiction in earlier ages does not change the confirmed Age-4 discovery by Hokkaido’s critters.
 
 ## Revised continents and polar waters — later October 12, 2026
 
-The latest author request replaces the two small procedural shapes. **Alaska**, the named third landmass, is modeled on a rotated Alaska outline, enlarged to **5–6%** of Libriam, and moved west. The app proposes **5.5%**, a **65° rotation**, and a center at **43° N, 140° W**. The second landmass is modeled on rotated **New Zealand** at **6–7%**, stretching toward the south pole; the app proposes **6.5%**, **15° rotation**, and **25° S, 124° E**, with a coastline near **85° S**. These exact implementation values remain design choices within the requested ranges. “New Zealand” is a working reference label, whereas “Alaska” is explicitly author-named.
+The latest author request replaces the two small procedural shapes. **Alaska**, the named third continent, is modeled on a rotated Alaska outline, enlarged to **5–6%** of Libriam, and moved west. The app proposes **5.5%**, a **65° rotation**, and a center at **43° N, 140° W**. The second continent is modeled on rotated **New Zealand** at **6–7%**, stretching toward the south pole; the app proposes **6.5%**, **15° rotation**, and **25° S, 124° E**, with a coastline near **85° S**. These exact implementation values remain design choices within the requested ranges. “New Zealand” is a working reference label, whereas “Alaska” is explicitly author-named.
 
 The north and south poles are **mostly ice-covered ocean**, with land possible but unspecified. The renderer supplies pack ice and broken marginal floes over the mapped surface; it does not add polar continents. This supersedes the earlier 1.1% / 0.9% proposals and combined 2% limit. Hokkaido remains **5%** at **83,422.22 km²**.
 
@@ -68,3 +68,9 @@ Source: the author’s pasted **Dragex Globe annotation group**, viewed at **Age
 - The eastern region near **19.692105° N, 30.903258° E** should resemble **African savanna / Saharan savanna**. Its temperature, exact vegetation, wildlife and political names remain unspecified.
 
 The complete coordinate contours are preserved in `dragex-globe/src/data/geography-notes.json`. Drawing unit 4564 establishes the map-view context, not a new date for island formation or climate change. The app applies these as underlying geographic/biome design layers; Creation, drought, Fallout and restoration continue to alter the appearance. Color palettes, transition widths, snow threshold and all detailed coastal sculpting remain visualization proposals. No new inhabitants or age boundaries are established.
+
+## Continents and Libriam Globe — latest author terminology, October 12, 2026
+
+The author explicitly calls Libriam’s three major regions **continents**, as on Earth: **Hokkaido**, **Alaska**, and the **New Zealand-inspired continent** (whose final fictional name remains undecided). This supersedes “landmass” as the preferred label for these three in current documentation. Eden’s Isle and the lake island are islands, not additional continents. This terminology does not establish countries, political borders or capitals within the continents.
+
+The globe program is renamed **Libriam Globe**, replacing **Dragex Globe** as its current title. The author requests a minimal default left panel containing **Search**, with continents, countries and other named places accessed through search. Earlier dated references to the former program name are historical.
