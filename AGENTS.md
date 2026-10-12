@@ -4,7 +4,7 @@ Phil is the author. This repository is a continuity and research system, not per
 
 ## Reading order
 
-Read `canon/author-confirmed.md`, `timeline/seven-ages.md`, and the relevant topic files. For recovered details, consult `research/drive-2026-10-11/sources.md` and the original source when the distinction matters. Read `research/drive-2026-10-11/conflicts.md` before resolving apparent contradictions.
+Read `canon/author-confirmed.md`, `timeline/seven-ages.md`, `books/moanas-tear-frame.md`, `world/allohim-and-cosmic-creation.md`, and the relevant topic files. For recovered details, consult `research/drive-2026-10-11/sources.md` and the original source when the distinction matters. Read `research/drive-2026-10-11/conflicts.md` before resolving apparent contradictions.
 
 ## Source precedence
 
@@ -19,13 +19,13 @@ Read `canon/author-confirmed.md`, `timeline/seven-ages.md`, and the relevant top
 
 Official spellings explicitly given: **Dragex**, **Critz**, **Koric**, **Veratus**, **Moana's Tear**. Normalize obvious dictation variants of these in context. A near-match is not a new character or alternate canonical name. Ask before adopting an uncertain new name.
 
-Keep unresolved variants visible: Archaíos / Archaois / Archaios / Archeios; Psyte / Pyste; Kaldro's Cape / Kalos' Cape; Morain / Morane; Kurosu / Kuroso; Mount Yokai / Mount Yotei. Do not automatically merge Draco with Drago, Makani with Dragex, or Enáretos with the unverified Korok reference.
+**Archaíos** is now explicitly author-confirmed (accented spelling); keep archival variants searchable: Archaois / Archaios / Archeios. Other unresolved variants: Psyte / Pyste; Kaldro's Cape / Kalos' Cape; Morain / Morane; Kurosu / Kuroso; Mount Yokai / Mount Yotei. Do not automatically merge Draco with Drago, Makani with Dragex, or Enáretos with the unverified Korok reference.
 
 ## Timeline discipline
 
-- There are seven ages. The April 2026 written outline supplies names and events, but its placement of the Tear's return in Age 3 conflicts with Phil's current Age-4 novel opening.
-- *Moana's Tear* begins at the start of Age 4. Do not move it back to Age 3 to accommodate old notes.
-- Human arrival in Hokkaido is only approximately Age 6. No humans are present or known there during the novels. Older passages about prior human rulers are superseded on this point.
+- **There are seven ages**. Author's latest account puts **the events of Moana's Tear in Age 3** and **Archaíos's writing of the book in Age 4**. Age 3 ends with the Tear's return; Age 4 opens with Veratus's reign over the Kingdom of Moana. The earlier Age-4 novel event placement is superseded.
+- **Judgement ends Age 5**; the Sixth Age is **Man**, with humans directly placed by Allohim on Eden's Isle. The older “Age of Judgement” label is superseded. **The Seventh Age remains undecided**, even though “Peace” is a provisional old label.
+- **No humans live in Hokkaido in the novels**. The first local humans are placed by Allohim on Eden's Isle in Age 6. A prior western-seafaring origin claim is not to be repeated as current canon; its relationship to the later account is unresolved.
 - Do not assign games to ages from their genre, weapons, technology, boss appearances, or atmosphere. Phil explicitly reserved those assignments.
 - A game can have a main setting and separate historical missions, flashbacks, or framing narration. Record those separately.
 - Do not convert AC / BC / ADF calendar numbers or character ages into seven-age dates without a confirmed mapping.

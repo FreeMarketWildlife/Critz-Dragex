@@ -1,6 +1,6 @@
 # Critz game registry and age-placement queue
 
-**Status:** Current named concepts recovered from Phil's October 9, 2026 game-planning conversation; all fictional-age assignments await Phil.  
+**Status:** Current named concepts recovered from Phil's October 9, 2026 game-planning conversation; all fictional-age assignments await Phil. **Latest seven-age definitions:** [timeline/seven-ages.md](../timeline/seven-ages.md), updated October 11, 2026.  
 **Conversation source:** Retrieved prior user messages in “Guessing Critz Games,” October 9, 2026 (including messages at 20:10 and 20:30 UTC). This is conversation evidence, not a claim that ten standalone design documents were found in Drive.
 
 ## Ten current game concepts
@@ -43,6 +43,8 @@ The Kingdom Conquest game's appearances of Dragex and Moana as objectives do not
 | **Dragex tabletop game** | A January 2022 rulebook: prey/predator/apex pieces, bells, movement/combat, crowning ten pieces, Dragex and Moana-themed effects. The 2022 novel outline has Koric and Veratus play Dragex. | Separate historical tabletop project and possible in-world game. Its relationship to Critz Party is unconfirmed. |
 | **PowPass – Dragex** | July–August 2025 crossover/reward plan with Koric, Veratus, Moto, Psyte/Pyste, Tanoshi, Tony, Dragex, and Moana. | Crossover/product evidence. Do not insert Pow Vista into the seven-age chronology without Phil. |
 | **Dragex children's book** | Whisperwood story with Annie, Lucy, Baer, and Sylvie. | Separate prose adaptation/draft; not an additional Critz game. |
+
+**Do not place any game into Age 3, 4, 5, or 6 without Phil's explicit assignment.** Updated canon: the novels' adventure is Age 3 (not Age 4); the Fourth Age is Veratus's reign and arcane acceleration; the Fifth is Fallout; the Sixth is Man.
 
 ## Recording Phil's next decisions
 

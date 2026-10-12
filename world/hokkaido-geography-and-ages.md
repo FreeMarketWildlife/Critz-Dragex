@@ -6,11 +6,11 @@
 
 Hokkaido is a landmass closely resembling the outline and approximate size of real-world Hokkaido, accompanied by a few islands. There is no larger Japan-like landmass to its south. It exists on a much smaller world; the author's rough scale puts Hokkaido at **5% of the world's total surface**.
 
-No planet name, exact radius, gravity, southern continent, or travel-time model is established. The real-world map is a shape reference, not permission to import modern roads, cities, national borders, or neighboring Japanese landmasses.
+**Two other landmasses on this same planet** are discovered in Age 4, though critters exploring them do not return. The reason is unknown. Only the hosts of heaven (birds) travel to and fro, and some great sea creatures have seen them. Their names and positions are unknown. No planet name, exact radius, gravity, geography of those other continents, or travel-time model is established. The real-world map is a shape reference, not permission to import modern roads, cities, national borders, or neighboring Japanese landmasses.
 
 ## Humans and chronology
 
-No humans live in Hokkaido or are known there during the Dragex novels. They arrive far in the future from a distant western land across the ocean, **approximately Age 6**. *Moana's Tear* opens at the **beginning of Age 4**. See [seven ages](../timeline/seven-ages.md) for the recovered age names and unresolved older placements.
+No humans live in Hokkaido or are known there during the Dragex novels (**Age 3**). At the beginning of **Age 6**, after Allohim's cleansing of Hokkaido, **Allohim places the first man in a garden on Eden's Isle and then gives him a woman**. Their family eventually expands from the isle to the mainland. The older statement that humans arrive from a western land is **superseded as their origin account**; possible later western voyages are unconfirmed. *Moana's Tear* **takes place in Age 3** and **is written by Archaíos in Age 4**. See [seven ages](../timeline/seven-ages.md).
 
 ## Supplied maps
 
@@ -43,7 +43,7 @@ These are approximate visual relationships, not distances, coordinates, or final
 - Map: **Kaldro's Cape**; May 2026 prose: **Cape of Kalos / Kalos' Cape**.
 - Map: **Kurosu City**; 2022 prose: **Kuroso City**.
 - Map and shooter references: **Morain**; prior conversation summaries also used **Morane**.
-- **Mount Yokai** and **Mount Yotei** both occur in written lore; their exact relationship is unresolved.
+- **Mount Yokai** is now the author-confirmed place of Dragex's obsidian sleep. **Mount Yotei** remains a conflicting older reference; do not silently equate them.
 - Old settlements and routes are indexed in [places and artifacts](../research/drive-2026-10-11/places-and-artifacts.md), not automatically added as current map labels.
 
 ## Audit of the earlier file

@@ -1,45 +1,45 @@
-# The seven ages
+# Seven Ages of Dragex — master timeline
 
-**Status:** Recovered written outline, with current author decisions taking precedence.  
-**Primary source:** [C01 — [Critz] Lore](https://docs.google.com/document/d/16ctzSVLICRg27OQlmpuGRzuF0lv8yu37yvBHDzkSCnw/edit?usp=drivesdk), created March 31 and modified April 1, 2026.  
-**Author override:** October 11, 2026 conversation.
+**Status:** Canonical events and transitions confirmed directly by author on **October 11, 2026**. The **Seventh Age remains provisional**. Recovered earlier outline: [April 2026 — [Critz] Lore](https://docs.google.com/document/d/16ctzSVLICRg27OQlmpuGRzuF0lv8yu37yvBHDzkSCnw/edit?usp=drivesdk).
 
-## Recovered sequence
+| # | Age | Starts when | Ends when | Key developments |
+|---|---|---|---|---|
+| 1 | **Creation** | Allohim creates the universe and commissions the designers of worlds | Dragex **fully falls asleep under Mount Yokai**, encased in obsidian | Dragex and Moana shape their world; the earlier creation narrative includes the conflict with Moana. |
+| 2 | **Fall** | At the precise instant Dragex sleeps | The **last Fey dies** at the **Battle of Mount Yokai** | Allohim entrusts stewardship to the Fey; related Fey seek power, divide and annihilate each other; their blood soaks the mountain. |
+| 3 | **Redemptive Opportunity** | Last Fey's death | **Koric returns Moana's Tear** | The Dragex book series' events, including Koric and Veratus's quest; the Tear restores rain and life. The return frees Koric to die. |
+| 4 | **Arcane** | **Veratus's reign** over the restored **Kingdom of Moana** begins | The devastating **arcane wars** occur and end the age | Archaíos writes *Moana's Tear*; arcane technology rapidly progresses; two distant continents are discovered; war technology ultimately devastates the world. |
+| 5 | **Fallout** | After the arcane wars | **Allohim judges and cleanses Hokkaido** | Horrific post-apocalyptic ruin, mutation, disease, zombies, few survivors, weakening Fey blood and partial reversion to ordinary animals. |
+| 6 | **Man** | Allohim has purified and raised Hokkaido from the ocean and established the first humans on Eden's Isle | **Unknown** | Eden's Isle garden, first man and woman, expanding human family and new stewardship; broadly peaceful, imperfect humanity. |
+| 7 | **Peace — provisional label** | **Unknown** | **Unknown** | The name is historical, but a distinctive event/character beyond Age 6 has not been decided. |
 
-| Age | Name in the source's overview | Events described in that version |
-|---|---|---|
-| 1 | Creation | The Creator makes the heavens and commissions Dragex and Moana. They create land/land animals and water/aquatic life respectively, and birds jointly. Dragex attacks Moana; she dies of grief and leaves the Tear. Dragex sleeps beneath obsidian, forming a stratovolcano at Mount Yotei. |
-| 2 | Fall | Fey are appointed stewards, divide, and fight on Mount Yokai. Their blood transforms animals and crystallizes into arcane. Snowmelt spreads it during the Spring of Life. Koric takes the sustaining Tear and receives the phoenix curse. |
-| 3 | Redemptive Opportunity | The detailed heading also calls it Redemption. The older outline places Koric's return of the Tear here, averting the spread of Death's Valley across Hokkaido. This placement conflicts with the author's current novel timing. |
-| 4 | Arcane | Prosperity leads through progress and ambition to sin. Nations build arcane militaries and ultimately destroy one another with extremely powerful arcane weapons. |
-| 5 | Fallout | Hokkaido is a post-apocalyptic world. This section is brief, not a developed political or ecological history. |
-| 6 | Judgement | The Creator judges the living and dead. Hokkaido is cast into the sea and a new, harmonious Hokkaido is made; death is removed. |
-| 7 | Peace | Permanent harmony, with new islands for animals to explore. |
+## Boundary notes and precise semantics
 
-These are existing source descriptions, not newly invented age definitions. The document does not provide exact durations, dates, all transitions, or the names of the nations involved.
+- Age 1 ends **at the moment** Dragex is completely asleep, not simply when Moana dies or when Fey arrive.
+- Age 2 ends **at the last Fey's death**, not at the earlier start of its great battle. Age 3 begins at that same instant.
+- The Fey-blooded animals arise from the blood-stained water **after** the Fey's final battle. The first generation includes **Archaíos**, who personally drinks the water. The precise date of Koric's curse and other events within Age 3 awaits further author explanation.
+- Age 3 ends **with restoration of the Tear**; that allows Koric eventually to die, but the author did not specify whether he dies at the transition.
+- Age 4 begins with the **reign of Veratus** over the reborn Kingdom of Moana; do not assume a specific coronation ceremony or dates.
+- The Age-4 discovery of **two other landmasses** does not mean that safe, verified settlement or round-trip voyages were achieved. No traveling critters return, while birds travel between lands and some great aquatic creatures have seen them.
+- **Arcane wars** (nuclear-like in impact) mark the end of Age 4. **Allohim's cleansing and judgement** mark the end of Age 5, not the title of a separate Sixth Age.
+- The transition into Age 6 is tightly related to the cleansing, ocean submersion/reemergence, garden, and first humans, but the interval between those acts has not been quantified.
+- Age 6 is peaceful enough that an Age 7 called **Peace** needs a new defining event or distinction. Do not assert a trigger without Phil choosing one.
 
-## Current author-confirmed placements
+## The book's two periods
 
-| Work/event | Placement | Certainty and limits |
-|---|---|---|
-| Moana's Tear — opening | Beginning of **Age 4** | Explicit current decision. This overrides the incompatible implication of the older Age-3 return entry. |
-| Moana's Tear — ending | After its Age-4 opening | The final objective is the Tear's return. No separate ending date or precise intra-age position was given. |
-| Human arrival in Hokkaido | **Approximately Age 6** | From a distant western land across the ocean. Exact timing relative to Judgement is not established. |
-| Humans during the novels | Absent / unknown in Hokkaido | Do not import the older draft's previous human rulers. |
-| Each current Critz game | **Unassigned — Phil decides** | See [game registry](../games/registry.md). |
+**Event timeline (Age 3):** Koric and Veratus travel to return the Tear; the return ends the age.  
+**Composition/narration timeline (Age 4):** Archaíos, very old and approaching death on Eden's Isle, writes *Moana's Tear* for his 19-year-old descendant Olivia (“Olive”), who studies history at the Great Library and school inside the Grandfather Tree of Grimroot Grove. Annual migrating birds carry his letters. He believes he has only one opportunity left to send them.
 
-## The key unresolved boundary
+See [book narrative frame](../books/moanas-tear-frame.md). Do not assume Olive participates in the original adventure simply because she receives the narrative.
 
-C01 says that the Tear is returned in Age 3; Phil now places the start of *Moana's Tear* at the beginning of Age 4. We do not know whether Age 3's events have changed, whether the return marks or follows an age transition, or whether the older outline has been otherwise revised. Preserve the recovered labels and latest author anchor without fabricating a reconciliation.
+## Superseded dates and unresolved calendars
 
-## Older calendars and chronologies — no approved conversion
+- The first October 11 statement that *Moana's Tear* **begins in Age 4** was revised by the author later that evening; the canonical **events belong in Age 3** while its **writing happens in Age 4**. Preserve this distinction in summaries, reading guides, and future game placements.
+- The April 2026 outline called Age 6 **Judgement**. Author now explicitly assigns judgement to the **end of Age 5** and renames the Sixth Age **Man**.
+- Older calendar labels (**539–655 AC**, **17 ADF**, and **144 years after Tear removal**) are not converted to age numbers until further author decisions.
+- The historical April source uses “Redemption” once as an Age-3 heading but its overview says **Redemptive Opportunity**; latest author explicitly chooses **Redemptive Opportunity**.
+- Existing April 2026 notes for an eternal harmony/new-islands Seventh Age are historical ideas, not reapproved precise developments.
+- The earlier phrase “humans arrive from the western ocean around Age 6” has been replaced as the first-origin model by the direct creation/placement of a man and woman by Allohim on Eden's Isle at the start of Age 6. Any residual western travel stories await clarification.
 
-- **539 AC:** an early draft's Seventh Shima War / Battle of Oshidashi; **540 AC:** blood-bearing snowmelt. Dwarves appear thirteen years later; Sapporo is founded in **555 AC**; Archaíos's pub in **563 AC**; an opening is set in **655 AC**. Source T14. These belong to an older world model.
-- **March 16, 17 ADF (After Dragex Fell):** Veratus's sixteenth hatchday in N02; the guild deadline is March 31. No established formula converts ADF into an age number.
-- Older versions give different Blood Moon deadlines: three months (A05) versus thirteen days (T01).
-- H01 begins **144 years after the Tear was taken**. This is not an approved length for any age or reincarnation cycle.
-- The character sheet's ages, the thousand-year basilisk reign in A03, and past-life references in R12 are not mutually calibrated.
+## Games
 
-## Cross-era game storytelling
-
-C02, the October 2025 `[Critz] Campaign` notes, proposes Archaíos narration, a Fey battle with medieval equipment, a later mammal-versus-basilisk mission with military weapons, and a Throne Room heading. These are historical mission concepts, not confirmed current game-to-age assignments. Record main setting, flashbacks, historical missions, and framing narrator era independently once Phil specifies them.
+All ten current Critz game concepts are listed in [game registry](../games/registry.md), with **age positions awaiting Phil's direction**. A game may span eras with flashbacks or historical missions. Do not assume new game dates based on this table.

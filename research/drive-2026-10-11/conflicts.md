@@ -1,3 +1,7 @@
+> **UPDATE — AUTHOR DECISIONS, OCTOBER 11, 2026 (later that evening).** The prior conflict register below is an archival snapshot and includes questions now resolved by the author. **Current authoritative entries:** [canon/author-confirmed](../../canon/author-confirmed.md), [seven ages](../../timeline/seven-ages.md), [narrative frame](../../books/moanas-tear-frame.md), and [cosmic creation](../../world/allohim-and-cosmic-creation.md). In particular: **Moana's Tear events are Age 3, writing is Age 4**; **the Age 3 to 4 boundary is the Tear's return**; **Judgement terminates Age 5, Sixth Age is Man**; **Allohim places the first local humans on Eden's Isle**; **Dragex's sleep is under Mount Yokai**, and **Archaíos** is the approved spelling. The Seventh Age's boundary remains open. Do not repeat the older status below as current.
+
+---
+
 # Continuity conflicts, pending decisions, and provenance audit
 
 **Status:** Editorial findings, not automatic fixes. Source IDs: [catalog](sources.md). Phil's current explicit decisions always win. This register preserves the questions without requiring the author to answer every one before continuing.
