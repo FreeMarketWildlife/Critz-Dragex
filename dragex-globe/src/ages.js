@@ -1,4 +1,5 @@
 import { distance, RADIUS, rad } from './model.js';
+import {mountainRelief} from './authored-geography.js';
 export const UNITS_PER_AGE=1000;
 export const FRAME_COUNT=7000;
 export const LAKE={lat:19.75,lon:9.98};
@@ -25,7 +26,7 @@ export function timelineState(value){
 }
 export function localKm(p,center=LAKE){return {x:(p.lon-center.lon)*rad*RADIUS*Math.cos(center.lat*rad),y:(p.lat-center.lat)*rad*RADIUS};}
 export function lakeField(p){const {x,y}=localKm(p),angle=Math.atan2(y,x),shape=1+.13*Math.sin(3*angle+.8)+.07*Math.cos(5*angle-.4);return Math.hypot(x/1.15,y/.88)/(LAKE_RADIUS_KM*shape);}
-export function mountainField(p){const {x,y}=localKm(p),a=localKm(MOUNTAIN_START),b=localKm(MOUNTAIN_END),dx=b.x-a.x,dy=b.y-a.y,t=clamp(((x-a.x)*dx+(y-a.y)*dy)/(dx*dx+dy*dy));const xx=a.x+t*dx+Math.sin(t*Math.PI*4)*2.5,yy=a.y+t*dy;return Math.exp(-((x-xx)**2+(y-yy)**2)/(2*5.5**2));}
+export function mountainField(p){return mountainRelief(p);}
 function rawDroughtCost(p){
  const {x,y}=localKm(p),angle=Math.atan2(y,x),east=clamp(x/70),south=clamp(-y/70),west=clamp(-x/60);
  const speed=(1+east*.75+south*.9)/(1+west*.2);

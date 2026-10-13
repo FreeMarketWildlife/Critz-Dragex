@@ -1,3 +1,4 @@
+import {namedPlaces,placeAt} from './authored-geography.js';
 import {searchPlaces} from './search.js';
 import {edenIsle,EDEN_CENTER,paintBiomes} from './coast-design.js';
 import './style.css';
@@ -36,7 +37,7 @@ const camera=new THREE.PerspectiveCamera(40,1,.001,200);camera.position.set(0,1.
 const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.dampingFactor=.07;controls.enablePan=false;controls.minDistance=1.06;controls.maxDistance=7;controls.rotateSpeed=.5;controls.zoomSpeed=.65;
 const atlas=new THREE.Group(),system=new THREE.Group();scene.add(atlas,system);system.visible=false;
 const ambient=new THREE.AmbientLight('#bedee5',2.2),sun=new THREE.DirectionalLight('#fff1d0',2.4);sun.position.set(-3,3,5);scene.add(ambient,sun);
-const surfaceGeometry=new THREE.SphereGeometry(1,256,160);surfaceGeometry.rotateY(-Math.PI/2);
+const surfaceGeometry=new THREE.SphereGeometry(1,512,320);surfaceGeometry.rotateY(-Math.PI/2);
 const material=new THREE.MeshStandardMaterial({roughness:.92,metalness:.05});
 const globe=new THREE.Mesh(surfaceGeometry,material);atlas.add(globe);
 const atmos=new THREE.Mesh(new THREE.SphereGeometry(1.025,80,48),new THREE.ShaderMaterial({transparent:true,side:THREE.BackSide,depthWrite:false,uniforms:{glow:{value:new THREE.Color('#518c9e')}},vertexShader:'varying vec3 n; varying vec3 v; void main(){vec4 p=modelViewMatrix*vec4(position,1.);n=normalize(normalMatrix*normal);v=normalize(-p.xyz);gl_Position=projectionMatrix*p;}',fragmentShader:'varying vec3 n;varying vec3 v;uniform vec3 glow;void main(){float a=pow(1.-abs(dot(n,v)),3.);gl_FragColor=vec4(glow,a*.42);}'}));atlas.add(atmos);
@@ -59,8 +60,8 @@ function texture(relief){
   const noise2=(x,y)=>{const i=Math.floor(x),j=Math.floor(y),a=x-i,b=y-j,u=a*a*(3-2*a),v=b*b*(3-2*b);return (hash(i,j)*(1-u)+hash(i+1,j)*u)*(1-v)+(hash(i,j+1)*(1-u)+hash(i+1,j+1)*u)*v;};
   const noise=(x,y)=>noise2(x*.014,y*.014)*.32+noise2(x*.035,y*.035)*.16+noise2(x*.085,y*.085)*.09+noise2(x*.19,y*.19)*.045-.3;
   for(let y=y1;y<y2;y++)for(let x=x1;x<x2;x++){
-   const n=noise(x,y),ridge=Math.exp(-Math.pow((x-(x1+x2)/2-(y-(y1+y2)/2)*.27)/(80+35*Math.sin(y*.012)),2))*.52;
-   const h=n+ridge*.55,v=noise(x-2,y-2)-n,j=(y*W+x)*4;
+   const n=noise(x,y);
+   const h=n,v=noise(x-2,y-2)-n,j=(y*W+x)*4;
    let color=h>.51?[171,173,151]:h>.31?[132,142,112]:h>.12?[103,130,91]:[78,116,77];
    const shade=1+v*3;for(let k=0;k<3;k++)d[j+k]=Math.min(255,color[k]*shade);
   }
@@ -84,7 +85,7 @@ for(let lat=-75;lat<=75;lat+=15){let pts=[];for(let lon=-180;lon<=180;lon+=2)pts
 for(let lon=-180;lon<180;lon+=30){let pts=[];for(let lat=-90;lat<=90;lat+=2)pts.push(new THREE.Vector3(...toVector(lat,lon,1.003)));gridGroup.add(line(pts,'#81b8c2',.12));}
 const coastGroup=new THREE.Group();atlas.add(coastGroup);function updateCoast(){coastGroup.children.slice().forEach(disposeObject);for(const f of [hokkaido,...otherLandmasses,edenIsle])for(const poly of geometryPolygons(f))for(const ring of poly)coastGroup.add(line(ring.map(([lo,la])=>new THREE.Vector3(...toVector(la,lo,1.004))),'#d0dcb2',.5));}updateCoast();
 const pinGroup=new THREE.Group(),measureGroup=new THREE.Group(),historyFeatures=new THREE.Group(),selectionGroup=new THREE.Group();atlas.add(pinGroup,measureGroup,historyFeatures,selectionGroup);
-const mountainPoints=[];for(let i=0;i<=80;i++){const t=i/80;mountainPoints.push(new THREE.Vector3(...toVector(MOUNTAIN_START.lat+(MOUNTAIN_END.lat-MOUNTAIN_START.lat)*t,MOUNTAIN_START.lon+(MOUNTAIN_END.lon-MOUNTAIN_START.lon)*t+Math.sin(t*Math.PI*4)*.35,1.013)));}historyFeatures.add(line(mountainPoints,'#e0c8a1',.85));
+// Mountain spines now appear as real terrain rather than drawn map lines.
 const lakeRing=[];for(let i=0;i<=120;i++){const p=destination(LAKE,i*3,27);lakeRing.push(new THREE.Vector3(...toVector(p.lat,p.lon,1.01)));}historyFeatures.add(line(lakeRing,'#aadfe3',.38));
 const starGeo=new THREE.BufferGeometry(),starPos=[];for(let i=0;i<850;i++){let v=new THREE.Vector3(Math.sin(i*78.123),Math.sin(i*43.52),Math.cos(i*92.21)).normalize().multiplyScalar(35);starPos.push(v.x,v.y,v.z);}starGeo.setAttribute('position',new THREE.Float32BufferAttribute(starPos,3));const stars=new THREE.Points(starGeo,new THREE.PointsMaterial({color:'#9cb2c1',size:.027,transparent:true,opacity:.55}));scene.add(stars);
 function disposeObject(obj){obj.parent?.remove(obj);obj.traverse(o=>{o.geometry?.dispose();if(Array.isArray(o.material))o.material.forEach(m=>m.dispose());else o.material?.dispose();});}
@@ -155,7 +156,7 @@ $$('[data-mode]').forEach(button=>button.onclick=()=>{
  if(mode==='atlas')flyTo(project.placement,fitDistance());else{camera.position.set(0,7,12);rebuildSystem();}controls.update();resize();
 });
 $('#unmapped-note').textContent='Alaska · New Zealand · polar sea ice';
-function selectCoordinate(p){selectedCoordinate=p;$('#cursor').textContent=coords(p);selectionGroup.children.slice().forEach(disposeObject);selectionGroup.add(pinMarker(p,'#ffe0a6',.008));$('#selected-coords').textContent=coords(p);const land=[hokkaido,...otherLandmasses,edenIsle].find(f=>geoContains(f,[p.lon,p.lat]));const atLake=lakeField(p)<1.1,isIsland=islandField(p)<1,isPool=isIsland&&poolDistance(p)<POOL_DIAMETER_KM/2;$('#selected-place').textContent=isPool?(timelineState(currentFrame).lake>.3?'Island’s inner pool · about 1 km wide':'Island’s dry pool bed'):isIsland?'Small lake island':atLake?(timelineState(currentFrame).lake>.3?'Great freshwater lake · Moana’s Tear':'Death’s Valley · dried lake bed'):land?(land===hokkaido?'Hokkaido · surface location':land.properties.name+' · adapted coastline'):polarIce(p.lat,p.lon)>.2?(p.lat>0?'North':'South')+' polar sea ice · frozen ocean':'Ocean-colored surface';$('#coordinate-panel').hidden=false;$('#copy-coords-status').textContent='';}
+function selectCoordinate(p){selectedCoordinate=p;$('#cursor').textContent=coords(p);selectionGroup.children.slice().forEach(disposeObject);selectionGroup.add(pinMarker(p,'#ffe0a6',.008));$('#selected-coords').textContent=coords(p);const land=[hokkaido,...otherLandmasses,edenIsle].find(f=>geoContains(f,[p.lon,p.lat]));const atLake=lakeField(p)<1.1,isIsland=islandField(p)<1,isPool=isIsland&&poolDistance(p)<POOL_DIAMETER_KM/2;$('#selected-place').textContent=isPool?(timelineState(currentFrame).lake>.3?'Island’s inner pool · about 1 km wide':'Island’s dry pool bed'):isIsland?'Small lake island':atLake?(timelineState(currentFrame).lake>.3?'Great freshwater lake · Moana’s Tear':'Death’s Valley · dried lake bed'):land?(land===hokkaido?'Hokkaido · surface location':land.properties.name+' · adapted coastline'):polarIce(p.lat,p.lon)>.2?(p.lat>0?'North':'South')+' polar sea ice · frozen ocean':'Ocean-colored surface';const named=placeAt(p);if(named)$('#selected-place').textContent=named.name;$('#coordinate-panel').hidden=false;$('#copy-coords-status').textContent='';}
 $('#close-coords').onclick=()=>{$('#coordinate-panel').hidden=true;selectionGroup.children.slice().forEach(disposeObject);};
 $('#copy-coords').onclick=async()=>{if(!selectedCoordinate)return;const p=selectedCoordinate,text=`${coords(p)} (latitude ${p.lat.toFixed(5)}, longitude ${p.lon.toFixed(5)}) · Age ${timelineState(currentFrame).age+1}, design unit ${Math.round(currentFrame)}`;try{await navigator.clipboard.writeText(text);$('#copy-coords-status').textContent='Copied. Paste these coordinates into the chat.';}catch{$('#copy-coords-status').textContent=text;}};
 $('#pin-selected').onclick=()=>{if(!selectedCoordinate)return;if(project.pins.length>=500){toast('This project supports up to 500 saved places.');return;}pendingPin={...selectedCoordinate};$('#pin-coordinates').textContent=coords(pendingPin);$('#pin-name').value='';$('#pin-dialog').showModal();};
@@ -178,17 +179,19 @@ function updateTerrainOverlays(){const key=`${Math.round(currentFrame)}:${projec
   o.userData.surfacePath.forEach((p,i)=>positions.setXYZ(i,...toVector(p.lat,p.lon,ageRendering.radiusAt(p)+p.lift)));positions.needsUpdate=true;o.geometry.computeBoundingSphere();
  });
 }
+const authorLabels=namedPlaces.map(p=>{const e=document.createElement('div');e.id=`author-place-${p.id}`;e.className='author-place-label';e.textContent=p.name;$('#viewport').append(e);return p;});
 let lastHistoryText=-1;
-function projectLabel(selector,p,show=true){const element=$(selector);if(!show){element.style.display='none';return;}const point=new THREE.Vector3(...toVector(p.lat,p.lon,1.02)),front=point.clone().normalize().dot(camera.position.clone().sub(point).normalize())>.05,v=point.project(camera);element.style.display=front&&Math.abs(v.x)<.98&&Math.abs(v.y)<.98?'block':'none';element.style.left=`${(v.x+1)*host.clientWidth/2}px`;element.style.top=`${(1-v.y)*host.clientHeight/2}px`;element.style.transform='translate(-50%,-50%)';}
+function projectLabel(selector,p,show=true){const element=$(selector);if(!show){element.style.display='none';return;}const point=new THREE.Vector3(...toVector(p.lat,p.lon,ageRendering.radiusAt(p)+.012)),front=point.clone().normalize().dot(camera.position.clone().sub(point).normalize())>.05,v=point.project(camera);element.style.display=front&&Math.abs(v.x)<.98&&Math.abs(v.y)<.98?'block':'none';element.style.left=`${(v.x+1)*host.clientWidth/2}px`;element.style.top=`${(1-v.y)*host.clientHeight/2}px`;element.style.transform='translate(-50%,-50%)';}
 function updateHistory(dt,now){if(mode==='atlas'){
  if(historyPlaying){currentFrame=Math.min(6999,currentFrame+dt*Number($('#history-speed').value));targetFrame=currentFrame;if(currentFrame>=6999){historyPlaying=false;$('#play-history').textContent='▶';$('#play-history').setAttribute('aria-label','Play history');historyTarget(6999,true);}}
  else if(Math.abs(targetFrame-currentFrame)>.05){const delta=targetFrame-currentFrame;currentFrame+=delta*(1-Math.exp(-dt*13));}else currentFrame=targetFrame;
  const frame=Math.round(currentFrame);if(frame!==lastHistoryText){updateTimelineText();lastHistoryText=frame;}
+ authorLabels.forEach(p=>projectLabel(`#author-place-${p.id}`,p,$('#labels').checked&&camera.position.length()<2.1&&timelineState(currentFrame).emergence>.5));
  const state=timelineState(currentFrame);ageRendering.update(currentFrame,now/1000,$('#relief').checked,project.terrain.exaggeration);controls.minDistance=Math.max(1.06,ageRendering.maxRadius+.03);updateTerrainOverlays();atlas.visible=state.emergence>.001;gridGroup.visible=$('#grid').checked&&state.emergence>.5;coastGroup.visible=state.emergence>.55;atmos.visible=state.emergence>.05;ageRendering.clouds.visible=$('#clouds').checked;historyFeatures.visible=$('#features').checked&&state.emergence>.5;
  const closeIsland=camera.position.length()<1.45;$('#history-label').textContent=closeIsland?(state.lake>.3?'INNER POOL · 1 KM':'DRY POOL BED'):(state.lake>.3?'GREAT LAKE · MOANA’S TEAR':'DEATH’S VALLEY');projectLabel('#history-label',closeIsland?{lat:ISLAND_CENTER.lat+.6,lon:ISLAND_CENTER.lon}:LAKE,$('#features').checked&&state.emergence>.5);otherLandmasses.forEach(f=>projectLabel('#'+f.properties.id+'-label',f.properties.center,$('#labels').checked&&state.emergence>.5));
  projectLabel('#eden-label',EDEN_CENTER,$('#labels').checked&&state.emergence>.5);
  projectLabel('#north-pole-label',{lat:87,lon:0},$('#labels').checked&&state.emergence>.5);projectLabel('#south-pole-label',{lat:-87,lon:0},$('#labels').checked&&state.emergence>.5);
- }else{atlas.visible=false;}
+ }else{atlas.visible=false;authorLabels.forEach(p=>projectLabel(`#author-place-${p.id}`,p,false));}
 }
 updateTimelineText();
 let last=performance.now();

@@ -49,3 +49,16 @@ These are approximate visual relationships, not distances, coordinates, or final
 ## Audit of the earlier file
 
 The previous version mixed confirmed geography with assistant-attributed historical claims lacking retrieved sources. Its original text is preserved in `research/legacy/hokkaido-first-pass.md`. Source-backed creation research is now in [cosmology and society](../research/drive-2026-10-11/cosmology-and-society.md). The unverified Korok/thousand-year-cycle assertion has not been adopted as canon.
+
+## Mountain and named-region annotations — October 12, 2026
+
+Source: Phil’s **Libriam Globe annotation group**, 11 outlines/boxes drawn at **Age 2, design unit 1556**, and his follow-up request to design their appearance from space and zoomed in. The complete coordinates and notes are preserved in [the globe’s annotation data](../dragex-globe/src/data/author-annotations.json). This is a map-design direction; the copied timestamp is viewing context, not a date when mountains or settlements arose.
+
+- Three mountain gestures trace ranges at the supplied centers **13.501208° N, −6.382356°**, **28.809420° N, −8.335936°**, and **46.969871° N, −9.848067°**. The first extends the earlier short western range direction with a longer, exact drawn spine, from **24.332077° N, −12.350870°** to **2.802981° N, 0.463373°**. This latest placement governs the renderer; the earlier numeric anchors remain historical evidence. “Central” and “Northern mountain range” are descriptive search labels, not author-given proper names.
+- **Mount Yokai** belongs at **9.191537° N, −18.750231°**, within the marked outline. It is the world’s **largest single mountain**, standing alone and **surrounded by jungle on all sides**. Exact elevation, summit geology and snow line are not specified.
+- **Prairie Bridge** (standard spelling of the author’s spoken prairie/prarie variants) is the beautiful flower-field corridor, from one coast to the other, near **5.320105° N, −29.072064°**.
+- **Grimroot Grove** occupies the entire supplied broad outline near **−0.012093°, −32.362429°**, bordering Prairie Bridge.
+- **Rootport** is in the box near **−10.871867°, −23.854195°**; **Liarsville**, a small town behind Rootport, is near **−10.185700°, −23.526592°**.
+- **Cloud Forest** is near **−8.814648°, −22.156314°**; **Kaldro’s Cape** near **−17.451946°, −32.004310°**; **Sapporo** near **15.798273° N, −20.910207°**. The supplied complete boxes determine their designated areas; these anchors refine the older map transcription. This does not import the real city of Sapporo’s roads or inhabitants.
+
+The author authorizes a first visual design. The app proposes varied ridges, rocky peaks and foothills; layered jungle/forest canopy; a pink/gold/green flower corridor; Cloud Forest mist coloring; and small settlement texture clusters. Detailed widths, elevation values, flowers, architecture, colors and transitions remain editable visualization proposals, not additional canon. Existing age effects still transform their appearance. No new political borders or historical founding dates are inferred.
