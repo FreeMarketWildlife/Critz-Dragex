@@ -127,3 +127,7 @@ The globe combines broad region colors visible from space with continuous geogra
 ### Softer satellite-style treatment
 
 The follow-up visual direction reduces cloud thickness by roughly two thirds, flattens and widens the banks, feathers their edges, and uses cooler whites with lighter shadows. Cloud opacity is reduced; ocean shallows and foam are less saturated and wave highlights are gentler. This tunes the existing stylized geometry toward a satellite-view appearance; it does not introduce real satellite weather data. Map rebuilding, camera-local shore detail and the 12-second loop remain available.
+
+## Soft light and unnamed moon — October 12, 2026
+
+Phil requested soft, even light and a relatively large unnamed moon orbiting Libriam. Neutral ambient light, hemispheric fill and a weak directional light now replace the stronger default directional lighting. The moon follows the globe's motion-loop pause/scrub controls and exported frames. Its radius of 0.32 planet radii, orbit of 2.15 planet radii, gray surface, inclination and 12-second animation cycle are visual proposals, not confirmed physical measurements or a fictional orbital period. No name is assigned.

@@ -74,6 +74,7 @@ Source: Phil's request for the first paired Blender animation on a correctly sca
 - **Archaíos** (author-confirmed spelling, including accent) is a very ancient tortoise and **first-generation Fey-blooded critter**, having personally drunk from the blood-tainted river following the Fey's fall. He dwells on **Eden's Isle**, west of Hokkaido.
 - He sends letters **once per year** with the help of **migrating birds** passing the island. He knows he has **only one more annual opportunity** to send letters to the mainland before he dies, and chooses to write to his very distant female descendant **Olivia**, whom he calls **Olive**. The number of generations between them is not yet established; the author's “great-great-very great granddaughter” is deliberately non-numeric.
 - **Olivia is 19** and wants to become a historian. She studies at the famous **school and Great Library in the Grandfather Tree, in the middle of Grimroot Grove**, under a legendary owl. Her exact relation to **Lady Wisdom** from older draft material has not been explicitly reconfirmed.
+- **Olivia loves olives and loves growing olives.** Source: direct author request, October 13, 2026.
 - It is **not established** whether the book comprises the text of a single letter, multiple letters, a chronicle accompanying his letters, or another presentation format. Do not invent the literary structure.
 
 ## Humans — latest resolution
@@ -171,3 +172,9 @@ Its **54,224.443 km² / 3.25%** area and reference location are preserved. The n
 ## Globe mountain and place coordinates — October 12, 2026
 
 Phil supplied eleven geographic annotations and requested mountains plus first-pass region appearances. **Mount Yokai** is the largest single mountain in the world, isolated and surrounded by jungle, at **9.191537° N, −18.750231°**. Three exact mountain spines, the coast-to-coast **Prairie Bridge** flower fields, the full **Grimroot Grove** boundary, and boxes for **Rootport**, **Liarsville** (a small town behind Rootport), **Cloud Forest**, **Kaldro’s Cape**, and **Sapporo** are now mapped. See the [dated geography entry](../world/hokkaido-geography-and-ages.md#mountain-and-named-region-annotations--october-12-2026) and [exact contours](../dragex-globe/src/data/author-annotations.json). These refine earlier map transcriptions; detailed rendering and absolute heights remain proposals. Age 2 / unit 1556 is the annotation viewing context, not a new creation or founding date.
+
+## Unnamed moon — October 12, 2026
+
+Source: Phil's direct request while revising the Libriam globe lighting.
+
+Libriam has a relatively large moon that orbits it. Phil explicitly leaves it unnamed. Exact dimensions, orbital distance, period, surface features and formation era are unspecified; numerical globe settings are visual proposals. This supersedes the earlier moon-free visualization and any blanket statement that the presence of a moon is undecided. No age boundary or game placement changes. Soft, even lighting is a visualization preference.

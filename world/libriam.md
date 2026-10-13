@@ -96,3 +96,9 @@ Implementation proposals: Alaska’s mainland center is approximately **21.56° 
 The author requests a **90° rotation of Zealand, followed by a north–south flip in the rotated orientation**, so that it curves the other way. The app chooses **clockwise** for the unspecified rotation direction, then reflects local north/south around Zealand’s existing **40° S, 124° E** reference center. That choice is an implementation interpretation; the sequence and flip direction are explicit author inputs.
 
 Its **54,224.443 km² / 3.25%** area and reference location are preserved. The new orientation supersedes the preceding upright layout and approximately 84.5° S southern reach: the same centered shape now runs broadly east–west in southern latitudes, with its southernmost coast around **48.9° S**. Alaska, Hokkaido, Eden’s Isle and the northern island arc are unchanged. This adds no historical event or climate-date claim.
+
+## Unnamed moon — October 12, 2026
+
+Source: Phil's direct request while revising the Libriam globe lighting.
+
+Libriam has a relatively large moon that orbits it. Phil explicitly leaves it unnamed. Exact dimensions, orbital distance, period, surface features and formation era are unspecified; numerical globe settings are visual proposals. This supersedes the earlier moon-free visualization and any blanket statement that the presence of a moon is undecided. No age boundary or game placement changes. Soft, even lighting is a visualization preference.

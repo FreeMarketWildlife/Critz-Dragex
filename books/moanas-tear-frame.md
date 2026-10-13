@@ -21,6 +21,7 @@
 - Official name **Olivia**, affectionate name **Olive** given by Archaíos.
 - A **19-year-old** girl/descendant of Archaíos.
 - Wants to become a **historian**.
+- **Olivia loves olives and loves growing olives.** Source: direct author request, October 13, 2026.
 - Attends **Hokkaido's most legendary historical school**, situated in the **Great Library of the Grandfather Tree**, in the middle of **Grimroot Grove**, a dark forest.
 - The school is taught/led by a **legendary owl**. Earlier writing features **Lady Wisdom**, also an owl linked with a large library, but the author has not yet explicitly said they are one and the same.
 - Her **species**, immediate family, appearance, exact curriculum, and reactions to the letters are **not given**. Do not assume that she is a tortoise solely because she descends from Archaíos.
