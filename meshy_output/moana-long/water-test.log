@@ -1,0 +1,12 @@
+00:00.427  blend            | Read blend: "/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana-long/moana-rig.blend"
+/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana-long/build_water_test.py:49: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.diffuse_color=(*color,1);m.use_nodes=True
+00:23.129  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana-long/water-001.png'
+00:26.743  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana-long/water-091.png'
+00:29.845  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana-long/water-181.png'
+00:33.159  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana-long/water-271.png'
+00:34.971  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana-long/sphere-overview.png'
+Info: Saved as "moana-water-test.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

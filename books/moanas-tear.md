@@ -1,5 +1,7 @@
 # Moana's Tear
 
+**October 12, 2026 author geography clarification:** **Moana’s Tear** also names the central lake island, which forms over **Moana’s skull**, partly exposed. Her immense ribs appear throughout Death’s Valley in Ages 3 and 4 as her body decays. The shared name does not establish the island's physical relationship to the portable artifact returned by Koric; that mechanism remains unspecified. See [current canon](../canon/author-confirmed.md).
+
 **Series:** Dragex — Book 1  
 **Status:** Core premise and historical literary frame **author-confirmed**; chapter-by-chapter details in development.  
 **Adventure:** Third Age — **Redemptive Opportunity**.  

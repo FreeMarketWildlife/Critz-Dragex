@@ -1,0 +1,22 @@
+{
+  "radius_km": 364.37698440899874,
+  "diameter_km": 728.7539688179975,
+  "island_span_km": 14.063927234845996,
+  "dragex_head_span_km": 14.063927234845996,
+  "moana_head_span_km": 14.063927234845996,
+  "mountain_footprint_span_km": 56.255708939383986,
+  "mountain_height_proposal_km": 18.0,
+  "lake_coords": {
+    "lat": 19.75,
+    "lon": 9.98
+  },
+  "yokai_coords": {
+    "lat": 9.191537,
+    "lon": -18.750231
+  },
+  "frames": 1321,
+  "fps": 30,
+  "timeline_seconds": 44,
+  "additional_meshy_credits": 0,
+  "final_dragex_max_radial_height_km": -79.06534780707403
+}

@@ -1,0 +1,22 @@
+{
+  "Ground_Step": {
+    "max_sampled_movement": 0.026538276563906775,
+    "loop_seam_distance": 0.0,
+    "finite": true
+  },
+  "Tail_Curl": {
+    "max_sampled_movement": 0.09536227056843126,
+    "loop_seam_distance": 0.0,
+    "finite": true
+  },
+  "Wing_Flap": {
+    "max_sampled_movement": 0.22905411200435097,
+    "loop_seam_distance": 0.0,
+    "finite": true
+  },
+  "Idle": {
+    "max_sampled_movement": 0.026538276563906775,
+    "loop_seam_distance": 0.0,
+    "finite": true
+  }
+}

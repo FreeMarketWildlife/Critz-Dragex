@@ -1,0 +1,14 @@
+17:54:19 | INFO: Data are loaded, start creating Blender stuff
+17:54:19 | INFO: Blender create Mesh node 0
+17:54:19 | INFO: glTF import finished in 0.03s
+/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/inspect_dragon.py:13: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  scene=bpy.context.scene;world=bpy.data.worlds.new('Studio');scene.world=world;world.use_nodes=True
+00:01.933  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/front.png'
+00:03.058  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/side.png'
+00:04.163  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/top.png'
+00:05.287  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/three-quarter.png'
+{"triangles": 16153, "vertices": 16079, "min": [-0.4891349971294403, -0.5, -0.21295200288295746], "max": [0.48879799246788025, 0.4997040033340454, 0.21708500385284424]}
+Info: Saved as "inspection.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

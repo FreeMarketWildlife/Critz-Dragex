@@ -1,0 +1,27 @@
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+18:52:02 | INFO: Starting glTF 2.0 export
+18:52:02 | INFO: Extracting primitive: Mesh_0
+18:52:02 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:52:02 | INFO: Primitives created: 1
+18:52:03 | INFO: Finished glTF 2.0 export in 1.2205121517181396 s
+/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/libriam-animation/build_scene.py:89: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new(name);m.diffuse_color=(*color,1);m.use_nodes=True;p=m.node_tree.nodes.get('Principled BSDF');p.inputs['Base Color'].default_value=(*color,1);p.inputs['Roughness'].default_value=rough;return m
+
+Baked frame 240
+Baked frame 480
+Baked frame 720
+Baked frame 960
+Baked frame 1200
+/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/libriam-animation/build_scene.py:170: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  worldmat=bpy.data.worlds.new('World');scene.world=worldmat;worldmat.use_nodes=True;worldmat.node_tree.nodes['Background'].inputs[0].default_value=(.015,.025,.045,1);worldmat.node_tree.nodes['Background'].inputs[1].default_value=.6
+01:11.969  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/libriam-animation/flight.png'
+01:14.389  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/libriam-animation/attack.png'
+01:16.813  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/libriam-animation/walk.png'
+01:19.176  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/libriam-animation/burrow.png'
+01:21.402  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/libriam-animation/buried.png'
+01:23.291  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/libriam-animation/world-overview.png'
+Info: Saved as "libriam-attack-and-burrow.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

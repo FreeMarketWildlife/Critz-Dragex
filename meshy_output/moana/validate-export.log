@@ -1,0 +1,50 @@
+16:51:13 | INFO: Data are loaded, start creating Blender stuff
+16:51:13 | INFO: Blender create Mesh node Mesh_0
+16:51:13 | INFO: glTF import finished in 0.07s
+00:00.613  blend            | Read blend: "/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/moana-rig.blend"
+00:01.313  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/001.png'
+00:01.880  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/005.png'
+00:02.451  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/009.png'
+00:03.024  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/013.png'
+00:03.601  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/017.png'
+00:04.193  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/021.png'
+00:04.765  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/025.png'
+00:05.337  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/029.png'
+00:05.904  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/033.png'
+00:06.484  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/037.png'
+00:07.062  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/041.png'
+00:07.639  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/045.png'
+00:08.207  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/049.png'
+00:08.790  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/053.png'
+00:09.371  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/057.png'
+00:09.949  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/061.png'
+00:10.522  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/065.png'
+00:11.105  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/069.png'
+00:11.678  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/073.png'
+00:12.272  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/077.png'
+00:12.859  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/081.png'
+00:13.455  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/085.png'
+00:14.054  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/089.png'
+00:14.634  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/093.png'
+00:15.211  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/097.png'
+00:15.801  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/101.png'
+00:16.392  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/105.png'
+00:16.989  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/109.png'
+00:17.568  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/113.png'
+00:18.157  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/preview-frames/117.png'
+Imported clips: ['Idle', 'Swim']
+{
+  "Idle": {
+    "max_sampled_movement": 0.09957472530762027,
+    "loop_seam_distance": 0.0,
+    "finite": true
+  },
+  "Swim": {
+    "max_sampled_movement": 0.345873220066762,
+    "loop_seam_distance": 0.0,
+    "finite": true
+  }
+}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

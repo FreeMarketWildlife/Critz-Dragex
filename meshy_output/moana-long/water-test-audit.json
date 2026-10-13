@@ -1,0 +1,98 @@
+{
+  "sphere_radius_km": 364.376984409,
+  "head_span_interpretation_km": 14.064,
+  "asset_length_km": 200.9142857142857,
+  "samples": [
+    {
+      "frame": 1,
+      "min_radial_depth_km": -39.89741815571455,
+      "max_radial_height_km": -3.2312027237592247,
+      "above_surface_vertices": 0,
+      "total_vertices": 17099
+    },
+    {
+      "frame": 31,
+      "min_radial_depth_km": -40.210488716979114,
+      "max_radial_height_km": 7.293302495794762,
+      "above_surface_vertices": 8736,
+      "total_vertices": 17099
+    },
+    {
+      "frame": 61,
+      "min_radial_depth_km": -39.7686347146676,
+      "max_radial_height_km": 16.994005869232296,
+      "above_surface_vertices": 10854,
+      "total_vertices": 17099
+    },
+    {
+      "frame": 91,
+      "min_radial_depth_km": -38.84593985781271,
+      "max_radial_height_km": 21.539896702188116,
+      "above_surface_vertices": 12165,
+      "total_vertices": 17099
+    },
+    {
+      "frame": 121,
+      "min_radial_depth_km": -34.890211424710174,
+      "max_radial_height_km": 20.56564654109593,
+      "above_surface_vertices": 13536,
+      "total_vertices": 17099
+    },
+    {
+      "frame": 151,
+      "min_radial_depth_km": -25.94240155632292,
+      "max_radial_height_km": 19.41173333539581,
+      "above_surface_vertices": 14358,
+      "total_vertices": 17099
+    },
+    {
+      "frame": 181,
+      "min_radial_depth_km": -14.51353322678932,
+      "max_radial_height_km": 17.5488556937608,
+      "above_surface_vertices": 5704,
+      "total_vertices": 17099
+    },
+    {
+      "frame": 211,
+      "min_radial_depth_km": -27.50534969149078,
+      "max_radial_height_km": 16.992597349563027,
+      "above_surface_vertices": 5543,
+      "total_vertices": 17099
+    },
+    {
+      "frame": 241,
+      "min_radial_depth_km": -36.62843583732604,
+      "max_radial_height_km": 17.412255395034038,
+      "above_surface_vertices": 4528,
+      "total_vertices": 17099
+    },
+    {
+      "frame": 271,
+      "min_radial_depth_km": -40.1539388634053,
+      "max_radial_height_km": 18.33686087742842,
+      "above_surface_vertices": 3283,
+      "total_vertices": 17099
+    },
+    {
+      "frame": 301,
+      "min_radial_depth_km": -41.95490529027177,
+      "max_radial_height_km": 17.45933533135775,
+      "above_surface_vertices": 2097,
+      "total_vertices": 17099
+    },
+    {
+      "frame": 331,
+      "min_radial_depth_km": -40.541944207086885,
+      "max_radial_height_km": 9.272336147827389,
+      "above_surface_vertices": 839,
+      "total_vertices": 17099
+    },
+    {
+      "frame": 361,
+      "min_radial_depth_km": -39.89747805178172,
+      "max_radial_height_km": -3.265480458662637,
+      "above_surface_vertices": 0,
+      "total_vertices": 17099
+    }
+  ]
+}

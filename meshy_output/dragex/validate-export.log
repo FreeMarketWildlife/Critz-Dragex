@@ -1,0 +1,61 @@
+18:04:32 | INFO: Data are loaded, start creating Blender stuff
+18:04:32 | INFO: Blender create Mesh node Mesh_0
+18:04:32 | INFO: glTF import finished in 0.11s
+00:00.708  blend            | Read blend: "/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/dragex-rig.blend"
+00:01.524  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/001.png'
+00:02.230  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/005.png'
+00:02.928  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/009.png'
+00:03.624  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/013.png'
+00:04.328  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/017.png'
+00:05.042  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/021.png'
+00:05.756  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/025.png'
+00:06.453  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/029.png'
+00:07.153  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/033.png'
+00:07.853  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/037.png'
+00:08.546  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/041.png'
+00:09.236  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/045.png'
+00:09.925  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/049.png'
+00:10.616  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/053.png'
+00:11.312  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/057.png'
+00:12.003  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/061.png'
+00:12.702  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/065.png'
+00:13.417  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/069.png'
+00:14.118  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/073.png'
+00:14.819  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/077.png'
+00:15.523  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/081.png'
+00:16.226  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/085.png'
+00:16.929  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/089.png'
+00:17.624  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/093.png'
+00:18.323  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/097.png'
+00:19.025  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/101.png'
+00:19.719  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/105.png'
+00:20.462  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/109.png'
+00:21.169  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/113.png'
+00:21.858  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/preview-frames/117.png'
+00:22.538  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/tail-curl-side.png'
+Imported clips: ['Ground_Step', 'Tail_Curl', 'Wing_Flap', 'Idle']
+{
+  "Ground_Step": {
+    "max_sampled_movement": 0.026538276563906775,
+    "loop_seam_distance": 0.0,
+    "finite": true
+  },
+  "Tail_Curl": {
+    "max_sampled_movement": 0.09536227056843126,
+    "loop_seam_distance": 0.0,
+    "finite": true
+  },
+  "Wing_Flap": {
+    "max_sampled_movement": 0.22905411200435097,
+    "loop_seam_distance": 0.0,
+    "finite": true
+  },
+  "Idle": {
+    "max_sampled_movement": 0.026538276563906775,
+    "loop_seam_distance": 0.0,
+    "finite": true
+  }
+}
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

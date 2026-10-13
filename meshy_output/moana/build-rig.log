@@ -1,0 +1,52 @@
+16:48:06 | INFO: Data are loaded, start creating Blender stuff
+16:48:06 | INFO: Blender create Mesh node 0
+16:48:06 | INFO: glTF import finished in 0.03s
+{
+  "triangles": 13987,
+  "vertices": 16910,
+  "deform_bones": 41,
+  "max_vertex_influences": 2,
+  "unweighted_vertices": 0,
+  "finite_swim_vertices": true,
+  "swim_edge_ratio_p01": 0.9887542516921526,
+  "swim_edge_ratio_p99": 1.0113631413831865,
+  "texture_sizes": {
+    "Image_0": [
+      2048,
+      2048
+    ],
+    "Image_1": [
+      2048,
+      2048
+    ],
+    "Image_2": [
+      2048,
+      2048
+    ]
+  },
+  "asset_length_units": 10,
+  "canonical_physical_scale": false,
+  "clips": [
+    "Swim",
+    "Idle"
+  ],
+  "jaw_rig": false
+}
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+16:48:07 | INFO: Starting glTF 2.0 export
+16:48:07 | INFO: Extracting primitive: Mesh_0
+16:48:07 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+16:48:07 | INFO: Primitives created: 1
+16:48:08 | INFO: Finished glTF 2.0 export in 0.346315860748291 s
+/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/build_rig.py:94: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world=bpy.data.worlds.new('Studio'); scene.world=world; world.use_nodes=True
+00:03.859  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/swim-001.png'
+00:05.085  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/swim-031.png'
+00:06.322  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/swim-061.png'
+00:07.543  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/moana/swim-091.png'
+
+Info: Saved as "moana-rig.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

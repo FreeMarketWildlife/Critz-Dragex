@@ -1,0 +1,31 @@
+{
+  "original_triangles": 16153,
+  "delivered_triangles": 14900,
+  "vertices": 15406,
+  "deform_bones": 62,
+  "max_influences": 3,
+  "unweighted_vertices": 0,
+  "clips": {
+    "Idle": {
+      "edge_ratio_p01": 0.9948820267826266,
+      "edge_ratio_p99": 1.005393724868586
+    },
+    "Wing_Flap": {
+      "edge_ratio_p01": 0.9879528743094746,
+      "edge_ratio_p99": 1.0141695277136094
+    },
+    "Tail_Curl": {
+      "edge_ratio_p01": 0.9929872784124268,
+      "edge_ratio_p99": 1.0074660204386352
+    },
+    "Ground_Step": {
+      "edge_ratio_p01": 0.9819182208840629,
+      "edge_ratio_p99": 1.0209339356829414
+    }
+  },
+  "head_span_asset_units": 0.14212670024376273,
+  "head_span_test_km": 14.064,
+  "asset_to_km_scale": 98.95396133083166,
+  "scale_is_anatomical_interpretation": true,
+  "jaw_rig": false
+}

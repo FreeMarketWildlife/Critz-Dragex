@@ -1,3 +1,4 @@
+import { makeEnvironment,WATER_COMMON,WATER_COLOR,WATER_NORMAL } from './environment.js';
 import {makeBiomeCanvas,REGION_SHADER} from './authored-geography.js';
 import {terrainRadius} from './terrain.js';
 import * as THREE from 'three';
@@ -17,9 +18,10 @@ export function makeAgeMaps(hokkaido){
  for(let j=0;j<RIVER_MOUTHS.length;j++){const points=makeRiverRoute(RIVER_MOUTHS[j],j,hokkaido);routes.push(points);r.beginPath();points.forEach((p,i)=>{const [x,y]=xy(p);i?r.lineTo(x,y):r.moveTo(x,y);});r.stroke();}
  r.restore();const riverTexture=new THREE.CanvasTexture(rivers);riverTexture.colorSpace=THREE.NoColorSpace;return {features,riverTexture,routes};
 }
-export function installAgeRendering(material,hokkaido,geometry){
+export function installAgeRendering(material,hokkaido,geometry,landFeatures=[]){
  let maps=makeAgeMaps(hokkaido);
  const biomeTexture=new THREE.CanvasTexture(makeBiomeCanvas(W,H));biomeTexture.colorSpace=THREE.NoColorSpace;
+ const environment=makeEnvironment([hokkaido,...landFeatures]),clouds=environment.clouds.group;
  const basePositions=geometry.attributes.position.array.slice(),uvs=geometry.attributes.uv;
  let surfaceState={...timelineState(2900),frame:2900},surfaceExaggeration=1,surfaceRelief=true,lastSurfaceKey='',maxRadius=1;
  function sample(u,v){const data=maps.features.image.data,x=Math.max(0,Math.min(W-1,u*W-.5)),y=Math.max(0,Math.min(H-1,v*H-.5)),x0=Math.floor(x),y0=Math.floor(y),x1=Math.min(W-1,x0+1),y1=Math.min(H-1,y0+1),fx=x-x0,fy=y-y0;const get=channel=>((data[(y0*W+x0)*4+channel]*(1-fx)+data[(y0*W+x1)*4+channel]*fx)*(1-fy)+(data[(y1*W+x0)*4+channel]*(1-fx)+data[(y1*W+x1)*4+channel]*fx)*fy)/255;return [get(0),get(3)];}
@@ -32,8 +34,10 @@ export function installAgeRendering(material,hokkaido,geometry){
  const uniforms={uBiomeMap:{value:biomeTexture},uAgeMap:{value:maps.features},uRiverMap:{value:maps.riverTexture},uEmergence:{value:1},uLava:{value:0},uLake:{value:0},uDrought:{value:0},uFallout:{value:0},uSubmersion:{value:0},uPeace:{value:0},uWorldPhase:{value:0},uRelief:{value:1},uSeconds:{value:0}};
  material.transparent=true;
  material.onBeforeCompile=shader=>{
- Object.assign(shader.uniforms,uniforms);
+ Object.assign(shader.uniforms,uniforms,environment.uniforms);
+ shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vWaterPoint;varying vec3 vWaterEast;varying vec3 vWaterNorth;').replace('#include <begin_vertex>','#include <begin_vertex>\nvWaterPoint=normalize(position);vec3 east=normalize(vec3(position.z,0.,-position.x)+vec3(.00001,0.,0.));vWaterEast=normalMatrix*east;vWaterNorth=normalMatrix*cross(normalize(position),east);');
  shader.fragmentShader=shader.fragmentShader.replace('#include <common>',`#include <common>\nuniform sampler2D uBiomeMap;uniform sampler2D uAgeMap;uniform sampler2D uRiverMap;uniform float uEmergence;uniform float uLava;uniform float uLake;uniform float uDrought;uniform float uFallout;uniform float uSubmersion;uniform float uPeace;uniform float uWorldPhase;uniform float uRelief;uniform float uSeconds;
+ ${WATER_COMMON}
  float ageHash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
  float ageNoise(vec2 p){vec2 i=floor(p),f=fract(p),u=f*f*(3.0-2.0*f);return mix(mix(ageHash(i),ageHash(i+vec2(1.,0.)),u.x),mix(ageHash(i+vec2(0.,1.)),ageHash(i+vec2(1.,1.)),u.x),u.y);}
  float ageFbm(vec2 p){return ageNoise(p)*.57+ageNoise(p*2.03+11.)*.28+ageNoise(p*4.17-3.)*.15;}
@@ -58,13 +62,15 @@ export function installAgeRendering(material,hokkaido,geometry){
  diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.025,.14,.22),uSubmersion*land);
  vec3 islandColor=mix(vec3(.23,.40,.17)+grain,vec3(.59,.36,.13)+grain,1.0-uLake);islandColor=mix(islandColor,islandColor*.3,uFallout);islandColor=mix(islandColor,vec3(.24,.52,.20)+grain,uPeace);
  diffuseColor.rgb=mix(diffuseColor.rgb,islandColor,island);vec3 poolColor=mix(vec3(.015,.27,.35),vec3(.13,.19,.055),uFallout);diffuseColor.rgb=mix(diffuseColor.rgb,poolColor,pool*island*uLake);
- float volcanic=ageFbm(vMapUv*vec2(65.,35.)+vec2(uSeconds*.008,0.));float magma=pow(1.0-smoothstep(.025,.105,abs(volcanic-.48)),1.5);float soup=smoothstep(.59,.67,volcanic);vec3 fire=mix(vec3(.04,.025,.024),vec3(1.0,.19,.012),magma);fire=mix(fire,vec3(.025,.15,.21),soup);magma*=1.-soup;diffuseColor.rgb=mix(diffuseColor.rgb,fire,uLava*(.65+.35*land));
+ float volcanic=ageFbm(vMapUv*vec2(65.,35.)+vec2(sin(uLoopPhase*6.28318530718),cos(uLoopPhase*6.28318530718))*.04);float magma=pow(1.0-smoothstep(.025,.105,abs(volcanic-.48)),1.5);float soup=smoothstep(.59,.67,volcanic);vec3 fire=mix(vec3(.04,.025,.024),vec3(1.0,.19,.012),magma);fire=mix(fire,vec3(.025,.15,.21),soup);magma*=1.-soup;diffuseColor.rgb=mix(diffuseColor.rgb,fire,uLava*(.65+.35*land));
+ ${WATER_COLOR}
  diffuseColor.a*=uEmergence;
  `);
+ shader.fragmentShader=shader.fragmentShader.replace('#include <roughnessmap_fragment>', '#include <roughnessmap_fragment>\nroughnessFactor=mix(roughnessFactor,.32,waterWeight);');
+ shader.fragmentShader=shader.fragmentShader.replace('#include <normal_fragment_maps>', `#include <normal_fragment_maps>\n${WATER_NORMAL}`);
  shader.fragmentShader=shader.fragmentShader.replace('#include <emissivemap_fragment>',`#include <emissivemap_fragment>\ntotalEmissiveRadiance+=vec3(1.0,.12,.006)*magma*uLava*.75;`);
 
  shader.fragmentShader=shader.fragmentShader.replace('#include <normal_fragment_maps>',`#include <normal_fragment_maps>\nvec3 terrainDx=dFdx(vViewPosition),terrainDy=dFdy(vViewPosition);vec3 terrainCrossX=cross(terrainDy,normal),terrainCrossY=cross(normal,terrainDx);float terrainDet=dot(terrainDx,terrainCrossX);normal=normalize(normal-sign(terrainDet)*(.000015*uRelief)*(dFdx(terrainDetail)*terrainCrossX+dFdy(terrainDetail)*terrainCrossY)/max(abs(terrainDet),.000001));`);
- };material.customProgramCacheKey=()=> 'libriam-authored-regions-v6';material.needsUpdate=true;
- const clouds=new THREE.Mesh(new THREE.SphereGeometry(1.035,80,48),new THREE.ShaderMaterial({transparent:true,depthWrite:false,uniforms:{uSeconds:{value:0},uCloudAmount:{value:.2},uEmergence:{value:1}},vertexShader:'varying vec3 p;void main(){p=position;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0);}',fragmentShader:`varying vec3 p;uniform float uSeconds;uniform float uCloudAmount;uniform float uEmergence;float ch(vec3 q){return fract(sin(dot(q,vec3(127.1,311.7,74.7)))*43758.5453);}float cn(vec3 q){vec3 i=floor(q),f=fract(q),u=f*f*(3.-2.*f);return mix(mix(mix(ch(i),ch(i+vec3(1,0,0)),u.x),mix(ch(i+vec3(0,1,0)),ch(i+vec3(1,1,0)),u.x),u.y),mix(mix(ch(i+vec3(0,0,1)),ch(i+vec3(1,0,1)),u.x),mix(ch(i+vec3(0,1,1)),ch(i+vec3(1,1,1)),u.x),u.y),u.z);}void main(){vec3 q=p*11.+vec3(uSeconds*.01,0,0);float n=cn(q)*.6+cn(q*2.1)*.28+cn(q*4.2)*.12;float a=smoothstep(.48,.7,n)*uCloudAmount*uEmergence;gl_FragColor=vec4(vec3(.81,.87,.87),a);}`}));
- return {clouds,get routes(){return maps.routes;},get maxRadius(){return maxRadius;},radiusAt(p){return radiusUV((p.lon+180)/360,(p.lat+90)/180);},update(frame,seconds,relief=true,exaggeration=1){updateSurface(frame,exaggeration,relief);const s=timelineState(frame);uniforms.uEmergence.value=s.emergence;uniforms.uLava.value=s.lava;uniforms.uLake.value=s.lake;uniforms.uDrought.value=s.drought;uniforms.uFallout.value=s.fallout;uniforms.uSubmersion.value=s.submersion;uniforms.uPeace.value=s.peace;uniforms.uWorldPhase.value=frame/1700;uniforms.uRelief.value=relief?1:0;uniforms.uSeconds.value=seconds;clouds.material.uniforms.uSeconds.value=seconds;clouds.material.uniforms.uCloudAmount.value=s.clouds;clouds.material.uniforms.uEmergence.value=s.emergence;},replaceMap(h){lastSurfaceKey='';maps.features.dispose();maps.riverTexture.dispose();maps=makeAgeMaps(h);uniforms.uAgeMap.value=maps.features;uniforms.uRiverMap.value=maps.riverTexture;},dispose(){biomeTexture.dispose();maps.features.dispose();maps.riverTexture.dispose();clouds.geometry.dispose();clouds.material.dispose();}};
+ };material.customProgramCacheKey=()=> 'libriam-authored-loop-v6';material.needsUpdate=true;
+ return {clouds,environment,get routes(){return maps.routes;},get maxRadius(){return maxRadius;},radiusAt(p){return radiusUV((p.lon+180)/360,(p.lat+90)/180);},update(frame,seconds,relief=true,exaggeration=1,cameraRadius=3,cameraCoordinate=null){updateSurface(frame,exaggeration,relief);const s=timelineState(frame);uniforms.uEmergence.value=s.emergence;uniforms.uLava.value=s.lava;uniforms.uLake.value=s.lake;uniforms.uDrought.value=s.drought;uniforms.uFallout.value=s.fallout;uniforms.uSubmersion.value=s.submersion;uniforms.uPeace.value=s.peace;uniforms.uWorldPhase.value=frame/1700;uniforms.uRelief.value=relief?1:0;uniforms.uSeconds.value=seconds;environment.update(seconds,s,cameraRadius,maxRadius,cameraCoordinate);},replaceMap(h){environment.replaceMap([h,...landFeatures]);lastSurfaceKey='';maps.features.dispose();maps.riverTexture.dispose();maps=makeAgeMaps(h);uniforms.uAgeMap.value=maps.features;uniforms.uRiverMap.value=maps.riverTexture;},dispose(){biomeTexture.dispose();maps.features.dispose();maps.riverTexture.dispose();environment.dispose();}};
 }

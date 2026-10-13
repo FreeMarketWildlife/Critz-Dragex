@@ -1,0 +1,24 @@
+import fs from 'node:fs';
+import {geoEquirectangular,geoPath,geoArea} from 'd3-geo';
+import {makeHokkaido,RADIUS,SURFACE_AREA} from './src/model.js';
+import {otherLandmasses} from './src/landmasses.js';
+import {edenIsle} from './src/coast-design.js';
+import {LAKE,LAKE_RADIUS_KM,destination,lakeField} from './src/ages.js';
+import {YOKAI,namedPlaces} from './src/authored-geography.js';
+import {ISLAND_CENTER,ISLAND_LENGTH_KM,ISLAND_AXIS,ISLAND_HALF_LENGTH_KM,ISLAND_HALF_WIDTH_KM,RIVER_MOUTHS,makeRiverRoute} from './src/hydrology.js';
+const out=new URL('../meshy_output/libriam-animation/',import.meta.url);fs.mkdirSync(out,{recursive:true});
+const source=JSON.parse(fs.readFileSync(new URL('./public/data/hokkaido.geojson',import.meta.url)));
+const hokkaido=makeHokkaido(source),features=[hokkaido,...otherLandmasses,edenIsle];
+function polygon(points,name){let ring=points.map(p=>[p.lon,p.lat]);ring.push([...ring[0]]);if(geoArea({type:'Polygon',coordinates:[ring]})>2*Math.PI)ring.reverse();return {type:'Feature',properties:{name},geometry:{type:'Polygon',coordinates:[ring]}};}
+const lake=polygon(Array.from({length:240},(_,i)=>{const bearing=i*1.5;let a=0,b=40;for(let j=0;j<30;j++){const m=(a+b)/2;if(lakeField(destination(LAKE,bearing,m))<1)a=m;else b=m;}return destination(LAKE,bearing,(a+b)/2);}), 'Lake Moana');
+const island=polygon(Array.from({length:160},(_,i)=>{const a=i/160*Math.PI*2,shape=1+.075*Math.sin(a*3+.2)*Math.sin(a)**2,u=Math.cos(a)*ISLAND_HALF_LENGTH_KM*shape,v=Math.sin(a)*ISLAND_HALF_WIDTH_KM*shape,x=u*ISLAND_AXIS.x-v*ISLAND_AXIS.y,y=u*ISLAND_AXIS.y+v*ISLAND_AXIS.x;return destination(ISLAND_CENTER,Math.atan2(x,y)*180/Math.PI,Math.hypot(x,y));}), "Moana's Tear");
+const rivers=RIVER_MOUTHS.map((m,i)=>makeRiverRoute(m,i,hokkaido));
+const projection=geoEquirectangular().scale(2048/(2*Math.PI)).translate([1024,512]);const path=geoPath(projection);
+let svg='<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="1024"><rect width="2048" height="1024" fill="#11394f"/>';
+for(const f of features)svg+=`<path d="${path(f)}" fill="#427c50" stroke="#79a76d" stroke-width=".65"/>`;
+svg+=`<path d="${path(lake)}" fill="#1c92ac"/>`;
+for(const points of rivers)svg+=`<path d="${path({type:'LineString',coordinates:points.map(p=>[p.lon,p.lat])})}" fill="none" stroke="#298ca8" stroke-width="1.2"/>`;
+svg+=`<path d="${path(island)}" fill="#c3aa6e"/></svg>`;
+fs.writeFileSync(new URL('libriam-map.svg',out),svg);
+fs.writeFileSync(new URL('geography.json',out),JSON.stringify({radiusKm:RADIUS,surfaceAreaKm2:SURFACE_AREA,features,lake,island,rivers,places:namedPlaces,LAKE,YOKAI,ISLAND_CENTER,ISLAND_LENGTH_KM,lakeRadiusProposalKm:LAKE_RADIUS_KM,mountainSpanKm:ISLAND_LENGTH_KM*4,mountainScaleInterpretation:'4x island span, within author 3–5x request; height unconfirmed',sourcePlacement:{lat:20,lon:0},status:'Exact spherical dimensions and current source-defined geography; source coast placement and terrain remain proposals'},null,2));
+console.log('Exported current globe coastlines, lake, island, rivers and named places.');

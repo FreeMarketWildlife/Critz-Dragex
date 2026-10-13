@@ -1,0 +1,68 @@
+{
+  "schema_version": "meshy.cli/v1",
+  "command": "image-to-3d.wait",
+  "ok": true,
+  "result": {
+    "task": {
+      "task_id": "01a132be-3acf-77f1-9efc-68d10bf884a9",
+      "resource": "image-to-3d",
+      "endpoint": "/openapi/v1/image-to-3d",
+      "type": "image-to-3d",
+      "name": "",
+      "status": "SUCCEEDED",
+      "progress": 100,
+      "preceding_tasks": null,
+      "created_at": 1791852691549,
+      "started_at": 1791852691552,
+      "finished_at": 1791852716898,
+      "expires_at": 1792111916898,
+      "face_count": null,
+      "consumed_credits": 15,
+      "model_urls": {
+        "glb": "https://assets.meshy.ai/009c68f6-4788-43c4-bba1-1a2865ff6dab/tasks/01a132be-3acf-77f1-9efc-68d10bf884a9/output/model.glb"
+      },
+      "image_urls": [],
+      "texture_urls": [
+        {
+          "base_color": "https://assets.meshy.ai/009c68f6-4788-43c4-bba1-1a2865ff6dab/tasks/01a132be-3acf-77f1-9efc-68d10bf884a9/output/texture_0.png",
+          "metallic": "https://assets.meshy.ai/009c68f6-4788-43c4-bba1-1a2865ff6dab/tasks/01a132be-3acf-77f1-9efc-68d10bf884a9/output/texture_0_metallic.png",
+          "roughness": "https://assets.meshy.ai/009c68f6-4788-43c4-bba1-1a2865ff6dab/tasks/01a132be-3acf-77f1-9efc-68d10bf884a9/output/texture_0_roughness.png",
+          "normal": "https://assets.meshy.ai/009c68f6-4788-43c4-bba1-1a2865ff6dab/tasks/01a132be-3acf-77f1-9efc-68d10bf884a9/output/texture_0_normal.png"
+        }
+      ],
+      "thumbnail_url": "https://assets.meshy.ai/009c68f6-4788-43c4-bba1-1a2865ff6dab/tasks/01a132be-3acf-77f1-9efc-68d10bf884a9/output/preview.png",
+      "thumbnail_urls": null,
+      "alpha_thumbnail_url": null,
+      "result": null,
+      "printability": null,
+      "task_error": null
+    },
+    "submission": {
+      "state": "accepted",
+      "operation_id": null
+    },
+    "downloads": {
+      "state": "not_requested",
+      "files": [],
+      "metadata_path": null
+    },
+    "saved_json": null,
+    "wait": {
+      "timed_out": false,
+      "elapsed_seconds": 2.5,
+      "polls": 1
+    },
+    "project": {
+      "project_dir": "/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/20261012_175223_dragex_01a132be",
+      "snapshot": "/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/20261012_175223_dragex_01a132be/task_01a132be-3acf-77f1-9efc-68d10bf884a9.json",
+      "stage": "geometry",
+      "action": "added",
+      "index": {
+        "updated": true,
+        "error": null
+      }
+    }
+  },
+  "error": null,
+  "warnings": []
+}

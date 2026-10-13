@@ -1,0 +1,17 @@
+00:00.300  blend            | Read blend: "/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/libriam-animation/libriam-attack-and-burrow.blend"
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+19:04:58 | INFO: Starting glTF 2.0 export
+19:04:58 | INFO: Extracting primitive: Mesh_0
+19:04:58 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+19:04:58 | INFO: Primitives created: 1
+19:04:59 | INFO: Finished glTF 2.0 export in 1.3833799362182617 s
+00:17.967  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/libriam-animation/attack.png'
+00:20.833  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/libriam-animation/walk.png'
+00:23.481  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/libriam-animation/burrow.png'
+00:26.131  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/libriam-animation/buried.png'
+
+Info: Saved as "libriam-attack-and-burrow.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

@@ -1,0 +1,12 @@
+{
+  "Idle": {
+    "max_sampled_movement": 0.08187856631534644,
+    "loop_seam_distance": 0.0,
+    "finite": true
+  },
+  "Swim": {
+    "max_sampled_movement": 0.2516698332770085,
+    "loop_seam_distance": 0.0,
+    "finite": true
+  }
+}

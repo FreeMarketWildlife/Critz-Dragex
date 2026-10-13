@@ -14,6 +14,10 @@
 
 ## Boundary notes and precise semantics
 
+- **Later October 12 animation account:** Dragex attacks Moana at the lake, then burrows beneath Mount Yokai. His **complete sleep**, not the start of digging, still ends Age 1. Moana's remains should be predominantly **bones by roughly halfway through Age 2**, refining the previously open decay timing; no equal design-unit spans are converted to years. The immense ribs remain visible in Ages 3 and 4. Clip timing and attack choreography are proposals.
+
+- **October 12, 2026 author clarification:** the central island in Lake Moana is **Moana’s Tear**, formed over Moana’s skull with part exposed. Her body slowly decays there; immense ribs are visible around Death’s Valley after Age 2 and during **Ages 3 and 4**. This establishes visible remains in those eras, not a new death date or transition. The lake's restoration at the Age-3/4 boundary does not remove the author-confirmed Age-4 ribs. The named island's relationship to the portable Tear artifact remains unspecified.
+
 - Age 1 ends **at the moment** Dragex is completely asleep, not simply when Moana dies or when Fey arrive.
 - Age 2 ends **at the death of the last Fey fighting at Mount Yokai**, not the global extinction of the species. The battle virtually wipes out the participating Fey and destroys their dominant civilization. **Some nonparticipants, including young/newborn Fey, and Fey on the other two continents survive**; even complete death among battle participants is described with some intentional hyperbole. Age 3 begins at this transition.
 - The Fey-blooded animals arise from the blood-stained water **after** the Fey's final battle. The first generation includes **Archaíos**, who personally drinks the water. The precise date of Koric's curse and other events within Age 3 awaits further author explanation.

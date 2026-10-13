@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "projects": [
+    {
+      "folder": "20261012_175223_dragex_01a132be",
+      "prompt": "Dragex",
+      "task_type": "image-to-3d",
+      "root_task_id": "01a132be-3acf-77f1-9efc-68d10bf884a9",
+      "created_at": "2026-10-13T00:52:23.934Z",
+      "updated_at": "2026-10-13T00:53:39.718Z",
+      "task_count": 3
+    }
+  ]
+}

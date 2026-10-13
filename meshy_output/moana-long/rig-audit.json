@@ -1,0 +1,31 @@
+{
+  "triangles": 12926,
+  "vertices": 17099,
+  "deform_bones": 61,
+  "max_vertex_influences": 2,
+  "unweighted_vertices": 0,
+  "finite_swim_vertices": true,
+  "swim_edge_ratio_p01": 0.9930283103527668,
+  "swim_edge_ratio_p99": 1.006954456392064,
+  "texture_sizes": {
+    "Image_0": [
+      2048,
+      2048
+    ],
+    "Image_1": [
+      2048,
+      2048
+    ],
+    "Image_2": [
+      2048,
+      2048
+    ]
+  },
+  "asset_length_units": 10,
+  "canonical_physical_scale": false,
+  "clips": [
+    "Swim",
+    "Idle"
+  ],
+  "jaw_rig": false
+}

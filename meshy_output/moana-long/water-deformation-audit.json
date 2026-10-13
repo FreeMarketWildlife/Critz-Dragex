@@ -1,0 +1,174 @@
+{
+  "Submerged_Swim": {
+    "edge_ratio_p01": 0.8395635540476997,
+    "edge_ratio_p99": 1.1734726969957092,
+    "depth_samples": [
+      {
+        "frame": 1,
+        "min_depth_km": -30.708910158135325,
+        "max_height_km": -16.730553946706266
+      },
+      {
+        "frame": 21,
+        "min_depth_km": -29.702497665398425,
+        "max_height_km": -17.665415324506398
+      },
+      {
+        "frame": 41,
+        "min_depth_km": -28.74964091332555,
+        "max_height_km": -16.82721384442965
+      },
+      {
+        "frame": 61,
+        "min_depth_km": -27.898556890438613,
+        "max_height_km": -16.42381091032405
+      },
+      {
+        "frame": 81,
+        "min_depth_km": -27.586984741948697,
+        "max_height_km": -16.564949507620895
+      },
+      {
+        "frame": 101,
+        "min_depth_km": -27.840723564261964,
+        "max_height_km": -17.068193464379533
+      },
+      {
+        "frame": 121,
+        "min_depth_km": -28.628501678441182,
+        "max_height_km": -16.67736220156695
+      },
+      {
+        "frame": 141,
+        "min_depth_km": -29.656739335928933,
+        "max_height_km": -15.990346271889791
+      },
+      {
+        "frame": 161,
+        "min_depth_km": -30.650331629004484,
+        "max_height_km": -15.281474810475288
+      },
+      {
+        "frame": 181,
+        "min_depth_km": -31.34361174696619,
+        "max_height_km": -14.756732406850688
+      },
+      {
+        "frame": 201,
+        "min_depth_km": -31.640448171240223,
+        "max_height_km": -14.880933568004764
+      },
+      {
+        "frame": 221,
+        "min_depth_km": -31.404029221869393,
+        "max_height_km": -15.624631383140638
+      },
+      {
+        "frame": 241,
+        "min_depth_km": -30.682429374700234,
+        "max_height_km": -16.784606909125614
+      }
+    ]
+  },
+  "Breach_And_Dive": {
+    "edge_ratio_p01": 0.8391556997326942,
+    "edge_ratio_p99": 1.1731506486189287,
+    "depth_samples": [
+      {
+        "frame": 1,
+        "min_depth_km": -39.89741815571455,
+        "max_height_km": -3.2312027237592247
+      },
+      {
+        "frame": 21,
+        "min_depth_km": -40.34626785414417,
+        "max_height_km": 3.1713813158173707
+      },
+      {
+        "frame": 41,
+        "min_depth_km": -39.81416617374799,
+        "max_height_km": 11.036355249270741
+      },
+      {
+        "frame": 61,
+        "min_depth_km": -39.7686347146676,
+        "max_height_km": 16.994005869232296
+      },
+      {
+        "frame": 81,
+        "min_depth_km": -39.18434746206475,
+        "max_height_km": 20.626276935274234
+      },
+      {
+        "frame": 101,
+        "min_depth_km": -38.1514863641101,
+        "max_height_km": 21.640798558825225
+      },
+      {
+        "frame": 121,
+        "min_depth_km": -34.890211424710174,
+        "max_height_km": 20.56564654109593
+      },
+      {
+        "frame": 141,
+        "min_depth_km": -29.373054415633987,
+        "max_height_km": 19.874305836347048
+      },
+      {
+        "frame": 161,
+        "min_depth_km": -22.216220750382774,
+        "max_height_km": 18.660463894120937
+      },
+      {
+        "frame": 181,
+        "min_depth_km": -14.51353322678932,
+        "max_height_km": 17.5488556937608
+      },
+      {
+        "frame": 201,
+        "min_depth_km": -23.4373361198177,
+        "max_height_km": 17.281889427150418
+      },
+      {
+        "frame": 221,
+        "min_depth_km": -31.135969658467104,
+        "max_height_km": 16.95826497029168
+      },
+      {
+        "frame": 241,
+        "min_depth_km": -36.62843583732604,
+        "max_height_km": 17.412255395034038
+      },
+      {
+        "frame": 261,
+        "min_depth_km": -39.387976529883645,
+        "max_height_km": 17.343077285595655
+      },
+      {
+        "frame": 281,
+        "min_depth_km": -40.633358455575376,
+        "max_height_km": 18.960179762952293
+      },
+      {
+        "frame": 301,
+        "min_depth_km": -41.95490529027177,
+        "max_height_km": 17.45933533135775
+      },
+      {
+        "frame": 321,
+        "min_depth_km": -40.495920340795465,
+        "max_height_km": 12.6523066103382
+      },
+      {
+        "frame": 341,
+        "min_depth_km": -40.666869292304455,
+        "max_height_km": 5.409644291145128
+      },
+      {
+        "frame": 361,
+        "min_depth_km": -39.89747805178172,
+        "max_height_km": -3.265480458662637
+      }
+    ]
+  }
+}

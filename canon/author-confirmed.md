@@ -1,5 +1,44 @@
 # Author-confirmed canon — 2026-10-11
 
+## Moana and Dragex dragon appearance — October 12, 2026
+
+Source: Phil's direct correction and approval during the Moana 3D concept session.
+
+- **Both Moana and Dragex are dragons.** Moana is a **water / sea-serpent dragon**, with an unmistakably dragon-shaped head; Dragex is a **land dragon with wings**. No reason for his wings was supplied.
+- Phil identified the blue dragon in his supplied illustrated reference as Moana's visual direction, then approved the revised blue, spiny, dragon-headed sea-serpent render: “that's moana for sure.” The approved concept is preserved at `meshy_output/moana/references/moana-approved-concept.png`.
+- This supersedes the three rejected initial concept renders with softer heads and decorative aquatic fins. Those were AI-generated design proposals, not canon.
+- The extended modeling pose, polygon count, bone layout, material settings and animation clips are technical asset choices, not new biology, dimensions, powers or historical events. No timeline boundary or game placement changes.
+- Later in the same session, Phil requested that Moana be **much longer**, preferring to revise the reference image now, then approved `meshy_output/moana/references/moana-long-rest-pose-v2.png`: “I love it! Yes, that's it.” These approved visual proportions supersede the shorter initial asset. No numerical total length or exact doubling ratio has been established.
+
+## Moana’s Tear island, skull and immense skeleton — October 12, 2026
+
+Source: Phil's direct account approving the longer model and requesting a Blender water-sphere animation test.
+
+- The **island inside Lake Moana is named Moana’s Tear**. It is **Moana’s skull**, with island material forming over the skull and part of the skull remaining visible. It is the central island associated with Death’s Valley, distinct from Eden’s Isle.
+- **Moana’s head is the size of that island.** The previously supplied island edge anchors are about **14.064 km apart** on spherical Libriam; using that span for the model's head length is a technical interpretation of the scale relationship, not a newly measured skull dimension. Exact anatomical orientation, skull width and total body length remain unspecified.
+- Her body **slowly decays there**. Her skeleton is so immense and long that **ribs are visible all around Death’s Valley’s desert after Age 2**, and remain visible in **Ages 3 and 4**. This confirms the remains' geography and visible eras; it supplies no new precise death date, decay rate or age boundary.
+- This replaces the earlier unspecified identity of the small lake island. Its preexisting edge anchors and approximately 1 km inner pool remain recorded; the pool's relationship to the skull anatomy is not specified.
+- **The island and the portable Tear artifact share the name Moana’s Tear.** Their exact physical/magical relationship is not supplied here. Do not treat Koric as carrying the entire skull-island, or invent a mechanism reconciling them.
+- The Blender sphere, travel path, water depth and breach motion are technical tests, not historical events or a new lake shoreline survey.
+
+## Dragex concept, head scale and tail — October 12, 2026
+
+Source: Phil's direct feedback on the Dragex image and authorization to use Meshy.
+
+- Phil approves the first red/gold winged land-dragon concept in general, while specifically replacing its tufted/bladed tail with the supplied reference's **smoothly tapering, sinuous tail, slim pointed tip and smaller dorsal spines**. The initial tail is superseded; its source image remains preserved.
+- **Dragex and Moana have the same dragon head shape, and their heads should be the same size.** This confirms their relative head scale, not an independently measured anatomical dimension. Asset matching uses Moana's existing island-sized head interpretation as a common scale reference.
+- Four legs, wing layout and body proportions from the approved general concept are visual design direction. Exact total dimensions, flight performance and individual animation motions are not new history or physical laws.
+
+## Attack at Lake Moana, burrowing and decay timing — October 12, 2026
+
+Source: Phil's request for the first paired Blender animation on a correctly scaled Libriam globe.
+
+- **Dragex attacks Moana at the lake**, then **digs down and buries himself beneath Mount Yokai**. His complete sleep beneath the mountain still ends Age 1; burrowing is not a replacement age boundary.
+- Dragex **flies and walks**. The requested animation should include both, with an attack at the lake followed by travel to and burrowing beneath Mount Yokai. Exact attack mechanics, route, elapsed fictional time and choreography remain animation choices.
+- **Mount Yokai should be about 3–5 times larger than Moana’s Tear island**, which is the common head-size reference. For the Blender test, interpreting “larger” as footprint span and choosing **4× the approximately 14.064 km island span** yields an approximately **56.26 km footprint**. The span interpretation, exact multiplier, mountain height, crater and tunnels remain proposals; the author did not specify whether the ratio denotes height, area or diameter.
+- Phil refines Moana's decay timing: she should be **bones by about halfway through Age 2**, rather than only by its end. This is an approximate within-age placement, not a duration in years. Her partly exposed skull-island and the ribs visible in Ages 3 and 4 remain confirmed. No new cause or precise death moment is supplied.
+- The requested skeleton/decay model is a **later step**. Current scope is the paired dragons, flight/walk, attack and burrowing tests on a world-scale Blender scene. The globe's precise radius and source-defined map coordinates can be reproduced; unfinished terrain and proposed coast placements do not become finalized geography by being imported.
+
 **Status:** Current direct author statements, superseding conflicting interpretations and older recovered documents. Review [the seven ages](../timeline/seven-ages.md), [cosmology](../world/allohim-and-cosmic-creation.md) and [narrative frame](../books/moanas-tear-frame.md).
 
 ## Official planet name

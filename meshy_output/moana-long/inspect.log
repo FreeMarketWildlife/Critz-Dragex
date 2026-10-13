@@ -1,0 +1,27 @@
+17:10:07 | INFO: Data are loaded, start creating Blender stuff
+17:10:07 | INFO: Blender create Mesh node 0
+17:10:07 | INFO: glTF import finished in 0.03s
+[
+  {
+    "name": "Mesh_0",
+    "vertices": 17099,
+    "triangles": 12926,
+    "min": [
+      -0.021043000742793083,
+      -0.5,
+      -0.05055300146341324
+    ],
+    "max": [
+      0.011439000256359577,
+      0.5,
+      0.0496940016746521
+    ],
+    "materials": [
+      "Material_0"
+    ]
+  }
+]
+Info: Saved as "inspection.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

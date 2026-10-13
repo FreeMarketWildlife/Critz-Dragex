@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "projects": [
+    {
+      "folder": "20261012_164601_moana_01a13281",
+      "prompt": "Moana",
+      "task_type": "image-to-3d",
+      "root_task_id": "01a13281-cc39-72bd-9387-2fd0ee01e827",
+      "created_at": "2026-10-12T23:46:01.743Z",
+      "updated_at": "2026-10-12T23:46:57.738Z",
+      "task_count": 3
+    }
+  ]
+}

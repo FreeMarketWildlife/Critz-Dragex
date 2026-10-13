@@ -1,0 +1,22 @@
+18:03:40 | INFO: Data are loaded, start creating Blender stuff
+18:03:40 | INFO: Blender create Mesh node 0
+18:03:40 | INFO: glTF import finished in 0.03s
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+18:03:43 | INFO: Starting glTF 2.0 export
+18:03:43 | INFO: Extracting primitive: Mesh_0
+18:03:43 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+18:03:43 | INFO: Primitives created: 1
+18:03:44 | INFO: Finished glTF 2.0 export in 0.8458290100097656 s
+/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/build_dragex.py:143: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world=bpy.data.worlds.new('Studio');scene.world=world;world.use_nodes=True
+00:05.518  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/Idle.png'
+00:06.843  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/Wing_Flap.png'
+00:08.169  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/Tail_Curl.png'
+00:09.463  render           | Saved: '/Users/tanoshi/Documents/ChatGPT/Critz-Dragex/meshy_output/dragex/Ground_Step.png'
+
+Info: Saved as "dragex-rig.blend"
+Info: Saved as "dragex-animation-test.blend"
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

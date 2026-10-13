@@ -12,6 +12,10 @@
 
 # Continuity conflicts, pending decisions, and provenance audit
 
+**Further author account — October 12, 2026, paired-dragon animation:** Dragex attacks Moana at the lake and burrows beneath Mount Yokai; his complete sleep still ends Age 1. Moana should be bones by approximately halfway through Age 2. This refines the previously open decay timing, without converting age viewing units to years or specifying a new death mechanism. Mount Yokai should be about 3–5× the island/head-size reference; whether that ratio is height, area or span is not specified. The Blender scene's 4× footprint, cone height and choreography are proposals. The skeleton/decay asset is a later task. See [current canon](../../canon/author-confirmed.md).
+
+**Later author resolution — October 12, 2026, Moana model session:** the small island inside Lake Moana is named **Moana’s Tear** and is her partly exposed skull with island material over it. Her head is island-sized; her immense ribs are visible throughout Death’s Valley after Age 2, including Ages 3 and 4. This resolves the island identity left unspecified in the geographic notes. It does not establish an exact death date, pool/skull anatomy, or the relationship between the identically named island and portable Tear artifact. Earlier recovered entries below remain historical source evidence. See [current canon](../../canon/author-confirmed.md).
+
 **Status:** Editorial findings, not automatic fixes. Source IDs: [catalog](sources.md). Phil's current explicit decisions always win. This register preserves the questions without requiring the author to answer every one before continuing.
 
 ## A. Already governed by current author statements

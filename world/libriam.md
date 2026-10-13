@@ -1,5 +1,11 @@
 # Libriam — the planet
 
+## Lake Moana’s skull-island — author decision, October 12, 2026
+
+**Later same-day direction:** Mount Yokai should be about **3–5× larger than Moana’s Tear island**. A Blender test uses a proposed **4× footprint span**, about **56.26 km**, at the globe source's existing Mount Yokai anchor. Height, crater, exact ratio interpretation and underground chamber are not specified. This replaces the smaller isolated cone in the earlier visualization as the intended scale direction, without rewriting its historical source. Dragex attacks Moana at the lake and subsequently burrows beneath this mountain. Moana is to be bones by about halfway through Age 2; her later exposed remains remain confirmed.
+
+Phil names the central lake island **Moana’s Tear** and identifies it as **Moana’s skull**, with island material formed over it and part of the skull exposed. Moana’s head is the size of the island; the existing opposite-edge anchors imply a roughly **14.064 km** span on spherical Libriam, while anatomical orientation and exact head dimensions are still unspecified. Her body slowly decays in this region, and her enormous ribs are visible all around Death’s Valley after Age 2, including **Ages 3 and 4**. This resolves the island's previously unspecified identity; it remains distinct from Eden’s Isle. The portable Tear artifact uses the same name, but its relationship to the skull-island and the inner pool is not established. See [current canon](../canon/author-confirmed.md).
+
 **Status:** Canonically named by the author on October 12, 2026. Spelling: **L-I-B-R-I-A-M**.
 
 ## Planet and geography
