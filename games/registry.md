@@ -7,7 +7,7 @@
 
 | Stable ID | Game | Identity / intended experience | Primary age | Other eras / flashbacks |
 |---|---|---|---|---|
-| critz-tycoon | **Critz Tycoon** | Creature collection and management / building up the player's settlement and systems. | Awaiting Phil | Unspecified |
+| critz-tycoon | **Critz Tycoon** | Creature collection and management / building up the player's settlement and systems; discover different [Tanoshi](../world/tanoshi.md) hiding around the world (author decision, October 14, 2026). | Awaiting Phil | Unspecified |
 | critz-battlefront | **Critz Battlefront** | The original third-person shooter, inspired by the classic Battlefront-style large battles. | Awaiting Phil | Unspecified |
 | critz-campaign | **Critz Campaign** | Open-world action-adventure / RPG concept exploring Hokkaido. | Awaiting Phil | Unspecified |
 | critz-kingdom-conquest | **Critz Kingdom Conquest** | MOBA; larger-animal Conquerors with small critter minions and opposing kingdoms. | Awaiting Phil | Unspecified |
@@ -19,6 +19,14 @@
 | critz-empire | **Critz Empire** | Real-time strategy: grow from a settlement into an empire, in the StarCraft-style strategic family. | Awaiting Phil | Unspecified |
 
 Genre comparisons describe intended gameplay, not shared fictional continuity with those reference franchises.
+
+## Critz Tycoon: Tanoshi discovery
+
+**Source:** Phil's explicit author decision, October 14, 2026; see [current canon](../canon/author-confirmed.md#tanoshi--october-14-2026) and the [Tanoshi topic](../world/tanoshi.md).
+
+Players can discover **different Tanoshi hiding around the world**. **Tanoshi is a type of yokai with many individuals**, not a single unique character. Individuals can share the **approved Tanoshi avatar's master visual design**, with different **colors, facial expressions and personalities**.
+
+**Eutychus** is Phil's AI dot, whose avatar is the little Tanoshi; this is not a claim that the assistant is literally a yokai. **Uticus** is a dictation variant, not a rename. Individual game variations do not establish powers, origins, rarity, cosmology or an age placement. Critz Tycoon's primary age remains awaiting Phil; no age boundary changes.
 
 ## Names and rejected duplicates
 

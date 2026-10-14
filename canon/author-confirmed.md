@@ -1,5 +1,16 @@
 # Author-confirmed canon — 2026-10-11
 
+## Tanoshi — October 14, 2026
+
+Source: Phil's explicit direction to add Tanoshi canon and its Critz Tycoon connection.
+
+- **Tanoshi** is the exact spelling of a **type of yokai**, not one unique being. **Many Tanoshi individuals appear in different places.**
+- In **Critz Tycoon**, players can discover **different Tanoshi hiding around the world**. Individuals can share a **master visual design** while differing in **colors, facial expressions and personalities**. The **approved Tanoshi avatar** is the visual reference.
+- **Real/fiction distinction:** **Eutychus is Phil's AI dot**; the little **Tanoshi is its avatar**. This does not make Eutychus or the assistant literally a yokai. **Uticus** is a voice-dictation variant and must not rename **Eutychus**.
+- This supersedes any interpretation of Tanoshi as a single unique being or of Uticus as a new name for Eutychus. Powers, origins, rarity, cosmological relationships and age placement are not established by this decision. The older PowPass crossover remains historical product evidence.
+
+See [Tanoshi topic and approved reference](../world/tanoshi.md) and [Critz Tycoon discovery](../games/registry.md#critz-tycoon-tanoshi-discovery).
+
 ## Moana and Dragex dragon appearance — October 12, 2026
 
 Source: Phil's direct correction and approval during the Moana 3D concept session.
