@@ -434,3 +434,29 @@ Source: Phil's direct author interview decision.
 ### Historical father-name evidence checked
 
 The recovered **T14 early Chapter 1** source (Google Drive document **1VDo18lkqwYsItSrtFf1qjMhwtZiiutPKDRX5CbootzU**, modified March 13, 2020) was directly read during this interview. A guild letter calls Veratus **“the offspring of Axios”** and mentions **“the bloodline of Keravna.”** Thus **Axios is a historical parental-name candidate**, not an explicitly confirmed current father/king name; the quoted passage does not establish parental sex or royal title. **Keravna** is a separate lineage name whose exact relationship remains unspecified. Do not silently adopt either as the current king without Phil's confirmation.
+
+## Axios, preserved bloodlines and the guild handover — October 14, 2026
+
+Source: Phil's latest explicit author interview decisions.
+
+### Father and ancestral record
+
+- **Axios is definitively Veratus's father**, the tyrannical king of Mount Yokai who employed and executed Koric's previous incarnation. This confirms the historical parental-name candidate.
+- Veratus learns his **full bloodline in Mount Yokai's king's chamber**, where it is **written/carved in stone**. This is the chamber's distinct revelation after the campfire disclosure that his father was king.
+- Parchment and similar combustible records there were destroyed when the **mammalian attackers burned Mount Yokai**. The stone genealogy survives.
+- The ancestral name appears in historical text as **Keravna**; Phil's latest dictation renders “Kravana.” The lineage connection is accepted in this discussion, but **a deliberate spelling change has not been established**. Preserve the archival spelling and note the spoken variant; exact genealogical position remains unspecified.
+
+### Bloodline culture and Archaíos's knowledge
+
+- Successful/prosperous societies and families have had the resources and continuity to **preserve their genealogies back to Gen One**, the first Fey-blooded generation.
+- Knowing and announcing such a pedigree can be a **posh, elite, ostentatiously proud status claim**. Many other creatures have forgotten their bloodlines or do not care about them. This is a social custom, not proof of inherent moral superiority or a universal interest in genealogy.
+- **Archaíos is not omniscient.** His extraordinary knowledge of lineages comes from living since Gen One, extensive relationships and experience, and a **spiritual connection enabling recognition of bloodlines when he looks at people**. Exact limits/mechanism remain unspecified.
+- Phil describes the mammalian rise and burning of Mount Yokai as **“at the beginning of the Third Age.”** This refines the broad period but requires reconciliation with the earlier execution-in-immediately-previous-life account and unspecified current character ages. **No exact dates, age lengths or calendar conversion are inferred**, and the Fey battle remains a distinct event marking the Age-2/3 boundary.
+
+### Confession exception and rescue plan
+
+- **Koric does not yet reveal the guild delivery plan at the post-cave campfire.** This is an explicit exception to and **supersedes the earlier unqualified “done keeping secrets / shares everything” wording**: his account of the past life and Axios is truthful, but the current guild plan remains concealed.
+- Koric **asks Veratus to trust him**. Veratus struggles to do so but **chooses to trust him**.
+- Koric **still hands Veratus over to the Guild of Kalos**, doing so with a plan/intention to **save him afterward**.
+- **Veratus is rescued and they all make it out**, per Phil's stated outcome. Exact rescue mechanism, participants meant by “all,” the guild's actions during custody, and artifact/payment details remain open; do not infer that Veratus knows or consents to the handover beforehand.
+- This supersedes any assumption that recovering his morally upright previous life's memories means Koric simply abandons the delivery.
