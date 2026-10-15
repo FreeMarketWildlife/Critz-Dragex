@@ -171,3 +171,31 @@ Source: Phil's direct continuation of the author interview. Obvious dictation va
 - The raven also knows that **Koric will die in Death's Valley**, achieving his **final death**, after which his spirit can go to **Allohim, Creator of the universe**. This resolves the earlier unspecified eventual death location and its finality; exact timing relative to the return, manner and scene remain open.
 - The raven's intended name remains the working transcription **Drakos**, with the author-requested accent still unspecified. No identity/rename link to Enáretos, Díkaios, Draco or Drago is established.
 
+
+## Cave-to-mountain order and campfire confession — October 14, 2026
+
+Source: Phil's latest direct author interview decisions. These supersede the earlier undecided cave-before/after-mountain sequence.
+
+### Confirmed sequence
+
+1. After the **Prairie Bridge inn revelation**, Koric agrees to accompany Veratus to **Mount Yokai**, departing from the direct northward route to Sapporo. This concession is a way of regaining favor with Veratus.
+2. **Koric's dreams intensify as they approach Mount Yokai**. One morning a particularly strong dream directs him to the **Cave of Origins near East Lake**, south of Mount Yokai.
+3. Koric insists on this further detour because he feels strongly called by destiny; he tells Veratus he can continue toward Mount Yokai. Veratus is confused and upset at yet another change of direction. Exact dialogue and how he decides to accompany Koric remain unwritten.
+4. **Cave reunion and river fight occur before the Mount Yokai visit.** Immediately after the attack, Veratus still does **not know why Koric tried to kill him**.
+5. The **raven stops the fight**, tells them they are destined to **work together to restore Moana's Tear**, and directs them toward **Mount Yokai for answers**.
+6. The raven tells Veratus he will be **king over Lake Moana**, using the lake's name rather than Death's Valley. Veratus is deeply confused and at this point knows nothing of his royal status.
+7. **That night, before entering Mount Yokai**, Koric explains his immediately previous life at a campfire, including **Veratus's father murdering him**. This settles the timing of Veratus learning why Koric attacked.
+8. **After the cave and campfire**, they enter Mount Yokai. Phil wants Veratus to discover/establish that **he is king in the king's chamber**. The discovery mechanism is undecided. How the campfire account of his royal father differs from the chamber's revelation of Veratus's own status requires clarification; do not silently invent concealment or a magical proof.
+
+### Campfire chapter and literary frame
+
+- Phil wants **an entire chapter centered on the campfire telling of Koric's immediately previous life**.
+- Koric also tells many stories of other lives that night. Phil proposes **Archaíos's narrative aside** explaining that his letter has no room to recount them all, while directing the recipient to **Veratus's own writings in a library at the restored lake/kingdom**.
+- The exact aside, “thousands” as literal count versus rhetorical abundance, the library's name/location, and the format/extent of Veratus's writings remain tentative.
+- This develops a **letter-oriented presentation**, but does not yet settle single-letter versus multiple-letter/attached-chronicle mechanics. Do not replace the established Grandfather Tree library with the proposed lake library or equate them without confirmation.
+
+### Place names
+
+- Phil explicitly **prefers Lake Moana** to “Moana's Lake” for the lake and the raven's language.
+- The restored polity's final name remains open: **Kingdom of Moana** is the previously established working name; “Moanan Kingdom” and other variants are being considered, not finalized replacements.
+- **Moana's Tear** remains the established name of the skull-island and portable artifact; those are not renamed by choosing Lake Moana.
