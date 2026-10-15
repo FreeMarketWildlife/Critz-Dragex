@@ -267,3 +267,50 @@ Source: Phil's direct author interview account.
 - Repository search for “Drakos” returned no matches during this interview. Recovered character notes separately contain **Enáretos** (raven), **Díkaios** (peregrine falcon), **Draco** (lizard), and **Drago** (antagonist). **No identity or rename relationship is established** by the similar names. Do not merge them automatically.
 
 This author account governs over incompatible historical phoenix/memory scenes. It does not settle the entire chapter order or alter the established Age 3 / Age 4 transition.
+
+## Veratus's father, Koric's execution and soul reunion — October 14, 2026
+
+Source: Phil's direct continuation of the author interview. Obvious dictation variants normalize to Koric, Veratus, Ice Blade and the established Creator spelling Allohim; no explicit Creator rename was requested.
+
+### Previous life and the king
+
+- In Koric's **immediately preceding life**, he was **counselor to the king of Mount Yokai, Veratus's father**. That incarnation's name remains undecided.
+- Veratus's father was an **evil, hypocritical king**: he outlawed magic while demanding that Koric use it for royal purposes, including saving Veratus's mother during childbirth and torturing people to extract information. These are demands; their outcomes and Koric's compliance in each case are not specified.
+- The king **executed Koric with the Ice Blade**, using the royal execution/storm mechanism already described.
+- Koric in that previous life was **morally upright**, had learned to tame his spirit and reunite his damaged soul, and had come very close to obtaining Moana's Tear. The precise chronology of those accomplishments is not yet supplied.
+
+### Destruction of the basilisk kingdom
+
+- That execution was the **tipping point** for a united assault on Mount Yokai, **led specifically by mammals**; the **hosts of heaven** also came.
+- The attackers devastated the basilisk kingdom, burned the entire mountain, and **the earth shook**.
+- Phil describes no basilisks or eggs remaining **on Mount Yokai** after the destruction. This establishes the destruction of that mountain kingdom, **not proven worldwide basilisk extinction**. Veratus survives; how he escaped, was removed, or was absent is not yet established.
+- This is the later **Age 3 fall of the basilisk kingdom**, distinct from the **Age 2 Fey battle** on Mount Yokai. Do not conflate the two events or invent the cause of the shaking.
+
+### Magic and persecution
+
+- **Anyone can practice magic**, regardless of species. **Not every amphibian practices it**.
+- Amphibians are culturally associated with magic, including practices perceived as witchcraft/voodoo, and suffer persecution/discrimination on that basis.
+- Phil places the emergence of persecution after the Fall / Battle of Mount Yokai, following some interval when magic was accepted. Exact elapsed time, geographic reach, and the chronology of individual bans remain unspecified; the basilisk king's ban is confirmed.
+
+### Literal soul fragments and Cave of Origins
+
+- **When Koric dies, a fragment of his soul separates and finds its way to the Cave of Origins.**
+- Some incarnations never discover the cave; others do. At the cave, those fragments **reunite with him**, restoring access to past lives. This now confirms literal soul fragmentation/reunion and **supersedes the earlier interview note treating soul-fragment language only as an analogy**.
+- Soul reunion can overwhelm his control. The reference to multiple spirits entering him describes his own past-life fragments; do not invent unrelated possessing souls.
+- Phil establishes that **a piece of Moana's Tear is in the Cave of Origins**, giving Koric a concrete reason to visit it.
+- Phil's **tentative explanation** is that the immediately previous incarnation placed the piece there, anticipating that the king would murder him for refusing orders and preparing for his next life. The placer and exact preparation remain proposed, not finalized.
+
+### Why Koric attacks Veratus
+
+- During the cave reunion, Koric experiences the immediately preceding incarnation's murder. **Veratus strongly resembles his father**.
+- The current Koric's hatred and consuming focus on the Tear interact with that returning memory: he sees Veratus as the threatening killer and believes he will prevent the Tear's return.
+- Overwhelmed and unable to control himself during this event, Koric **tries to kill Veratus**. This settles the cause of the previously recorded cave/river fight.
+- The previous incarnation's moral uprightness does not make the current incarnation equally controlled or morally mature.
+
+### Raven and final death
+
+- A **raven intervenes and stops the fight**. This now confirms raven species and intervention over the earlier raven-versus-eagle possibility.
+- The raven knows **Veratus is destined to rule Moana's Tear, the actual location**, and the restored kingdom. Do not equate that island with Eden's Isle.
+- The raven also knows that **Koric will die in Death's Valley**, achieving his **final death**, after which his spirit can go to **Allohim, Creator of the universe**. This resolves the earlier unspecified eventual death location and its finality; exact timing relative to the return, manner and scene remain open.
+- The raven's intended name remains the working transcription **Drakos**, with the author-requested accent still unspecified. No identity/rename link to Enáretos, Díkaios, Draco or Drago is established.
+
