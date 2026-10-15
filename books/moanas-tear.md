@@ -543,3 +543,26 @@ Source: Phil's latest author interview; intentional dictation variants normalize
 - The number of fragments, where/how the Tear broke, whether the separate pieces are physically distinct from the named skull-island, and what each does remain **unresolved**. This is a promising direction, not yet a fully confirmed fragment system.
 - Keep the established distinction: the island called **Moana's Tear** is formed over Moana's skull, while Koric seeks a portable artifact also called **Moana's Tear**; their physical/magical relationship remains unspecified.
 
+
+
+## Orca attack, Ur wager and Grimroot landing — October 15, 2026
+
+Source: Phil's latest author interview. Names normalized from voice dictation: Koric, Veratus, Weston, Psyte (spelled P-S-Y-T-E), Royal Game of Ur, Archaíos.
+
+### Weston’s route and travel-time estimate
+
+- After Weston swallows the passenger ship at **Kaldro’s Cape in the middle of the night**, he swims onward toward Sapporo.
+- The current map anchors put Kaldro’s Cape about **223 km (139 mi)** from Sapporo along the shortest great-circle surface distance. This is a straight-line map estimate, not Weston's actual path.
+- As a blue-whale pacing reference, NOAA says blue whales typically travel/feed at about **5 mph (8 km/h)**, with faster bursts; that rate would cover 223 km in roughly **28 hours** of uninterrupted travel. Other references give slower ordinary cruising speeds, which could stretch the crossing to around **two or three days**. A real whale does not keep one speed continuously, and the route/coordinates for Eden’s Isle and Grimroot Grove are only approximate on the current map.
+- **Story direction:** orcas attack Weston while he is traveling toward Sapporo, and the fatal interception happens in the waters between **Eden’s Isle and Grimroot Grove**. Weston dies and rolls belly-up; Koric and Veratus are stranded and ultimately wash ashore at **Grimroot Grove**.
+- Exact days inside Weston remain undecided. Based on the current route scale and a large whale’s travel pace, **about one to two nights** is a plausible working estimate; several days can work if Weston takes a longer route, moves slowly, or the underwater path is substantially longer. This is pacing guidance, not canon.
+- In **Chapter 3**, Veratus believes he is on Eden’s Isle and receives a psychic/spiritual vision or communication from **Archaíos**, the tortoise author. He wakes as Koric wakes him and realizes they are on Grimroot Grove. Exact sequence and content of the vision remain open.
+
+### Psyte and Koric’s Royal Game of Ur wager
+
+- **Koric invents a false history for Roger’s dagger** (a large knife, not a sword): he improvises claims about its past, its decorative gem, and its metal to make the weapon sound valuable and desirable to Psyte.
+- **Psyte has psychic/mind-reading abilities**, but cannot get a clear or confident read on Koric. His exact powers and limits remain open.
+- Psyte is a ninja-like frog bounty hunter who uses throwing stars; he thinks Roger’s dagger would be a useful addition to his kit.
+- Psyte believes he is good enough at the **Royal Game of Ur** to accept Koric’s challenge. The wager is Koric’s dagger if Koric loses; Koric intends to win Psyte’s Moana’s Tear fragment.
+- The game is interrupted by the orca attack **just before Koric is about to win**. Before the game can finish, Koric manages to get the fragment away from Psyte. How he physically obtains or conceals it amid the attack remains to be developed.
+- The theft/acquisition is unknown to Veratus, Psyte in the moment, and the reader. Koric’s successful acquisition is a concealed reveal; the precise reveal timing remains open.
