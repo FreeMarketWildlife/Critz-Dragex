@@ -199,3 +199,44 @@ Source: Phil's latest direct author interview decisions. These supersede the ear
 - Phil explicitly **prefers Lake Moana** to “Moana's Lake” for the lake and the raven's language.
 - The restored polity's final name remains open: **Kingdom of Moana** is the previously established working name; “Moanan Kingdom” and other variants are being considered, not finalized replacements.
 - **Moana's Tear** remains the established name of the skull-island and portable artifact; those are not renamed by choosing Lake Moana.
+
+## Lake Moana, full confession and Archaíos's guidance — October 14, 2026
+
+Source: Phil's latest direct author interview. Use established spellings **Koric, Veratus, Archaíos, Allohim**. Dictated “Elohim” is explicitly rejected as the Creator's spelling; incidental speech to Elijah is not lore.
+
+### Lake Moana and Veratus's books
+
+- **Lake Moana** is now the author's settled name for the lake/domain Veratus is prophesied to rule, replacing the earlier tentative “Moana's Lake” option. This does not rename the skull-island or portable artifact **Moana's Tear**, or settle a separate formal kingdom title.
+- For a lizard, ruling even a pond is substantial; an **entire lake is an almost unbelievable responsibility**. Kingship includes **protecting its ecosystem** and extensive duties, not merely a title.
+- Veratus finds the prophecy implausible: why would he become king? He also worries about **having an heir when he knows of no other surviving basilisk**. This is his concern, not proof of global extinction or a finalized inheritance/biology rule. Its eventual resolution belongs to another story and remains open.
+- **Veratus definitely writes the campfire tales** as **a separate book containing several short stories of Koric's lives**. This promotes the earlier possible writings into confirmed authorial direction.
+- Phil additionally **tentatively** envisions Veratus writing the next story. Its identity, title and publication order are not finalized. The short-story book's title and library location remain open.
+
+### Full confession
+
+- At the post-cave campfire, Koric explicitly tells Veratus **“Your father was the king”** and tells the truth about the previous life and murder.
+- **He does not withhold information for dramatic effect; he is done keeping secrets.** Distinguish honest lack of knowledge from deliberate concealment.
+- **Koric genuinely does not know how Veratus escaped the destruction or was saved.**
+- His immediately previous incarnation **did not know about Veratus at all**. Being the father's counselor does not establish that he knew the egg, child, rescue plan or future survivor. Do not invent a pregnancy/birth/execution chronology to reconcile this.
+- Exactly how the full-confession commitment is staged concerning the current guild delivery plan remains unwritten; do not add a secret exception as established canon.
+- Because royal parentage is explicitly disclosed here, the king's chamber must not be treated as Veratus's first discovery that his father was king. Its distinct discovery remains open.
+
+### Archaíos rescues the egg and guides Koric
+
+- **Archaíos carried Veratus's egg from Mount Yokai to Rootport**, slowly, **at the king's request**, doing the evil king a favor.
+- He entrusted the egg to **a pair of chameleons who already had some acquaintance with him**. Exact relationship/history and rescue timing relative to the assault are not yet given.
+- Archaíos, as author/narrator, supplies this explanation to the reader when Koric's ignorance of the rescue becomes relevant. Whether the traveling characters receive this information at that moment is not specified.
+- Phil began an explanation involving the king/Archaíos knowing something about Allohim but did not complete that causal statement; **do not invent its missing content or motive**.
+- **Archaíos told the current Koric where Veratus was through a dream**. This explains how Koric knew to seek him in Rootport despite the previous incarnation's ignorance.
+- From **Eden's Isle**, Archaíos sometimes **reaches people spiritually/through dreams** to communicate and guide them. The dictated near-match “psychopathically” describes this spiritual contact, not a psychopathology trait.
+- **Allohim blesses Archaíos with extraordinary longevity in connection with this guiding role**. Limits, costs, range and exact powers are not established.
+
+### Archaíos's lifespan and chronology — latest account
+
+- Archaíos **was born in Age 1**, was already old when he drank the blood-bearing river, and lives **thousands of years across several ages**. Phil tentatively places his birth roughly **a hundred years before the drinking**, in Age 1; exact dates are not fixed.
+- Phil now explicitly places his **drinking from the River of Blood in Age 2**.
+- He writes in **Age 4 (Arcane)** about events of **Age 3**, having lived through Ages 1–3 and into Age 4.
+- Phil calls him first-generation “Fey”; the defining explanation is that **he personally drank from the River of Blood**. Established classification is **first-generation Fey-blooded tortoise**, not an original Fey being; no explicit species retcon was requested.
+- Phil now states that **each of the first three ages lasts at least a thousand years**. This is a new authorial duration constraint, **not an inference from the globe's 1,000-unit UI spans**. Exact lengths, dates and Archaíos's birth year remain unspecified.
+- **Continuity issue requiring clarification:** earlier canonical notes put his drinking after the last Mount Yokai Fey fighter's death, which itself starts Age 3. Today's explicit **Age-2 drinking** supersedes his prior age placement, but the ordering of the river drinking, battle's final death and age boundary needs an author explanation. Preserve the established boundary; do not silently shift it or invent the river's onset.
+
