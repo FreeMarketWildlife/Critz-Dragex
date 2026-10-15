@@ -64,3 +64,33 @@ This establishes the current opening's central lure, concealed guild assignment,
 Source: Phil's direct author interview clarification.
 
 Koric regards returning Moana's Tear to Death's Valley as his life's quest and goal. He will do whatever it takes and does not care what it costs to complete that return. This establishes his overriding motivation at this stage of the story; it does not by itself specify the Guild of Kalos's intended treatment of Veratus, what Koric knows about that treatment, or the promised payment. Those details remain open. Do not infer a specific sacrifice, slave transaction, or guild possession of the Tear from this statement alone.
+
+## Ice Blade, guild sacrifice and Tear possession — October 14, 2026
+
+Source: Phil's direct author interview account, following the opening-journey decisions.
+
+### Confirmed character knowledge and guild plan
+
+- **Koric believes the Guild of Kalos will try to sacrifice Veratus to activate an ancient royal artifact**, provisionally called the **Ice Blade**. He undertakes the delivery despite that expectation, in pursuit of returning Moana's Tear.
+- The Guild of Kalos **possesses Moana's Tear, or at least part of it**. This possession connects delivering Veratus with Koric's quest. The precise bargain, amount handed over, and whether payment is actually honored remain unspecified.
+- This resolves the earlier interview's open questions about Koric's expected treatment of Veratus and the guild's connection to the Tear. A planned sacrifice is not confirmation that it succeeds.
+
+### Royal blade and storm mechanism
+
+- **Ice Blade is a working descriptor, not a finalized proper name.**
+- The artifact is an ancient sword wielded by the **kings of Mount Yokai**. It has a hilt/handle that produces an **ice blade when activated**; it wields **ice and lightning** power.
+- A life-taking killing blow with the sword, which sends the victim's spirit away, triggers **lightning from the sky**.
+- **Thunderclouds form before the fatal blow**, in anticipation of the death. Phil connects this foreknowledge with omniscience/knowledge of past, present and future; the responsible being and exact mechanism are not settled.
+- The blade's power contributed to the basilisks' conquest of Mount Yokai and their fearsome reputation.
+- Basilisk rulers deliberately **kept prisoners to execute with the sword**, exploiting its storm effects. Approaching armies sometimes withdrew when thunderclouds formed around the mountain.
+- The account describes wicked royal abuse of this power; it does not establish that every basilisk or every ruler was evil. Lightning's exact target, range, controllability and conditions beyond the stated fatal-blow trigger remain unspecified.
+
+### Proposals and unresolved mechanism
+
+- Phil suggests an ancient **yokai** may have given the sword to the basilisks and that a yokai may inhabit it. Fey or other magical-creature origins were also considered. **None of these origins or identities is finalized.**
+- Phil considers involvement by **Allohim** or omniscient spiritual beings in the anticipatory storms; this is a possibility, not a confirmed divine endorsement or settled cosmology.
+- A possible yokai subtype/name sounded like “tenoshi” in dictation; its spelling and meaning remain unconfirmed. Do not silently turn it into a named entity.
+- Phil is considering **several parts/fragments of the portable Tear**, with **Veratus, Koric and Moto** each carrying some. Fragment count, dimensions, weight, division history and individual ownership are not settled.
+- The large portable Tear concept is discussed in connection with Moana's immense skull. **Moana's Tear island is the skull landmass; it is not Eden's Isle** (Phil immediately corrected that verbal slip). The exact physical/magical relationship between the island and the portable Tear remains open; no carrying of the entire skull-island is established.
+- Historical versions with different artifact acquisition routes remain preserved as drafts. Guild possession is now confirmed, but neither a completed exchange nor a particular heist outcome is thereby finalized.
+
