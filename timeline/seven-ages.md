@@ -72,3 +72,11 @@ The Tear’s return ends Age 3; life returns during the opening of Age 4. Fallou
 **Latest continental revision (October 12):** the second continent is now **Zealand**, with half its earlier app area (**3.25% of Libriam**). Alaska loses **15% of its earlier app area** (**4.675%**) and receives a southern mainland and northern island chain along the author’s arc toward Hokkaido’s northern tip. The supplied Age-5/unit-4564 context does not date these shapes or establish a new historical event.
 
 **Latest Zealand orientation (October 12):** rotate 90° and then flip north–south. The app uses a clockwise quarter-turn around its existing reference center; area stays 3.25%. The new east–west orientation supersedes its preceding polar-reaching layout without dating a geographic-change event.
+
+## Basilisk kingdom and Koric's last two lives — October 14, 2026
+
+Author interview clarification: **during Age 3**, Veratus's father rules Mount Yokai and employs Koric's immediately previous incarnation as counselor. The king bans magic while demanding its private use, then executes that incarnation with the Ice Blade. This execution precipitates a united assault led by mammals, with the hosts of heaven also coming; the basilisk kingdom is destroyed, Mount Yokai is burned, and the earth shakes. No basilisks or eggs remain on the mountain in Phil's account; worldwide extinction is not established, and Veratus's means of survival remains open. **This is distinct from the Age-2 Fey battle.**
+
+In the current incarnation, Koric seeks Veratus for delivery to the Guild of Kalos, which possesses the Tear or part of it. During the journey, the Cave of Origins reunites his soul fragments and memories; recalling his execution and seeing the father's likeness in Veratus, he tries to kill him until a raven intervenes. Cave-before-mountain versus cave-after-mountain remains undecided.
+
+The raven knows Veratus is destined to rule the restored Moana's Tear location/kingdom and that **Koric's final death will occur in Death's Valley**, allowing his spirit to go to Allohim. **The Tear's return still ends Age 3**; the precise death timing relative to that transition and its manner remain unspecified. See [the current book account](../books/moanas-tear.md).
