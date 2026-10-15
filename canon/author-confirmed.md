@@ -613,3 +613,15 @@ Source: Phil's direct author interview answer; tentative details are labeled.
 - He then speaks with guardians **Roger and Claire**: **Uncle Roger opposes him going; Aunt Claire supports him going.**
 - Why either guardian takes that position, what Veratus says to persuade or answer them, and the precise decision that leads him to board remain open. Preserve his initial refusal and the disagreement as separate beats; don't infer that permission alone makes him depart.
 - This boat is the journey toward Sapporo/Mount Yokai and the later Weston incident. Its passengers/charter details and exact departure hour remain undecided.
+
+## Roger's promise and the guardians' parting conversation — October 15, 2026
+
+Source: Phil's direct author interview answer.
+
+- **Archaíos personally brought Veratus's egg from Mount Yokai and entrusted it to the chameleon couple, Roger and Claire**, in Rootport. He chose remote Rootport because he judged it very unlikely that locals there would recognize a basilisk. This confirms the direct handoff and Archaíos's protective reasoning.
+- Roger **promised Archaíos he would always protect Veratus**. His resistance to Veratus leaving comes from love and fear that, as an old chameleon, he cannot follow and protect him on the road.
+- Roger is a **grumpy older chameleon**. He masks his protective fear with a harsh, self-interested argument: Veratus's departure would abandon Roger and Claire and damage the family farm; “what would we do without you?” may capture the idea, not finalized dialogue.
+- His sharp delivery can sound mean, but he **deeply loves Veratus**. Do not interpret his gruffness as lack of affection.
+- **Claire encourages Veratus to go**, telling him he is destined for great things and should pursue the journey. Exact quote is a draft thought, not fixed prose.
+- This clarifies their opposing views: Roger's promise makes departure feel like failing his duty to protect; Claire believes protecting Veratus also means allowing him to pursue his future.
+- The precise decision or event that finally overcomes Veratus's initial refusal remains open.
