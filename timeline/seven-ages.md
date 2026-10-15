@@ -84,3 +84,9 @@ The raven knows Veratus is destined to rule the restored Moana's Tear location/k
 ## Opening journey order — October 14, 2026
 
 Phil settles the relative sequence within Age 3: **Prairie Bridge inn revelation → dream-driven detour to Cave of Origins near East Lake → soul reunion and fight → raven intervention/prophecy → campfire confession that night → Mount Yokai and king's chamber**. Veratus learns at the campfire that his father murdered Koric's previous incarnation; the mountain chamber is intended to establish his own kingship, by a mechanism still undecided. The raven foretells his rule over **Lake Moana** (preferred lake name). Final kingdom naming remains open. No absolute dates or age boundaries change. See [book notes](../books/moanas-tear.md).
+
+## Archaíos lifespan and egg rescue — October 14, 2026
+
+Latest author account: Archaíos is **born in Age 1**, already old when he personally drinks the **River of Blood in Age 2**, lives thousands of years, and writes the Age-3 story in **Age 4**. Birth roughly a hundred years before drinking is tentative. Phil states **Ages 1–3 each span at least a thousand years**; exact lengths remain open and globe UI units still are not years. **Age-2 drinking conflicts with the earlier after-final-Fey-death placement**: latest drinking age governs, but relation to the battle and its unchanged Age-2/3 boundary requires clarification.
+
+During Age 3, Archaíos carries Veratus's egg from Mount Yokai to chameleon guardians in Rootport **at the king's request**. Exact timing relative to the destruction remains unspecified. The current Koric learns Veratus's location through **a dream sent by Archaíos**, not the previous incarnation's memories. Archaíos guides people spiritually from Eden's Isle and receives extraordinary longevity as Allohim's blessing connected to that role. See [book notes](../books/moanas-tear.md) for full author decisions.
