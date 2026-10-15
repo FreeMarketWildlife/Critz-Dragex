@@ -535,3 +535,24 @@ Source: Phil's direct author interview continuation.
 - Axios's claim on the Tear was a significant source of damage to his relationship with the previous Koric. Do not infer an agreed transfer, ownership, or whether the Tear had already been stolen at that point.
 - Phil speculates that an **evil yokai may have possessed Axios at some point and led him astray**. This is a possible explanation only: whether possession occurred, which yokai, when, its duration, and how much of Axios's behavior it influenced remain undecided.
 - This does not establish that possession excuses Axios's evil acts or that a yokai is confirmed to inhabit the Ice Blade.
+
+## Separate Sapporo escape routes and Moto's ambush — October 15, 2026
+
+Source: Phil's direct author interview continuation. This updates the previously outlined single-group flight.
+
+### Split during the chase
+
+- Koric turns back to help injured Moto. Moto urges him to leave, but **Koric helps Moto escape**.
+- **Veratus escapes alone**, pursued by Sapporo's guards. He gets away by **running across a moving river of water**, an extraordinary water-running feat.
+- Veratus believes Koric and Moto are lost to him. That night he is discouraged, lonely and feels everything is ruined; he remembers the good life he had in Rootport and misses his aunt and uncle.
+- Koric and Moto use their connections at an **inn** and pay a **hefty price for safe passage**, then escape by an **underground tunnel**. Inn name, contacts, price and exact tunnel route remain open.
+
+### Moto's death — intended direction, timing unsettled
+
+- Phil wants Moto to **die soon after the Sapporo escape**.
+- Current proposed death scene: Koric and Moto are traveling through the tunnel, believe themselves safe, and Moto stops talking. Koric looks back and sees a **blade protruding from Moto's chest**. Koric fights the person who killed him.
+- The killer's identity, how they got into the tunnel unnoticed, blade type and battle outcome are not established.
+- **Timing conflict intentionally unresolved:** one account has Koric and Moto find Veratus asleep the next morning (or possibly two days later), wake him and embrace; another has Moto killed in the tunnel before Koric finds Veratus the next morning or two days later. These cannot both occur in that exact order if the reunion includes a living Moto. Preserve both as possible scene arrangements pending Phil's decision.
+- Veratus sleeping alone and believing he has lost Koric may precede a later reunion; whether he already learns Moto's fate, whether Koric reunites with him alive, and the exact elapsed time remain open.
+- Do not retain the prior assumption that all three simply run together out of Sapporo or use one shared tunnel route. Their escape paths diverge as described here.
+
