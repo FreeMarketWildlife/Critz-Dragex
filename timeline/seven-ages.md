@@ -130,3 +130,9 @@ Koric turns back for injured Moto despite Moto urging him to go. Veratus escapes
 ## Resolved: Moto dies before Koric finds Veratus — October 15, 2026
 
 Sequence settled by Phil: Veratus last sees Moto at the Tear handoff as Koric turns back to help him. Veratus escapes alone; Koric and Moto use an inn contact and underground tunnel. Moto is stabbed and dies there; Koric fights the killer. **Moto never sees Veratus again.** Koric finds Veratus the following morning or possibly two days later, wakes him and embraces him. The earlier option of a living-Moto reunion is superseded. Exact delay, attacker and battle outcome remain open.
+
+## Rootport opening and character-age direction — October 15, 2026
+
+Rootport is a self-sufficient fishing/export town with merchant boats arriving **twice weekly**; exact weekdays are open. Calendar structure matches the seven-day week and months of our world. At story opening, Veratus delivers the feeder-creature farm goods of guardians Roger and Claire to the marketplace. Koric disembarks from a merchant boat, quietly follows his errands, then approaches him over lunch at an inn and remarks that he is a basilisk. Remote Rootport trades with Sapporo infrequently, so locals may not recognize this rare species despite its general reputation as fallen.
+
+Current age goal: Veratus **16**, Koric **21–22**. The basilisk fall is tentatively **16 years before** the story. The proposed previous-Koric death “four or five years before” lacks a clear reference point and does not yet fit a fixed sequence; Archaíos meeting current Koric at age 3–5 is also a developing direction. Keep these as open chronology pending clarification. See [book notes](../books/moanas-tear.md).
