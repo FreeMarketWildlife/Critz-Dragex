@@ -625,3 +625,18 @@ Source: Phil's direct author interview answer.
 - **Claire encourages Veratus to go**, telling him he is destined for great things and should pursue the journey. Exact quote is a draft thought, not fixed prose.
 - This clarifies their opposing views: Roger's promise makes departure feel like failing his duty to protect; Claire believes protecting Veratus also means allowing him to pursue his future.
 - The precise decision or event that finally overcomes Veratus's initial refusal remains open.
+
+## Veratus's restlessness, birthday and decision to leave — October 15, 2026
+
+Source: Phil's direct author interview continuation.
+
+- Veratus's **subconscious main driver is a hunger for adventure and discovery**; he has long believed there is far more of the world to see.
+- He loves **drawing maps**. By the story opening, he has mapped **all of Rootport**, **all of Liarsville** (dictation variant “Lyresville”; use the repository's current map spelling **Liarsville** pending confirmation), and a substantial part of **Cloud Forest**, as far as he can reach on a day's journey.
+- He is frustrated that Roger and Claire **baby him** and that he still lives under their roof. He is turning **16 very soon**, possibly on the day he leaves; exact birthday timing remains provisional.
+- Koric's offer to learn about basilisk ancestry gives Veratus a conscious reason to act on this buried desire. Roger discourages him, saying he will find nothing except that he is the last of his kind; this is Roger's belief/negative warning, not proof that Veratus is globally the last basilisk.
+- Veratus decides to go despite his first refusal and Roger's warning. The precise internal turning point or final line that makes him choose remains unwritten.
+- As a parting gift, **Roger gives Veratus a little dagger / short sword**, warning him that he had better learn to use it because he will need it. Exact object size/name and wording remain flexible.
+- At sunset, **Koric and Veratus race to catch a boat that transports passengers**. “Passenger boat/ferry” is the current functional description; operator, vessel name, passenger roster and fare remain open.
+- Veratus's imminent birthday is tied to the **Blood Moon** on which the **Guild of Kalos wants to sacrifice him to activate the Ice Blade**. The date/relative timing is now a strong story direction; whether his birthday and Blood Moon fall on the same exact day is implied but still requires confirmation.
+- This creates dramatic irony: Koric invites Veratus onto a boat for a concealed guild delivery timed around the sacrificial opportunity, while Veratus believes he is pursuing adventure and ancestry.
+
