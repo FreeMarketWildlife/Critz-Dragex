@@ -152,3 +152,7 @@ Archaíos personally brought Veratus's egg from Mount Yokai to chameleons Roger 
 ## Veratus's mapmaking and departure for adventure — October 15, 2026
 
 Veratus has secretly longed for adventure and loves mapping. By the opening he has mapped all of Rootport, all of Liarsville, and as much of Cloud Forest as he can reach in a day. He feels babied under Roger and Claire's roof and is nearly 16. Koric's ancestry offer gives his restlessness a concrete direction; Roger warns he'll only learn he's the last basilisk, a belief rather than confirmed extinction. Veratus chooses to leave, and Roger gives him a small dagger/short sword with a warning to learn its use. At sunset Koric and Veratus race to catch a passenger boat. Veratus's impending birthday is connected to the Blood Moon on which the Guild plans to sacrifice him to activate the Ice Blade; exact birthday/Blood Moon coincidence remains to verify.
+
+## Rootport–Kaldro's Cape passage — October 15, 2026
+
+Koric and Veratus board a passenger ship for Sapporo near sunset. They talk and get to know one another; no notable passenger meeting is planned before Weston swallows the ship at Kaldro's Cape. On the current globe, Rootport→Cape is roughly **65 km** and Cape→Sapporo roughly **223 km** (great-circle distances at radius ~364 km). A working, unconfirmed estimate is an overnight passage, reaching the cape the following morning (about 12–18 hours), with several more days to Sapporo if the whale did not intervene. Actual route/speed/weather unspecified. See [book notes](../books/moanas-tear.md).
