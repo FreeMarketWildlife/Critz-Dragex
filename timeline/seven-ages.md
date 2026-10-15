@@ -80,3 +80,7 @@ Author interview clarification: **during Age 3**, Veratus's father rules Mount Y
 In the current incarnation, Koric seeks Veratus for delivery to the Guild of Kalos, which possesses the Tear or part of it. During the journey, the Cave of Origins reunites his soul fragments and memories; recalling his execution and seeing the father's likeness in Veratus, he tries to kill him until a raven intervenes. Cave-before-mountain versus cave-after-mountain remains undecided.
 
 The raven knows Veratus is destined to rule the restored Moana's Tear location/kingdom and that **Koric's final death will occur in Death's Valley**, allowing his spirit to go to Allohim. **The Tear's return still ends Age 3**; the precise death timing relative to that transition and its manner remain unspecified. See [the current book account](../books/moanas-tear.md).
+
+## Opening journey order — October 14, 2026
+
+Phil settles the relative sequence within Age 3: **Prairie Bridge inn revelation → dream-driven detour to Cave of Origins near East Lake → soul reunion and fight → raven intervention/prophecy → campfire confession that night → Mount Yokai and king's chamber**. Veratus learns at the campfire that his father murdered Koric's previous incarnation; the mountain chamber is intended to establish his own kingship, by a mechanism still undecided. The raven foretells his rule over **Lake Moana** (preferred lake name). Final kingdom naming remains open. No absolute dates or age boundaries change. See [book notes](../books/moanas-tear.md).
