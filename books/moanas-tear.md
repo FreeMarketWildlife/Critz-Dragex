@@ -457,3 +457,16 @@ Source: Phil's direct author interview correction. Latest clarification supersed
 - Koric offers to prove the ability and tries to teach him to run on water that same day. **This demonstration and Veratus's first attempt begin building trust between them** and help motivate the adventure.
 - Exact location of the water, whether Veratus succeeds immediately, and what happens during the lesson remain open. Do not treat the sample dialogue as verbatim final text.
 
+
+## Water-running lesson and first invitation — October 15, 2026
+
+Source: Phil's direct author interview answer; tentative details are labeled.
+
+- Koric and Veratus may return to the guardians' **farm/property**, near the edge of **Rootport**, toward **Liarsville** (spelling is the current intended transcription; verify against the map/name registry before normalizing globally).
+- A **small pond** on or near the property is the proposed place for Veratus to practice water-running.
+- Veratus may **fail on his first attempt**, but eventually succeeds. This is the intended progression; exact number of attempts, coaching, danger and emotional beat remain unwritten.
+- Having gained Veratus's trust through the lesson, **Koric invites him to travel on a boat leaving that afternoon**. The boat departs **around sunset**.
+- Veratus **initially says no** to the invitation.
+- He then speaks with guardians **Roger and Claire**: **Uncle Roger opposes him going; Aunt Claire supports him going.**
+- Why either guardian takes that position, what Veratus says to persuade or answer them, and the precise decision that leads him to board remain open. Preserve his initial refusal and the disagreement as separate beats; don't infer that permission alone makes him depart.
+- This boat is the journey toward Sapporo/Mount Yokai and the later Weston incident. Its passengers/charter details and exact departure hour remain undecided.
