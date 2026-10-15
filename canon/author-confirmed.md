@@ -640,3 +640,37 @@ Source: Phil's direct author interview continuation.
 - Veratus's imminent birthday is tied to the **Blood Moon** on which the **Guild of Kalos wants to sacrifice him to activate the Ice Blade**. The date/relative timing is now a strong story direction; whether his birthday and Blood Moon fall on the same exact day is implied but still requires confirmation.
 - This creates dramatic irony: Koric invites Veratus onto a boat for a concealed guild delivery timed around the sacrificial opportunity, while Veratus believes he is pursuing adventure and ancestry.
 
+
+## Weston passage and the Tear fragment held by Psyte — October 15, 2026
+
+Source: Phil's latest author interview; intentional dictation variants normalized to Koric, Veratus, Moana's Tear, Psyte, Alfred and Royal Game of Ur.
+
+### Ship/whale sequence
+
+- Weston swallows the passenger ship **in the middle of the night**, before morning (supersedes the working next-morning estimate).
+- Weston is a **large whale**, with Phil leaning toward a **blue whale** for recognizability; species is not yet firmly confirmed.
+- Weston travels onward from Kaldro's Cape **toward Sapporo**. Koric knows this in advance and has **planned around Weston's route**.
+- Koric arranged the plan with **Alfred, an octopus inside Weston**, as a bargain for safe/quick passage. The exact service offered, price/consideration and whether Weston knowingly cooperates remain open.
+- The companions remain inside Weston for **the time it takes the whale to travel toward Sapporo**. A stay of several days is possible, but Phil has not fixed an exact number or route duration.
+
+### Koric's concealed second objective
+
+- Koric's **deeper reason** for arranging this whale passage is to obtain a **piece/fragment of Moana's Tear located inside Weston**.
+- Koric keeps this objective secret from Veratus. Veratus need not know Koric planned their entry into the whale or intended to seek the fragment.
+- The fragment is associated with **Psyte** (spoken/spelled **P-S-Y-T-E** here; archival variants include Pyste). Psyte is a frog and has found/holds a precious jewel that he strongly desires.
+- The Tear has an alluring, potentially addictive draw on creatures who possess or encounter it, compared by Phil to the One Ring in *The Lord of the Rings*, but **much weaker**. Exact effects, progression and whether every fragment has this influence remain undecided.
+- Psyte belongs to an **unnamed underground bounty-hunting guild**, distinct from the Guild of Kalos; he earns his living as a bounty hunter. The guild name, membership and its relationship to the whale's other inhabitants remain open.
+
+### Proposed way to obtain it
+
+- Koric challenges Psyte to a **Royal Game of Ur** and bets that he can beat him, intending to win the Tear fragment.
+- The wager and game are a proposed story direction; rules, stakes, whether Psyte accepts, result, and whether the fragment changes hands immediately remain to be written.
+- The working dramatic shape is that Veratus sees this as Koric's bizarre bet/game, while Koric is pursuing a dangerous, secret quest-object objective. Do not invent exact dialogue or assert the bet's outcome before Phil sets it.
+
+### Fragment system — recommendation and status
+
+- Phil is considering **multiple pieces/fragments** of the portable Moana's Tear, allowing each recovery to mark progress toward restoring Death's Valley.
+- Assistant recommendation: this works well as a quest structure **if every fragment belongs to the same original artifact and has a meaningful role in the restoration**, rather than feeling like arbitrary collectible tokens. The fragment held in Weston/Psyte, the piece in the Cave of Origins, and the Tear held by the Guild of Kalos need a clear count/identity/ownership map when Phil is ready.
+- The number of fragments, where/how the Tear broke, whether the separate pieces are physically distinct from the named skull-island, and what each does remain **unresolved**. This is a promising direction, not yet a fully confirmed fragment system.
+- Keep the established distinction: the island called **Moana's Tear** is formed over Moana's skull, while Koric seeks a portable artifact also called **Moana's Tear**; their physical/magical relationship remains unspecified.
+
