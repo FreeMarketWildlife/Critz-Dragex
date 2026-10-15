@@ -126,3 +126,7 @@ During the escape, Moto is injured. Koric makes the hard decision to give the Te
 ## Split escape from Sapporo and Moto's tunnel ambush — October 15, 2026
 
 Koric turns back for injured Moto despite Moto urging him to go. Veratus escapes alone from the guards by running across a moving river; lonely and discouraged, he misses Rootport and his aunt/uncle. Koric and Moto buy safe passage at an inn from Koric's connections, then take an underground tunnel. **Proposed:** while they think they are safe, Moto falls silent; Koric sees a blade in his chest and fights the attacker. Reunion timing remains unresolved: Phil also described Koric and Moto waking Veratus the next morning or two days later for an embrace, which conflicts with Moto dying in the tunnel before Koric finds Veratus. Do not merge these into a fixed order yet.
+
+## Resolved: Moto dies before Koric finds Veratus — October 15, 2026
+
+Sequence settled by Phil: Veratus last sees Moto at the Tear handoff as Koric turns back to help him. Veratus escapes alone; Koric and Moto use an inn contact and underground tunnel. Moto is stabbed and dies there; Koric fights the killer. **Moto never sees Veratus again.** Koric finds Veratus the following morning or possibly two days later, wakes him and embraces him. The earlier option of a living-Moto reunion is superseded. Exact delay, attacker and battle outcome remain open.
