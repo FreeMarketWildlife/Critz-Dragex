@@ -98,3 +98,7 @@ After executing Koric's previous incarnation, the basilisk king sees the united 
 ## Immediate cause of counselor's execution — October 14, 2026
 
 Koric's previous incarnation **frees all remaining prisoners** after the king starts imprisoning people for trivial offenses to supply Ice Blade executions. With the mammalian-kingdom-led united armies already approaching, the king finds no prisoners left and **executes the counselor in their place**. Preferred author direction: lightning still strikes, but the armies continue. Special Ice Blade/phoenix-curse interaction remains an alternative under consideration. Earlier “tipping point” language does not settle exactly when coalition formation versus marching occurred; no second execution is implied.
+
+## Axios and surviving genealogy — October 14, 2026
+
+**Axios is confirmed as Veratus's father and the king**. Veratus learns this parentage at the campfire and discovers the fuller lineage **carved in stone in the king's chamber**; combustible records burned in the mammalian destruction. Phil now describes that destruction/rise as **at the beginning of Age 3**; exact dating relative to Koric's previous life and present-day ages needs clarification, without moving the established Fey-battle boundary. Later in the current quest, Koric **does hand Veratus to the guild while intending to rescue him**, having withheld this plan at the campfire. Veratus is saved and the group escapes; precise mechanism and participants remain unspecified.
