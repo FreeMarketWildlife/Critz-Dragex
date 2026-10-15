@@ -497,3 +497,15 @@ Source: Phil's direct author interview continuation.
 - Veratus's imminent birthday is tied to the **Blood Moon** on which the **Guild of Kalos wants to sacrifice him to activate the Ice Blade**. The date/relative timing is now a strong story direction; whether his birthday and Blood Moon fall on the same exact day is implied but still requires confirmation.
 - This creates dramatic irony: Koric invites Veratus onto a boat for a concealed guild delivery timed around the sacrificial opportunity, while Veratus believes he is pursuing adventure and ancestry.
 
+
+## Passenger ship route and working sailing-time estimate — October 15, 2026
+
+Source: Phil's direct author interview and a route estimate from the current Libriam Globe map.
+
+- Koric and Veratus board a **passenger-carrying ship** at Rootport near sunset. They speak with one another and gradually get to know each other; they do **not** meet other notable characters aboard before the whale encounter.
+- The ship is bound for **Sapporo**, taking the sea route around **Kaldro's Cape**. **Weston swallows the ship at Kaldro's Cape**, before it reaches Sapporo.
+- Current globe anchor points: **Rootport −10.871867°, −23.854195°; Kaldro's Cape −17.451946°, −32.004310°; Sapporo 15.798273°, −20.910207°**. At the globe's current radius (~364.38 km), the shortest surface distances are approximately **65 km Rootport→Cape** and **223 km Cape→Sapporo**. These are map-distance estimates, not authored ship lanes; currents, coast-hugging and routing can increase travel distance.
+- **Working pacing proposal:** leaving near sunset, the ship reaches Kaldro's Cape and is swallowed by Weston **the following morning**, after roughly an overnight passage (about 12–18 hours, depending on sailing conditions and route). From the cape, the remaining mapped leg to Sapporo would take several additional days. This gives Koric and Veratus time aboard to talk while preserving the Chapter 1 whale attack before the city.
+- The time estimate is an assistant's practical proposal based on map scale and plausible small-world sailing pace, **not fixed canon until Phil confirms**. Exact vessel name/type, speed, route, weather, passengers, and whether “the following morning” is preferred remain open.
+- Dictation variants “Quark/Korok” and “Varatis/Veradis” in this answer refer to established **Koric** and **Veratus**; do not introduce new characters.
+
