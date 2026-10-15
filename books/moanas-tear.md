@@ -373,3 +373,22 @@ Source: Phil's direct author interview continuation.
 - They run out of the city and flee **east toward Death's Valley**.
 - Sapporo's guards pursue them, but the **citywide chaos gives them a possible opportunity to slip away**. The exact tactic and how they ultimately lose the guards remain undecided; don't claim they simply outrun every guard in a footrace.
 - Keep the route east from Sapporo; do not confuse this with the earlier pre-city west/east Lake geography.
+
+## Moto's injury, Koric's farewell and Axios's desire for the Tear — October 15, 2026
+
+Source: Phil's direct author interview continuation.
+
+### During the escape
+
+- **Moto is injured** in the Sapporo escape. Injury details and severity are unspecified.
+- Koric makes the exceptionally difficult decision to **give Moana's Tear to Veratus**.
+- Koric tells him: **“If you don't find me tonight, find me in my next life. Only I can restore the Tear of Moana; it's my cross to bear.”**
+- This is an emotional farewell/parting commitment tied to Koric's phoenix curse and life's quest. How the pair separate physically after this exchange, whether Koric intends or expects to die that night, and how the line relates to the Tear's return are not yet specified.
+- The direct quote's spelling “Tear of Moana” is preserved here; established artifact name elsewhere is **Moana's Tear**.
+
+### Axios and the Tear
+
+- **Axios wanted Moana's Tear from Koric's previous incarnation** and desired it as the **prize crown jewel of Mount Yokai**.
+- Axios's claim on the Tear was a significant source of damage to his relationship with the previous Koric. Do not infer an agreed transfer, ownership, or whether the Tear had already been stolen at that point.
+- Phil speculates that an **evil yokai may have possessed Axios at some point and led him astray**. This is a possible explanation only: whether possession occurred, which yokai, when, its duration, and how much of Axios's behavior it influenced remain undecided.
+- This does not establish that possession excuses Axios's evil acts or that a yokai is confirmed to inhabit the Ice Blade.
