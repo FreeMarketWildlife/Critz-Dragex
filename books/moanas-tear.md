@@ -345,3 +345,14 @@ Source: Phil's direct author interview continuation.
 - Their immediate larger objective remains getting **Moana's Tear to Death's Valley**. The next specific route/destination after escape, and the artifact's transport/fragment distribution, remain open.
 - The moment should retain both truths: the lightning is a spectacular payoff to Veratus's first use of the Ice Blade, and its immediate consequence is claustrophobic danger before he can emotionally absorb the killing.
 
+
+## Sapporo collapse escape and anti-amphibian hostility — October 15, 2026
+
+Source: Phil's direct author interview continuation.
+
+- The aftermath feels like being trapped in a **collapsing underground cave**: pitch-black, buried, disorienting. Koric, Veratus and Moto must **find one another, confirm they still have the Tear, and make their way out**. No special guiding sound, magic light, helper or escape trick has been established.
+- Once free of the rubble, they must **escape Sapporo**, which is now on high alert after the museum destruction and Veratus's killing/lightning strike.
+- **Sapporo is a massive city populated by tiny critters**; the scale makes crossing/exiting it a substantial challenge.
+- **Amphibians are unwelcome in Sapporo**, especially in the city's royal innermost district. This heightens danger for amphibian Koric during the escape. The hostility's exact legal form, enforcers, rationale and whether it applies uniformly remain unspecified.
+- Veratus's single killing and lightning strike cause extensive destruction in that district; do not infer a death toll, exact structural damage, or that the whole city is destroyed.
+- Priority order in the immediate darkness: locate companions, verify the Tear, escape the underground collapse; then evade alert authorities/city forces and get out of Sapporo.
