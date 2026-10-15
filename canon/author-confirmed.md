@@ -567,3 +567,23 @@ Source: Phil's explicit resolution of the scene order.
 - Veratus escapes separately and has no knowledge of Moto's tunnel death during that night. **Koric finds Veratus the next morning or possibly two days later**; exact interval remains undecided. Veratus is asleep, Koric wakes him, and they embrace.
 - This resolves and supersedes the alternative where Koric and Moto find Veratus together while Moto is still alive. Preserve the emotional reunion as a **Koric/Veratus reunion after Moto's death**, not a trio reunion.
 - Killer identity, fatal blow timing relative to the inn, and Koric's fight outcome remain open. Moto's death is confirmed.
+
+## Rootport opening: market delivery and first approach — October 15, 2026
+
+Source: Phil's direct author interview answer; dictation variants normalize to Veratus, Koric, Roger, Claire and Archaíos.
+
+- The story opens in **Rootport**, a modest **fishing-village/export town**. It is substantially self-sufficient, imports little, and receives merchants bringing unusual goods from distant places.
+- Merchant boats arrive and trade **twice a week**. Exact weekdays are not chosen. The calendar has **seven days per week and the same months/calendar pattern as our world**; no weekday-to-date mapping is established.
+- Veratus is doing a normal delivery chore for his chameleon guardians, **Roger and Claire**, who farm small feeder/invertebrate creatures such as **springtails, worms, mealworms and earthworms**. He carries some of their farm goods into town for the merchants/marketplace, probably in a **wheelbarrow, cart or carriage**; exact load and conveyance remain open.
+- Koric arrives by boat early that morning as one of the other creatures disembarking. He **quietly watches/follows Veratus through his delivery errands** before approaching him later, likely at an inn where Veratus stops for lunch.
+- During their lunch conversation, Koric greets Veratus and points out that he is a **basilisk**. Koric already knows Veratus's identity and name but conceals his prior knowledge and true Sapporo/Guild purpose.
+- The opening uses ordinary work and local commerce to introduce Rootport before the larger quest begins. Rootport is remote from Sapporo and trades with it infrequently.
+- It is broadly known that **the basilisks of Mount Yokai fell about sixteen years ago**, when Veratus was an egg/newborn. Yet Rootport's distance and limited contact mean its inhabitants may no longer recognize what a basilisk looks like; the species' near-extinction is not everyday local knowledge. This explains why Veratus can live there without being instantly recognized.
+- Veratus's guardians are farmers raising these small creatures; exact household business arrangements, crops, load quantities, and merchant identities remain open.
+
+## Age and fall-date revision under consideration — October 15, 2026
+
+Phil wants Veratus to be **16** in the current story and Koric around **21–22**, making Koric approximately five or six years older. The Mount Yokai basilisk kingdom's fall is therefore tentatively placed about **16 years before the current adventure**, rather than the earlier 20-year figure.
+
+Phil also wants Koric's previous incarnation's death moved to **roughly four or five years before a reference point not yet made fully clear**, and wants Archaíos to have met the current Koric at around **age 3–5**. These are developing age/timing directions, not yet a coherent fixed chronology: if the previous Koric died at the fall 16 years before the story while the current Koric is 21–22, the current Koric would already have been roughly 5–6 at that event. Clarify whether “four or five years before” means before the present story, before the fall, or another milestone before locking the timeline. Preserve the confirmed character-age goals while leaving the exact dates unresolved.
+
