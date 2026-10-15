@@ -674,3 +674,13 @@ Source: Phil's latest author interview; intentional dictation variants normalize
 - The number of fragments, where/how the Tear broke, whether the separate pieces are physically distinct from the named skull-island, and what each does remain **unresolved**. This is a promising direction, not yet a fully confirmed fragment system.
 - Keep the established distinction: the island called **Moana's Tear** is formed over Moana's skull, while Koric seeks a portable artifact also called **Moana's Tear**; their physical/magical relationship remains unspecified.
 
+
+
+## Weston attack and Psyte wager — October 15, 2026
+
+- Weston is swallowed at Kaldro’s Cape at midnight, then travels toward Sapporo. Orcas attack him between Eden’s Isle and Grimroot Grove; Weston dies belly-up, leaving Koric and Veratus stranded before they wash ashore at Grimroot Grove.
+- Chapter 3 opens with Veratus’s apparent Eden’s Isle vision/psychic communication with Archaíos, followed by Koric waking him on Grimroot Grove. The exact scene order and vision content are open.
+- Koric tells Psyte a fabricated story about Roger’s jeweled dagger. Psyte can read minds but cannot confidently read Koric, and wants the knife for his ninja-like frog bounty-hunter kit.
+- Psyte accepts a Royal Game of Ur wager because he expects to win. If Koric loses, Psyte gets Roger’s dagger; if Koric wins, he seeks Psyte’s Tear fragment.
+- Orcas interrupt the game immediately before Koric is about to win. Koric secretly gets the fragment away from Psyte before the game concludes; the exact method and reveal remain open.
+- Whale travel time remains unconfirmed. The ~223 km Cape-to-Sapporo map distance and a blue whale’s typical ~5 mph travel rate imply about 28 hours if direct and continuous; variable speeds/routes could make it roughly 1–3 days. The current approximate map lacks exact coordinates for the interception area.
