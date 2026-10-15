@@ -237,3 +237,33 @@ Source: Phil's direct author interview account, following the opening-journey de
 - The large portable Tear concept is discussed in connection with Moana's immense skull. **Moana's Tear island is the skull landmass; it is not Eden's Isle** (Phil immediately corrected that verbal slip). The exact physical/magical relationship between the island and the portable Tear remains open; no carrying of the entire skull-island is established.
 - Historical versions with different artifact acquisition routes remain preserved as drafts. Guild possession is now confirmed, but neither a completed exchange nor a particular heist outcome is thereby finalized.
 
+
+## Phoenix curse and Cave of Origins — October 14, 2026
+
+Source: Phil's direct author interview account.
+
+### Koric's soul, lives and dreams
+
+- Koric's **phoenix curse** causes repeated lives: **the same soul enters a new body with a new mind**. He remains the **same species (fire salamander)** and **always male**; Phil considered then explicitly rejected varying his sex.
+- **Every death damages and hurts the soul**, progressively worsening its condition. The curse perpetuates death and suffering rather than granting desirable immortality. Phoenixes also exist in this world; their exact relationship to Koric's curse is not established.
+- Throughout his current life, Koric dreams of his previous lives reaching out to him. The dreams tell him the cycle of death and suffering will continue and convince him that **returning Moana's Tear is his destiny and overriding life's task**.
+- This clarifies that the previously recorded inability to die means an inability to escape the rebirth cycle / achieve final death, not that his individual bodies cannot die.
+- Do not invent the curse's original caster, original offense, number or length of lives, rebirth timing, or a universally applicable soul system for all creatures.
+
+### Cave geography and memory experience
+
+- **Cave of Origins** is near Mount Yokai, closer to **East Lake**, which lies roughly **southeast of Mount Yokai**. Phil describes **twin rivers running from Mount Yokai into East Lake and West Lake**. Exact routes and coordinates are unspecified; this does not automatically replace the separately mapped great rivers.
+- Koric and Veratus visit the cave **either shortly before or after Mount Yokai**; the order is undecided.
+- Koric undergoes an intense spiritual experience in which his mind receives the memories/information of **all his previous lives**. His memory becomes fully filled out.
+- **After this experience, the dreams cease.** Phil described torn or separated soul aspects as a tentative analogy; do not treat this as a settled literal soul-fragment anatomy, complete soul healing, or lifting of the curse.
+- Koric tells Veratus **not to follow him inside**. When he takes too long, Veratus enters after him.
+- Koric tackles Veratus out of the cave, beats/attacks him, and they have a major fight extending into the **river**. The cause of Koric's aggression, degree of control, and precise choreography remain open.
+
+### Legendary bird intervention — proposed
+
+- Phil proposes that a legendary bird called **Drakos** intervenes, stops their fight, and tells them they must work together.
+- The name was dictated as **D-R-A-K-O-S with an accent**, but the accent's letter and form were not specified. **Drakos is an unaccented working transcription**, not a settled accented spelling.
+- **Species undecided:** raven favored over an eagle; identity and intervention remain proposed.
+- Repository search for “Drakos” returned no matches during this interview. Recovered character notes separately contain **Enáretos** (raven), **Díkaios** (peregrine falcon), **Draco** (lizard), and **Drago** (antagonist). **No identity or rename relationship is established** by the similar names. Do not merge them automatically.
+
+This author account governs over incompatible historical phoenix/memory scenes. It does not settle the entire chapter order or alter the established Age 3 / Age 4 transition.
