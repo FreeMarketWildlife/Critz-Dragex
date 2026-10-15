@@ -556,3 +556,14 @@ Source: Phil's direct author interview continuation. This updates the previously
 - Veratus sleeping alone and believing he has lost Koric may precede a later reunion; whether he already learns Moto's fate, whether Koric reunites with him alive, and the exact elapsed time remain open.
 - Do not retain the prior assumption that all three simply run together out of Sapporo or use one shared tunnel route. Their escape paths diverge as described here.
 
+
+## Moto's final separation and death — sequence resolved October 15, 2026
+
+Source: Phil's explicit resolution of the scene order.
+
+- **Moto dies before Koric reunites with Veratus.** While Koric and Moto travel through the underground tunnel after buying safe passage, they believe they are safe. Moto stops speaking; Koric looks back and sees a blade protruding from Moto's chest. Koric fights Moto's attacker.
+- **Koric and Moto never reunite with Veratus.** Moto never sees Veratus again.
+- **Veratus last sees Moto at the Tear handoff**, when Koric gives Veratus Moana's Tear and turns back to help injured Moto.
+- Veratus escapes separately and has no knowledge of Moto's tunnel death during that night. **Koric finds Veratus the next morning or possibly two days later**; exact interval remains undecided. Veratus is asleep, Koric wakes him, and they embrace.
+- This resolves and supersedes the alternative where Koric and Moto find Veratus together while Moto is still alive. Preserve the emotional reunion as a **Koric/Veratus reunion after Moto's death**, not a trio reunion.
+- Killer identity, fatal blow timing relative to the inn, and Koric's fight outcome remain open. Moto's death is confirmed.
