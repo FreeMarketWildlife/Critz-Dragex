@@ -148,3 +148,7 @@ After their lunch meeting, Koric may take Veratus to a small pond at Roger and C
 ## Why Roger and Claire disagree about Veratus leaving — October 15, 2026
 
 Archaíos personally brought Veratus's egg from Mount Yokai to chameleons Roger and Claire in remote Rootport, believing locals unlikely to recognize a basilisk. Roger promised Archaíos he would always protect Veratus. Now an old, gruff chameleon, Roger fears he cannot follow if Veratus leaves; he hides that fear behind harsh talk about the farm and how the family would manage without him. He deeply loves Veratus. Claire encourages him to go, believing he is destined for great things. What finally makes Veratus accept the invitation remains open.
+
+## Veratus's mapmaking and departure for adventure — October 15, 2026
+
+Veratus has secretly longed for adventure and loves mapping. By the opening he has mapped all of Rootport, all of Liarsville, and as much of Cloud Forest as he can reach in a day. He feels babied under Roger and Claire's roof and is nearly 16. Koric's ancestry offer gives his restlessness a concrete direction; Roger warns he'll only learn he's the last basilisk, a belief rather than confirmed extinction. Veratus chooses to leave, and Roger gives him a small dagger/short sword with a warning to learn its use. At sunset Koric and Veratus race to catch a passenger boat. Veratus's impending birthday is connected to the Blood Moon on which the Guild plans to sacrifice him to activate the Ice Blade; exact birthday/Blood Moon coincidence remains to verify.
