@@ -118,3 +118,7 @@ Koric, Veratus and Moto are buried in pitch-black underground rubble, like survi
 ## Western Kingdom and flight from Sapporo — October 15, 2026
 
 Mammals hold political power; **Sapporo is the capital of the Western Kingdom**. Its king is a relatively small mammal; Phil leans toward a **platypus**, not confirmed. After emerging from the underground collapse, Koric, Veratus and Moto run, pursued by Sapporo's guards, then flee **east toward Death's Valley**. Citywide chaos may let them slip away; exact means of losing the pursuit remain open.
+
+## Koric entrusts the Tear to Veratus — October 15, 2026
+
+During the escape, Moto is injured. Koric makes the hard decision to give the Tear to Veratus and says: **“If you don't find me tonight, find me in my next life. Only I can restore the Tear of Moana; it's my cross to bear.”** His physical separation, whether he expects to die that night, and the farewell's relation to the eventual restoration remain open. In Koric's immediately previous life, **Axios wanted the Tear as Mount Yokai's crown jewel**, straining their relationship. An evil yokai's possible possession/influence over Axios remains speculation, not established fact.
