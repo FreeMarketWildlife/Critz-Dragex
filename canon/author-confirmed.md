@@ -477,3 +477,14 @@ Source: Phil's direct author interview continuation.
 - **Allohim** remains the correct established Creator spelling, as the author asks to confirm.
 - How much of the Tear the guild holds versus the Cave of Origins piece, the fate of other artifacts, and who escapes beyond the named trio remain open. Current escape does not automatically adopt the older draft's later Moto death or guild-building destruction.
 
+
+## First killing and buried escape — October 15, 2026
+
+Source: Phil's direct author interview continuation.
+
+- Veratus is **horrified after killing his first person** with the Ice Blade in the Sapporo museum escape. He has **no time to process the death**.
+- The moment he kills the person, **lightning strikes through the ceiling**. The resulting destruction drops rubble over **Koric, Veratus and Moto**, leaving all three trapped.
+- They find themselves in a **completely dark, enclosed space beneath the rubble** and must escape. Exact chamber geography, injuries, oxygen/light source, and how they move the rubble are not yet established.
+- Their immediate larger objective remains getting **Moana's Tear to Death's Valley**. The next specific route/destination after escape, and the artifact's transport/fragment distribution, remain open.
+- The moment should retain both truths: the lightning is a spectacular payoff to Veratus's first use of the Ice Blade, and its immediate consequence is claustrophobic danger before he can emotionally absorb the killing.
+
