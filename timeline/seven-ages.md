@@ -94,3 +94,7 @@ During Age 3, Archaíos carries Veratus's egg from Mount Yokai to chameleon guar
 ## Egg rescue timing — October 14, 2026
 
 After executing Koric's previous incarnation, the basilisk king sees the united Hokkaido army continuing its advance **despite the thunderclouds**. Before the kingdom's destruction, he begs the widely renowned Archaíos to save his **last remaining egg**, fearing the end of his line and species. This is Veratus; the king does not yet know the hatchling's sex. The rescue request is thus after the execution and during the approaching assault; precise escape timing remains unspecified.
+
+## Immediate cause of counselor's execution — October 14, 2026
+
+Koric's previous incarnation **frees all remaining prisoners** after the king starts imprisoning people for trivial offenses to supply Ice Blade executions. With the mammalian-kingdom-led united armies already approaching, the king finds no prisoners left and **executes the counselor in their place**. Preferred author direction: lightning still strikes, but the armies continue. Special Ice Blade/phoenix-curse interaction remains an alternative under consideration. Earlier “tipping point” language does not settle exactly when coalition formation versus marching occurred; no second execution is implied.
