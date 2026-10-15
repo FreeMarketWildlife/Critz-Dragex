@@ -406,3 +406,15 @@ Source: Phil's direct author interview answer.
 - The letters' contents, whether they explicitly requested a visit, and the timing of arrival relative to the execution remain unspecified.
 - Phil is considering **distinct names for Koric's different incarnations**, possibly alongside **an original/shared name referring to the soul across all lives**. This is an open naming system, not a finalized rule.
 - **Koric** remains the current incarnation's established name and a convenient interview shorthand for the previous incarnation until a name is chosen. No assistant-proposed name is canon without author selection.
+
+## Letters anticipating execution and Archaíos's purpose — October 14, 2026
+
+Source: Phil's direct author interview clarification.
+
+- Koric's immediately previous incarnation writes to Archaíos that **his end is approaching** and that he would be pleased for Archaíos to **witness his death**.
+- He knows **Archaíos's extraordinary influence across Hokkaido** and sees significance in having him witness it. What specific subsequent action he expects Archaíos to take remains unspecified; do not invent a coordinated revolt, revenge pact or publicity plan.
+- Phil compares the correspondence's situation/tone to **Paul writing letters from prison**. This is a creative analogy, not confirmation of a specific prison scene, theology or copied text.
+- Archaíos ostensibly comes in response to that invitation, but his **close relationship with Allohim** gives him a sense that he is coming for **another purpose**, that he is meant to be there. Whether he already knows the precise egg-rescue task is unspecified.
+- In these characters' speech, **“the world” means their known world, Hokkaido**. They **do not yet know of Libriam's other continents**. This does not make Hokkaido the whole planet or change the Age-4 discovery.
+- Phil wants the name under consideration for the previous/original/shared Koric identity to be **a variant of or inspired by “Phoenix.”** Which identity receives that name and the exact name remain undecided.
+- Earlier assistant suggestions **Vaelor, Oric, The Emberbound** were proposals only and were not adopted.
