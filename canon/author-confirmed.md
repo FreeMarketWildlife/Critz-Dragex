@@ -397,3 +397,12 @@ Source: Phil's direct answer about the egg rescue.
 - This establishes the rescue request **after the execution, while the enemy army is approaching**, before the kingdom's destruction. Exact departure and escape timing remain unspecified.
 - Archaíos's widespread reputation explains why the king knows of him and turns to him; a specific prior friendship, bargain or personal history is not established.
 - The king's plea to preserve his offspring does not erase the established account of his tyranny.
+
+## Why Archaíos came to Mount Yokai — October 14, 2026
+
+Source: Phil's direct author interview answer.
+
+- **Koric's immediately previous incarnation had written letters to Archaíos**, and **Archaíos came to Mount Yokai because of those letters**.
+- The letters' contents, whether they explicitly requested a visit, and the timing of arrival relative to the execution remain unspecified.
+- Phil is considering **distinct names for Koric's different incarnations**, possibly alongside **an original/shared name referring to the soul across all lives**. This is an open naming system, not a finalized rule.
+- **Koric** remains the current incarnation's established name and a convenient interview shorthand for the previous incarnation until a name is chosen. No assistant-proposed name is canon without author selection.
