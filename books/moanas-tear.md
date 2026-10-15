@@ -275,3 +275,19 @@ Source: Phil's direct author interview clarification.
 - In these characters' speech, **“the world” means their known world, Hokkaido**. They **do not yet know of Libriam's other continents**. This does not make Hokkaido the whole planet or change the Age-4 discovery.
 - Phil wants the name under consideration for the previous/original/shared Koric identity to be **a variant of or inspired by “Phoenix.”** Which identity receives that name and the exact name remain undecided.
 - Earlier assistant suggestions **Vaelor, Oric, The Emberbound** were proposals only and were not adopted.
+
+## Counselor frees the prisoners — October 14, 2026
+
+Source: Phil's direct author interview decision.
+
+- The king initially uses prisoners guilty of grave crimes for the Ice Blade executions, but as that supply runs out he **rounds up people for trivial offenses who do not deserve death**.
+- Koric's previous incarnation has increasingly stood up to him and **frees every remaining prisoner from captivity**.
+- As Hokkaido's united armies approach, **led by the mammalian kingdom**, the king seeks a prisoner to execute to trigger the storm deterrent and discovers the cells empty.
+- He takes the counselor who freed them as the substitute victim and **executes him with the Ice Blade**. This is the concrete act precipitating the execution, replacing the earlier unspecified refused order.
+- Phil's **preferred direction** is that **lightning still strikes but the armies keep advancing anyway**. He also considers a special interaction between the Ice Blade and Koric's phoenix curse, but **no altered effect is settled**. Do not assert a failed lightning trigger or curse cancellation.
+- Earlier statements that the execution is the political tipping point coexist with this account of armies already marching: the precise stages of coalition formation, mobilization and final resolve remain unpinned. Do not invent a second execution.
+- Original/shared soul name and incarnation names **remain undecided**. Phil likes **Phinnick** (working transcription of “Finnick with P-H”) and **Fenix** as possibilities, not selections.
+
+### Historical father-name evidence checked
+
+The recovered **T14 early Chapter 1** source (Google Drive document **1VDo18lkqwYsItSrtFf1qjMhwtZiiutPKDRX5CbootzU**, modified March 13, 2020) was directly read during this interview. A guild letter calls Veratus **“the offspring of Axios”** and mentions **“the bloodline of Keravna.”** Thus **Axios is a historical parental-name candidate**, not an explicitly confirmed current father/king name; the quoted passage does not establish parental sex or royal title. **Keravna** is a separate lineage name whose exact relationship remains unspecified. Do not silently adopt either as the current king without Phil's confirmation.
