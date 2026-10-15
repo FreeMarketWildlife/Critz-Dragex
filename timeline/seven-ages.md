@@ -160,3 +160,13 @@ Koric and Veratus board a passenger ship for Sapporo near sunset. They talk and 
 ## Night passage inside Weston and the Psyte fragment — October 15, 2026
 
 **Superseding the next-morning travel estimate:** Weston swallows the ship at Kaldro's Cape in the **middle of the night**. Koric has planned for Weston's onward route to Sapporo with **Alfred the octopus**, arranging a bargain for safe/quick passage. Koric's hidden deeper objective is a Tear fragment inside Weston, held by **Psyte**, a frog bounty hunter for an unnamed underground guild distinct from Kalos. Koric challenges Psyte to the **Royal Game of Ur**, betting he can win the fragment. The Tear has a mild alluring/addictive pull. Whale species leans blue whale; exact duration, bargain terms, game outcome and the full fragment count/system remain open. Several fragments are a promising quest structure if they are pieces of one original artifact with meaningful restoration roles; this is not yet fixed canon. See [book notes](../books/moanas-tear.md).
+
+
+## Weston’s death and the Grimroot Grove landing — October 15, 2026
+
+- Weston swallows the passenger ship at Kaldro’s Cape in the middle of the night and swims toward Sapporo.
+- On the way, orcas attack Weston between Eden’s Isle and Grimroot Grove. Weston dies and rolls belly-up; Koric and Veratus are stranded before washing ashore at Grimroot Grove.
+- Koric negotiates safe/quick passage with Alfred the octopus and secretly seeks the Moana’s Tear fragment held by Psyte. Koric spins a false history of Roger’s jeweled dagger; Psyte’s imperfect mind-reading does not expose the lie.
+- Psyte accepts a Royal Game of Ur wager, putting Roger’s dagger at risk if Koric loses. Koric intends to win Psyte’s Tear fragment. Orcas interrupt just before Koric is about to win; Koric secretly gets the fragment away before the game concludes.
+- Veratus’s Chapter 3 vision/communication from Archaíos feels like Eden’s Isle, but he wakes to Koric on Grimroot Grove.
+- Exact time inside Weston is open. Map and whale-speed estimates suggest around one to two nights as a practical starting point, with a longer route allowing more. This estimate is not author-confirmed.
