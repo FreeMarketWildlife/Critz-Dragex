@@ -58,3 +58,9 @@ Source: Phil's direct answers during the Moana's Tear author interview.
 
 This establishes the current opening's central lure, concealed guild assignment, and Prairie Bridge trust rupture over incompatible archived openings. Preserve old manuscripts as historical evidence; do not combine their different first meetings, Tear acquisition methods, or endings. This interview adds no age boundary or game-era assignment.
 
+
+## Koric's overriding purpose — October 14, 2026
+
+Source: Phil's direct author interview clarification.
+
+Koric regards returning Moana's Tear to Death's Valley as his life's quest and goal. He will do whatever it takes and does not care what it costs to complete that return. This establishes his overriding motivation at this stage of the story; it does not by itself specify the Guild of Kalos's intended treatment of Veratus, what Koric knows about that treatment, or the promised payment. Those details remain open. Do not infer a specific sacrifice, slave transaction, or guild possession of the Tear from this statement alone.
