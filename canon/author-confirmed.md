@@ -383,3 +383,17 @@ Source: Phil's latest direct author interview. Use established spellings **Koric
 - Phil now states that **each of the first three ages lasts at least a thousand years**. This is a new authorial duration constraint, **not an inference from the globe's 1,000-unit UI spans**. Exact lengths, dates and Archaíos's birth year remain unspecified.
 - **Continuity issue requiring clarification:** earlier canonical notes put his drinking after the last Mount Yokai Fey fighter's death, which itself starts Age 3. Today's explicit **Age-2 drinking** supersedes his prior age placement, but the ordering of the river drinking, battle's final death and age boundary needs an author explanation. Preserve the established boundary; do not silently shift it or invent the river's onset.
 
+
+## The king entrusts the last egg to Archaíos — October 14, 2026
+
+Source: Phil's direct answer about the egg rescue.
+
+- **Archaíos is famous throughout Hokkaido**, a Gandalf-like figure in stature and recognition: people of importance generally know who he is. This is an authorial comparison, not an imported character or new powers.
+- After the king executes Koric's previous incarnation and the thunderclouds appear, **the approaching army keeps coming anyway**. They have had enough; the storm deterrent fails.
+- Phil describes **all of Hokkaido coming against the king**. This conveys a broadly united opposition; do not turn it into a literal census of every inhabitant. The previously established mammal-led assault remains.
+- Seeing his line threatened with extinction, the king **begs Archaíos to take and save his last remaining egg**, fearing the hatchling may be the last basilisk.
+- The egg is **Veratus**, the king's youngest offspring. The king **does not know the hatchling's sex**; descriptions of “youngest son” are retrospective, not evidence of prenatal knowledge.
+- The king had many children; their individual identities, number and precise fates are not established here.
+- This establishes the rescue request **after the execution, while the enemy army is approaching**, before the kingdom's destruction. Exact departure and escape timing remain unspecified.
+- Archaíos's widespread reputation explains why the king knows of him and turns to him; a specific prior friendship, bargain or personal history is not established.
+- The king's plea to preserve his offspring does not erase the established account of his tyranny.
