@@ -106,3 +106,7 @@ Koric's previous incarnation **frees all remaining prisoners** after the king st
 ## Sapporo handover and escape — October 15, 2026
 
 Before Sapporo, Koric teaches Veratus Fey magic. In the **artifact-filled cult museum beneath the keep in the king's ward**, Veratus discovers he is being traded to Kalos for Moana's Tear. He enters custody willingly because he trusts **Allohim's promise through Drakos** of ruling Lake Moana, without knowing the rescue plan. Koric obtains the Tear, Veratus takes the Ice Blade, and Moto reveals his undercover guild disguise; they fight their way out. **Veratus's first killing triggers lightning through the ceiling**, paying off the blade/lightning images seen earlier in Mount Yokai's king's chamber and halls. Exact dates and rescue choreography remain open. See [book notes](../books/moanas-tear.md).
+
+## First Ice Blade killing and Sapporo collapse — October 15, 2026
+
+At Sapporo's artifact museum, Veratus is **horrified by his first killing**, but has no time to process it: lightning strikes through the ceiling and rubble buries **Koric, Veratus and Moto** in total darkness. They must escape the enclosed space, then continue carrying Moana's Tear toward Death's Valley. Exact escape, injuries and next route remain open. See [book notes](../books/moanas-tear.md).
