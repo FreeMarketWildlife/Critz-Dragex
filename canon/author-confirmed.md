@@ -171,3 +171,33 @@ Its **54,224.443 km² / 3.25%** area and reference location are preserved. The n
 ## Globe mountain and place coordinates — October 12, 2026
 
 Phil supplied eleven geographic annotations and requested mountains plus first-pass region appearances. **Mount Yokai** is the largest single mountain in the world, isolated and surrounded by jungle, at **9.191537° N, −18.750231°**. Three exact mountain spines, the coast-to-coast **Prairie Bridge** flower fields, the full **Grimroot Grove** boundary, and boxes for **Rootport**, **Liarsville** (a small town behind Rootport), **Cloud Forest**, **Kaldro’s Cape**, and **Sapporo** are now mapped. See the [dated geography entry](../world/hokkaido-geography-and-ages.md#mountain-and-named-region-annotations--october-12-2026) and [exact contours](../dragex-globe/src/data/author-annotations.json). These refine earlier map transcriptions; detailed rendering and absolute heights remain proposals. Age 2 / unit 1556 is the annotation viewing context, not a new creation or founding date.
+
+## Moana's Tear: opening journey and Koric's deception — October 14, 2026
+
+Source: Phil's direct answers during the Moana's Tear author interview.
+
+### Confirmed direction
+
+- Koric is seeking **Veratus specifically**, knows his name before meeting him, and conceals that prior knowledge.
+- Koric's actual business in **Sapporo** is delivering Veratus to the **Guild of Kalos**. What the guild wants with him and Koric's compensation remain unspecified in this interview.
+- Koric draws Veratus into the journey by suggesting he knows where other basilisks are and offering to take him to **Mount Yokai** to reconnect with his ancestry. He presents himself as having business in Sapporo; the precise cover occupation is not settled.
+- **Koric genuinely believes Veratus is the last living basilisk in the entire world. He therefore believes he is lying when he offers hope of meeting other basilisks.** Whether other basilisks actually survive is unknown; his belief does not establish their extinction as objective canon.
+- The basilisk kingdom on Mount Yokai fell earlier in Age 3. Rootport's inhabitants are comparatively uninformed about this history, and many do not appreciate how rare basilisks have become.
+- Veratus initially **refuses the call**. He ultimately accompanies Koric by boat; the specific event that changes his mind is still open.
+- Later, at an **inn in Prairie Bridge**, with **Moto** present, their stated intention of meeting basilisks at Mount Yokai prompts one of Koric's friends to expose that Koric knows the basilisk kingdom has been erased. Exact dialogue and the friend's identity remain unwritten.
+- Veratus loses trust and refuses to continue straight to Sapporo, insisting on **Mount Yokai** instead. Koric agrees to accompany him. The original immediate itinerary is Sapporo; when Koric initially promises the mountain visit relative to Sapporo is not settled.
+- Phil describes **Moto as a small white field mouse**, with a samurai/ninja character concept. This supersedes the uncertain shrew-versus-mouse description for the current interview direction.
+
+### Weston sequence and unresolved choices
+
+- Phil's explicitly preferred chapter boundary is **Weston the whale swallowing the boat at the end of Chapter 1**, with Koric and Veratus surviving.
+- Chapter 2 opens with a waterslide-like passage into a dark, wet, slimy chamber inside Weston.
+- Boat size, passenger count, other passengers' fates, attacking sea creatures, and the precise rescue/admission sequence remain unsettled. Phil also explored shipwreck, capsizing, and entering the water before Weston collects them; these are alternatives, not additional consecutive events.
+- Koric knows an octopus inside Weston, but the octopus's current name remains undecided: Phil tentatively recalled **Arnold**; recovered drafts use **Alfred**. Do not adopt Octavius or silently finalize a rename.
+- Koric engineering a wreck to supply captives, treasure, or slaves was brainstorming only, **not confirmed**.
+- Assistant suggestions about a small passenger vessel, a departure deadline, an affectionate farewell, and Veratus's specific feelings about his guardians remain proposals unless Phil confirms them.
+
+### Precedence
+
+This establishes the current opening's central lure, concealed guild assignment, and Prairie Bridge trust rupture over incompatible archived openings. Preserve old manuscripts as historical evidence; do not combine their different first meetings, Tear acquisition methods, or endings. This interview adds no age boundary or game-era assignment.
+
