@@ -317,3 +317,20 @@ Source: Phil's latest explicit author interview decisions.
 - Koric **still hands Veratus over to the Guild of Kalos**, doing so with a plan/intention to **save him afterward**.
 - **Veratus is rescued and they all make it out**, per Phil's stated outcome. Exact rescue mechanism, participants meant by “all,” the guild's actions during custody, and artifact/payment details remain open; do not infer that Veratus knows or consents to the handover beforehand.
 - This supersedes any assumption that recovering his morally upright previous life's memories means Koric simply abandons the delivery.
+
+## Sapporo artifact museum: handover, trust and escape — October 15, 2026
+
+Source: Phil's direct author interview continuation.
+
+- **Koric never tells Veratus in advance that he intends to trade him to the Guild of Kalos for Moana's Tear.** Veratus discovers the transaction **in Sapporo, inside the guild's cult museum containing many artifacts**.
+- The museum is **beneath the keep, in Sapporo's king's ward**. Exact architectural/political relationships and room layout remain unspecified; do not invent a reigning king's identity or guild control over the city.
+- **Before reaching Sapporo, Koric teaches Veratus to harness Fey magic**, available to **every Fey creature** in Phil's wording. This confirms Veratus's training and access, not an exclusive species restriction; earlier “anyone can practice magic” remains unless explicitly revised.
+- In the museum, **Veratus feels the room's intense magic** and fears Koric is sacrificing him either to save Hokkaido from Death's Valley or to free himself from the phoenix curse. These are **Veratus's interpretations**, not confirmation that he knows Koric's rescue plan.
+- Veratus remembers **Allohim's promise, delivered by the raven Drakos, that he will reign over Lake Moana**. He trusts that promise and **willingly enters the guild's custody**, despite believing himself in danger. This resolves the earlier question about his reaction: willingness does not mean advance knowledge of the trade or informed agreement to a rescue scheme.
+- **Koric obtains Moana's Tear**, **Veratus obtains the Ice Blade**, and **Moto reveals himself as an undercover guild member**; chaos erupts and they **fight their way out**. The exact handover, object placement and beat-by-beat rescue mechanics remain unwritten.
+- **Veratus kills a person for the first time during this fight**, using the Ice Blade, and **lightning crashes through the ceiling**. Victim identity, circumstances of the blow, emotional aftermath and structural consequences remain unspecified.
+- At **Mount Yokai**, they previously saw **paintings and stone carvings in the king's chamber and halls depicting this blade/lightning phenomenon**. Those prepare the later manifestation; no additional inscriptions or specific depicted events are invented here.
+- Phil now refers directly to **the raven Drakos** as the promise's messenger. Use **Drakos** as the current unaccented transcription; the previously requested accent's placement remains unspecified. No rename/identity connection to older birds is established.
+- **Allohim** remains the correct established Creator spelling, as the author asks to confirm.
+- How much of the Tear the guild holds versus the Cave of Origins piece, the fate of other artifacts, and who escapes beyond the named trio remain open. Current escape does not automatically adopt the older draft's later Moto death or guild-building destruction.
+
