@@ -444,3 +444,16 @@ Phil wants Veratus to be **16** in the current story and Koric around **21–22*
 
 Phil also wants Koric's previous incarnation's death moved to **roughly four or five years before a reference point not yet made fully clear**, and wants Archaíos to have met the current Koric at around **age 3–5**. These are developing age/timing directions, not yet a coherent fixed chronology: if the previous Koric died at the fall 16 years before the story while the current Koric is 21–22, the current Koric would already have been roughly 5–6 at that event. Clarify whether “four or five years before” means before the present story, before the fall, or another milestone before locking the timeline. Preserve the confirmed character-age goals while leaving the exact dates unresolved.
 
+
+## Lunch meeting: Veratus learns he is a basilisk — October 15, 2026
+
+Source: Phil's direct author interview correction. Latest clarification supersedes his initial thought that Veratus already knows the species name.
+
+- **Veratus does not know that “basilisk” is the name of his species.** He has not understood/learned his specific species identity, despite knowing his family and local life.
+- He also **does not know that he can run on water**.
+- At the Rootport inn over lunch, Koric recognizes him and says something along the lines of: **“A basilisk. I haven't seen one of your kind in a while.”** This wording is a dialogue sketch, not final prose.
+- Veratus asks whether Koric has seen others like him and/or **“What's a basilisk?”** Koric laughs in surprise that Veratus doesn't know his own species name. Veratus doubts him because visiting merchants have never identified him.
+- Koric connects the unusual shape of Veratus's feet to his basilisk ability: **he can run on water**, and Koric says it comes naturally to a Fey creature. The exact lore wording, and whether “what could possibly come naturally to a Fey?” is included, remain draft dialogue.
+- Koric offers to prove the ability and tries to teach him to run on water that same day. **This demonstration and Veratus's first attempt begin building trust between them** and help motivate the adventure.
+- Exact location of the water, whether Veratus succeeds immediately, and what happens during the lesson remain open. Do not treat the sample dialogue as verbatim final text.
+
