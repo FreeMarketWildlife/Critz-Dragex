@@ -499,3 +499,20 @@ Source: Phil's direct author interview continuation.
 - **Amphibians are unwelcome in Sapporo**, especially in the city's royal innermost district. This heightens danger for amphibian Koric during the escape. The hostility's exact legal form, enforcers, rationale and whether it applies uniformly remain unspecified.
 - Veratus's single killing and lightning strike cause extensive destruction in that district; do not infer a death toll, exact structural damage, or that the whole city is destroyed.
 - Priority order in the immediate darkness: locate companions, verify the Tear, escape the underground collapse; then evade alert authorities/city forces and get out of Sapporo.
+
+## Sapporo's government and the eastward chase — October 15, 2026
+
+Source: Phil's direct author interview continuation.
+
+### Western kingdom
+
+- The **mammals hold power** in the current political order, and **Sapporo is the capital of the Western Kingdom**.
+- Sapporo's king is **a mammal, but not a huge mammal**. Phil currently **leans toward a platypus** as king; this is a preference, not a finalized species or named ruler.
+- Exact name, government structure, kingdom borders and the king's role in the museum crisis remain open. Do not insert a confirmed platypus king into canon prose yet.
+
+### Escape route
+
+- The trio's first move upon emerging from the underground rubble is straightforward: **run**. Their escape becomes a **chase scene** through Sapporo.
+- They run out of the city and flee **east toward Death's Valley**.
+- Sapporo's guards pursue them, but the **citywide chaos gives them a possible opportunity to slip away**. The exact tactic and how they ultimately lose the guards remain undecided; don't claim they simply outrun every guard in a footrace.
+- Keep the route east from Sapporo; do not confuse this with the earlier pre-city west/east Lake geography.
