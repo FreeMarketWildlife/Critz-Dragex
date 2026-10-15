@@ -110,3 +110,7 @@ Before Sapporo, Koric teaches Veratus Fey magic. In the **artifact-filled cult m
 ## First Ice Blade killing and Sapporo collapse — October 15, 2026
 
 At Sapporo's artifact museum, Veratus is **horrified by his first killing**, but has no time to process it: lightning strikes through the ceiling and rubble buries **Koric, Veratus and Moto** in total darkness. They must escape the enclosed space, then continue carrying Moana's Tear toward Death's Valley. Exact escape, injuries and next route remain open. See [book notes](../books/moanas-tear.md).
+
+## Flight through Sapporo after the museum collapse — October 15, 2026
+
+Koric, Veratus and Moto are buried in pitch-black underground rubble, like survivors of a cave-in. They locate one another, confirm the Tear is with them, and work their way out. Sapporo is now on high alert. The city is massive despite its tiny-critter population, making escape difficult; **amphibians are unwelcome, especially in the royal inner district**, putting Koric at added risk. The single killing/lightning strike damages the museum area, not necessarily the whole city. See [book notes](../books/moanas-tear.md).
