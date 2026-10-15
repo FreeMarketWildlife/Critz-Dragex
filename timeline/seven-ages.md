@@ -144,3 +144,7 @@ At lunch in Rootport, Koric identifies Veratus as a **basilisk**. Veratus does *
 ## Pond lesson and sunset boat offer — October 15, 2026
 
 After their lunch meeting, Koric may take Veratus to a small pond at Roger and Claire's property on Rootport's edge toward Liarsville. Veratus fails initially, then learns to run across the water. Koric invites him onto a boat leaving around sunset that afternoon; Veratus first refuses. He discusses it with his guardians: Roger is against leaving, Claire supports it. The reasons, final decision, exact dialogue and passenger details remain open.
+
+## Why Roger and Claire disagree about Veratus leaving — October 15, 2026
+
+Archaíos personally brought Veratus's egg from Mount Yokai to chameleons Roger and Claire in remote Rootport, believing locals unlikely to recognize a basilisk. Roger promised Archaíos he would always protect Veratus. Now an old, gruff chameleon, Roger fears he cannot follow if Veratus leaves; he hides that fear behind harsh talk about the farm and how the family would manage without him. He deeply loves Veratus. Claire encourages him to go, believing he is destined for great things. What finally makes Veratus accept the invitation remains open.
