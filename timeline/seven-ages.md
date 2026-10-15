@@ -140,3 +140,7 @@ Current age goal: Veratus **16**, Koric **21–22**. The basilisk fall is tentat
 ## Veratus learns his species and water-running ability — October 15, 2026
 
 At lunch in Rootport, Koric identifies Veratus as a **basilisk**. Veratus does **not** know that name for his species and does **not** know he can run on water. Koric explains that the unusual feet enable water-running and offers a demonstration that day. Their conversation and first lesson begin to build trust. Sample dialogue is exploratory; whether Veratus succeeds immediately and the exact water/location remain open.
+
+## Pond lesson and sunset boat offer — October 15, 2026
+
+After their lunch meeting, Koric may take Veratus to a small pond at Roger and Claire's property on Rootport's edge toward Liarsville. Veratus fails initially, then learns to run across the water. Koric invites him onto a boat leaving around sunset that afternoon; Veratus first refuses. He discusses it with his guardians: Roger is against leaving, Claire supports it. The reasons, final decision, exact dialogue and passenger details remain open.
