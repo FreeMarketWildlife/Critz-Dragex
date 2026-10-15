@@ -122,3 +122,7 @@ Mammals hold political power; **Sapporo is the capital of the Western Kingdom**.
 ## Koric entrusts the Tear to Veratus — October 15, 2026
 
 During the escape, Moto is injured. Koric makes the hard decision to give the Tear to Veratus and says: **“If you don't find me tonight, find me in my next life. Only I can restore the Tear of Moana; it's my cross to bear.”** His physical separation, whether he expects to die that night, and the farewell's relation to the eventual restoration remain open. In Koric's immediately previous life, **Axios wanted the Tear as Mount Yokai's crown jewel**, straining their relationship. An evil yokai's possible possession/influence over Axios remains speculation, not established fact.
+
+## Split escape from Sapporo and Moto's tunnel ambush — October 15, 2026
+
+Koric turns back for injured Moto despite Moto urging him to go. Veratus escapes alone from the guards by running across a moving river; lonely and discouraged, he misses Rootport and his aunt/uncle. Koric and Moto buy safe passage at an inn from Koric's connections, then take an underground tunnel. **Proposed:** while they think they are safe, Moto falls silent; Koric sees a blade in his chest and fights the attacker. Reunion timing remains unresolved: Phil also described Koric and Moto waking Veratus the next morning or two days later for an embrace, which conflicts with Moto dying in the tunnel before Koric finds Veratus. Do not merge these into a fixed order yet.
