@@ -684,3 +684,12 @@ Source: Phil's latest author interview; intentional dictation variants normalize
 - Psyte accepts a Royal Game of Ur wager because he expects to win. If Koric loses, Psyte gets Roger’s dagger; if Koric wins, he seeks Psyte’s Tear fragment.
 - Orcas interrupt the game immediately before Koric is about to win. Koric secretly gets the fragment away from Psyte before the game concludes; the exact method and reveal remain open.
 - Whale travel time remains unconfirmed. The ~223 km Cape-to-Sapporo map distance and a blue whale’s typical ~5 mph travel rate imply about 28 hours if direct and continuous; variable speeds/routes could make it roughly 1–3 days. The current approximate map lacks exact coordinates for the interception area.
+
+
+## Quote for Dragex — October 18, 2026 (UTC)
+
+Source: Phil's direct request to include this quote in Dragex and save it in the Critz–Dragex repository.
+
+> Anything can be true as long as you’re the one defining the terms.
+
+Speaker, attribution, scene, and placement remain unspecified.
