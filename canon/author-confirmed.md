@@ -52,9 +52,9 @@ Source: Phil's request for the first paired Blender animation on a correctly sca
 
 **Status:** Current direct author statements, superseding conflicting interpretations and older recovered documents. Review [the seven ages](../timeline/seven-ages.md), [cosmology](../world/allohim-and-cosmic-creation.md) and [narrative frame](../books/moanas-tear-frame.md).
 
-## Official planet name
+## Official world name (moon of Kronos)
 
-- **Libriam** (L-I-B-R-I-A-M) is the **official name of the entire planet** where the Dragex books and Critz games are set; **Hokkaido is one of its three great continents**, not the name of the planet.
+- **Libriam** (L-I-B-R-I-A-M) is the **official name of the entire inhabited world** where the Dragex books and Critz games are set; **Hokkaido is one of its three great continents**, not the name of the world. The October 13, 2026 decision classifies Libriam as a moon of Kronos, superseding the earlier standalone-planet classification.
 - **Libriam** is the author's coined name. An earlier AI response proposed a Latin-*libra* / balance interpretation. That is an *optional thematic association*, **not a verified literal Latin translation or a fixed in-universe etymology**.
 
 ## The world and its Creator
@@ -62,8 +62,8 @@ Source: Phil's request for the first paired Blender animation on a correctly sca
 - **Allohim** creates the entire universe, including multiple galaxies and the creative beings assigned to design individual worlds.
 - Different worlds are assigned different numbers of creative beings. **Earth**, in the **Milky Way**, is the *one world Allohim designed personally*; it is unimaginably distant and isolated from the other worlds, which will never contact it.
 - **Dragex and Moana** are creative beings Allohim created and charged with designing the world of Libriam; they make the things within it. The exact distribution of their creations beyond earlier draft accounts is not newly specified.
-- Hokkaido is the principal continent, shaped approximately like real Hokkaido, with several nearby islands, on a much smaller planet. The author's estimate is that Hokkaido covers **about 5% of the planet's total surface**. There is **no Japan-like continent south of Hokkaido**.
-- **Two other major continents** on the same planet are discovered in **Age 4**. Critters who venture to them do not return; the reasons are unknown. Birds (the **hosts of heaven**) travel between these lands, and some great sea creatures have seen them. No names, coordinates, settlement histories, or reasons for non-return have been established.
+- Hokkaido is the principal continent, shaped approximately like real Hokkaido, with several nearby islands, on the much smaller world Libriam (now classified as a moon). The author's estimate is that Hokkaido covers **about 5% of the planet's total surface**. There is **no Japan-like continent south of Hokkaido**.
+- **Two other major continents** on the same world are discovered in **Age 4**. Critters who venture to them do not return; the reasons are unknown. Birds (the **hosts of heaven**) travel between these lands, and some great sea creatures have seen them. No names, coordinates, settlement histories, or reasons for non-return have been established.
 
 ## Time and transitions
 
@@ -189,3 +189,11 @@ Phil supplied eleven geographic annotations and requested mountains plus first-p
 Source: Phil's direct request while revising the Libriam globe lighting.
 
 Libriam has a relatively large moon that orbits it. Phil explicitly leaves it unnamed. Exact dimensions, orbital distance, period, surface features and formation era are unspecified; numerical globe settings are visual proposals. This supersedes the earlier moon-free visualization and any blanket statement that the presence of a moon is undecided. No age boundary or game placement changes. Soft, even lighting is a visualization preference.
+
+## Kronos solar system — October 13, 2026
+
+Source: Phil's direct solar-system development request.
+
+**Libriam is a moon orbiting Kronos**, a Saturn-like planet, and its sub-satellite is named **Moon**. **Zuhal** is the system's only other planet, also Saturn-like with a different appearance and complementary color. The sun is an **orange dwarf**. Zuhal has a moon and sub-satellite; their names remain unspecified. Occasional comets are requested. Phil authorizes proposed orbital paths and appearances. Libriam's passage through Kronos's ring/asteroid fields is requested every **1,000 years**; the physical mechanism remains unresolved.
+
+For the globe experiment, **one viewing frame temporarily represents one year**. This is not a final age-duration decision; Age 7 is still eternal. No novel events or game eras are reassigned. Numerical orbital settings and the sparse outer-ring encounter mechanism are implementation proposals. This supersedes the earlier standalone-planet classification and the unnamed-moon entry. See [system decisions and research](../world/kronos-system.md).

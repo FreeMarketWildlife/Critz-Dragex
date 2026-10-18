@@ -51,3 +51,14 @@ test('removed cloud layer stays empty and invisible at every loop position',asyn
  }
  clouds.dispose();
 });
+
+test('shore packing reuses source RGBA storage and preserves flipped 16-bit distances, alpha masks and ice',async()=>{
+ const {packShorePixels}=await import('../src/environment.js');
+ const storage=new Uint8ClampedArray(32).fill(77),pixels=storage.subarray(8,24),mask=new Uint8Array([0,128,255,0]),distance=new Float32Array([-20,0,16,2]);
+ const data=packShorePixels(pixels,mask,distance,2,2,16,()=>.5);
+ assert.equal(data.buffer,pixels.buffer);assert.equal(data.byteOffset,pixels.byteOffset);assert.equal(data.byteLength,16);
+ assert.deepEqual([...data],[255,255,128,255,143,0,128,255,0,0,128,0,128,128,128,0]);
+ assert.ok(storage.subarray(0,8).every(v=>v===77));assert.ok(storage.subarray(24).every(v=>v===77));
+ const local=packShorePixels(new Uint8ClampedArray(8),new Uint8Array([255,0]),new Float32Array([-2,2]),2,1,2);
+ assert.deepEqual([...local],[0,255,0,0,255,0,0,255]);
+});

@@ -1,6 +1,6 @@
 import { makeEnvironment,WATER_COMMON,WATER_COLOR,WATER_NORMAL } from './environment.js';
 import {makeBiomeCanvas,REGION_SHADER} from './authored-geography.js';
-import {terrainRadius} from './terrain.js';
+import {makeTerrainSurface} from './terrain-surface.js';
 import * as THREE from 'three';
 import { RIVER_MOUTHS,makeRiverRoute,ISLAND_CENTER,ISLAND_AXIS,ISLAND_HALF_LENGTH_KM,ISLAND_HALF_WIDTH_KM,POOL_DIAMETER_KM } from './hydrology.js';
 import { lakeField,mountainField,droughtCost,timelineState } from './ages.js';
@@ -22,14 +22,7 @@ export function installAgeRendering(material,hokkaido,geometry,landFeatures=[]){
  let maps=makeAgeMaps(hokkaido);
  const biomeTexture=new THREE.CanvasTexture(makeBiomeCanvas(W,H));biomeTexture.colorSpace=THREE.NoColorSpace;
  const environment=makeEnvironment([hokkaido,...landFeatures]),clouds=environment.clouds.group;
- const basePositions=geometry.attributes.position.array.slice(),uvs=geometry.attributes.uv;
- let surfaceState={...timelineState(2900),frame:2900},surfaceExaggeration=1,surfaceRelief=true,lastSurfaceKey='',maxRadius=1;
- function sample(u,v){const data=maps.features.image.data,x=Math.max(0,Math.min(W-1,u*W-.5)),y=Math.max(0,Math.min(H-1,v*H-.5)),x0=Math.floor(x),y0=Math.floor(y),x1=Math.min(W-1,x0+1),y1=Math.min(H-1,y0+1),fx=x-x0,fy=y-y0;const get=channel=>((data[(y0*W+x0)*4+channel]*(1-fx)+data[(y0*W+x1)*4+channel]*fx)*(1-fy)+(data[(y1*W+x0)*4+channel]*(1-fx)+data[(y1*W+x1)*4+channel]*fx)*fy)/255;return [get(0),get(3)];}
- function radiusUV(u,v){const [land,mountain]=sample(u,v);return terrainRadius(u,v,land,mountain,surfaceState,surfaceExaggeration,surfaceRelief);}
- function updateSurface(frame,exaggeration,relief){surfaceState={...timelineState(frame),frame};surfaceExaggeration=exaggeration;surfaceRelief=relief;const key=`${Math.round(frame)}:${exaggeration}:${relief}`;if(key===lastSurfaceKey)return;lastSurfaceKey=key;maxRadius=0;
-  const positions=geometry.attributes.position;for(let i=0;i<positions.count;i++){const radius=radiusUV(uvs.getX(i),uvs.getY(i));maxRadius=Math.max(maxRadius,radius);positions.setXYZ(i,basePositions[i*3]*radius,basePositions[i*3+1]*radius,basePositions[i*3+2]*radius);}
-  positions.needsUpdate=true;geometry.computeVertexNormals();geometry.computeBoundingSphere();
- }
+ const surface=makeTerrainSurface(geometry,maps.features.image.data,W,H);
 
  const uniforms={uBiomeMap:{value:biomeTexture},uAgeMap:{value:maps.features},uRiverMap:{value:maps.riverTexture},uEmergence:{value:1},uLava:{value:0},uLake:{value:0},uDrought:{value:0},uFallout:{value:0},uSubmersion:{value:0},uPeace:{value:0},uWorldPhase:{value:0},uRelief:{value:1},uSeconds:{value:0}};
  material.transparent=true;
@@ -72,5 +65,5 @@ export function installAgeRendering(material,hokkaido,geometry,landFeatures=[]){
 
  shader.fragmentShader=shader.fragmentShader.replace('#include <normal_fragment_maps>',`#include <normal_fragment_maps>\nvec3 terrainDx=dFdx(vViewPosition),terrainDy=dFdy(vViewPosition);vec3 terrainCrossX=cross(terrainDy,normal),terrainCrossY=cross(normal,terrainDx);float terrainDet=dot(terrainDx,terrainCrossX);normal=normalize(normal-sign(terrainDet)*(.000015*uRelief)*(dFdx(terrainDetail)*terrainCrossX+dFdy(terrainDetail)*terrainCrossY)/max(abs(terrainDet),.000001));`);
  };material.customProgramCacheKey=()=> 'libriam-authored-loop-v6';material.needsUpdate=true;
- return {clouds,environment,get routes(){return maps.routes;},get maxRadius(){return maxRadius;},radiusAt(p){return radiusUV((p.lon+180)/360,(p.lat+90)/180);},update(frame,seconds,relief=true,exaggeration=1,cameraRadius=3,cameraCoordinate=null){updateSurface(frame,exaggeration,relief);const s=timelineState(frame);uniforms.uEmergence.value=s.emergence;uniforms.uLava.value=s.lava;uniforms.uLake.value=s.lake;uniforms.uDrought.value=s.drought;uniforms.uFallout.value=s.fallout;uniforms.uSubmersion.value=s.submersion;uniforms.uPeace.value=s.peace;uniforms.uWorldPhase.value=frame/1700;uniforms.uRelief.value=relief?1:0;uniforms.uSeconds.value=seconds;environment.update(seconds,s,cameraRadius,maxRadius,cameraCoordinate);},replaceMap(h){environment.replaceMap([h,...landFeatures]);lastSurfaceKey='';maps.features.dispose();maps.riverTexture.dispose();maps=makeAgeMaps(h);uniforms.uAgeMap.value=maps.features;uniforms.uRiverMap.value=maps.riverTexture;},dispose(){biomeTexture.dispose();maps.features.dispose();maps.riverTexture.dispose();environment.dispose();}};
+ return {clouds,environment,get routes(){return maps.routes;},get maxRadius(){return surface.maxRadius;},radiusAt(p){return surface.radiusAt(p);},update(frame,seconds,relief=true,exaggeration=1,cameraRadius=3,cameraCoordinate=null){surface.update(frame,exaggeration,relief);const s=timelineState(frame);uniforms.uEmergence.value=s.emergence;uniforms.uLava.value=s.lava;uniforms.uLake.value=s.lake;uniforms.uDrought.value=s.drought;uniforms.uFallout.value=s.fallout;uniforms.uSubmersion.value=s.submersion;uniforms.uPeace.value=s.peace;uniforms.uWorldPhase.value=frame/1700;uniforms.uRelief.value=relief?1:0;uniforms.uSeconds.value=seconds;environment.update(seconds,s,cameraRadius,surface.maxRadius,cameraCoordinate);},replaceMap(h){environment.replaceMap([h,...landFeatures]);maps.features.dispose();maps.riverTexture.dispose();maps=makeAgeMaps(h);surface.replaceMap(maps.features.image.data);uniforms.uAgeMap.value=maps.features;uniforms.uRiverMap.value=maps.riverTexture;},dispose(){biomeTexture.dispose();maps.features.dispose();maps.riverTexture.dispose();environment.dispose();}};
 }

@@ -6,6 +6,18 @@ import {polarIce} from './polar.js';
 import {bakeWaveAtlas,loopPhase,signedShoreDistance,LOOP_SECONDS} from './water-loop.js';
 
 const WIDTH=4096,HEIGHT=2048,SHORE_RANGE_KM=16;
+// The source RGBA pixels are no longer needed once the mask is extracted.
+// Pack into that same buffer instead of allocating another 32 MiB global tile.
+export function packShorePixels(pixels,mask,distance,width,height,rangeKm,ice=null){
+ const data=new Uint8Array(pixels.buffer,pixels.byteOffset,pixels.byteLength);
+ for(let y=0;y<height;y++)for(let x=0;x<width;x++){
+  const source=y*width+x,target=((height-1-y)*width+x)*4;
+  const encoded=Math.round(Math.max(0,Math.min(1,.5+distance[source]/(2*rangeKm)))*65535);
+  data[target]=encoded>>>8;data[target+1]=mask[source];
+  data[target+2]=ice?Math.round(ice(90-(y+.5)/height*180,(x+.5)/width*360-180)*255):0;data[target+3]=encoded&255;
+ }
+ return data;
+}
 export function makeShoreTexture(features){
  const canvas=document.createElement('canvas');canvas.width=WIDTH;canvas.height=HEIGHT;
  const ctx=canvas.getContext('2d',{willReadFrequently:true});
@@ -13,13 +25,7 @@ export function makeShoreTexture(features){
  ctx.fillStyle='white';for(const feature of features){ctx.beginPath();draw(feature);ctx.fill();}
  const pixels=ctx.getImageData(0,0,WIDTH,HEIGHT).data,mask=new Uint8Array(WIDTH*HEIGHT);
  for(let i=0;i<mask.length;i++)mask[i]=pixels[i*4+3];
- const distance=signedShoreDistance(mask,WIDTH,HEIGHT,RADIUS),data=new Uint8Array(pixels.length);
- for(let y=0;y<HEIGHT;y++)for(let x=0;x<WIDTH;x++){
-  const source=y*WIDTH+x,target=((HEIGHT-1-y)*WIDTH+x)*4;
-  const encoded=Math.round(Math.max(0,Math.min(1,.5+distance[source]/(2*SHORE_RANGE_KM)))*65535);
-  data[target]=encoded>>>8;
-  data[target+1]=mask[source];data[target+2]=Math.round(polarIce(90-(y+.5)/HEIGHT*180,(x+.5)/WIDTH*360-180)*255);data[target+3]=encoded&255;
- }
+ const distance=signedShoreDistance(mask,WIDTH,HEIGHT,RADIUS),data=packShorePixels(pixels,mask,distance,WIDTH,HEIGHT,SHORE_RANGE_KM,polarIce);
  const texture=new THREE.DataTexture(data,WIDTH,HEIGHT);texture.minFilter=texture.magFilter=THREE.LinearFilter;texture.wrapS=THREE.RepeatWrapping;texture.needsUpdate=true;return texture;
 }
 
@@ -34,11 +40,7 @@ export function makeLocalShore(features,center,spanKm=12){
  for(const feature of features){ctx.beginPath();draw(feature);ctx.fill();}
  const pixels=ctx.getImageData(0,0,size,size).data,mask=new Uint8Array(size*size);
  for(let i=0;i<mask.length;i++)mask[i]=pixels[i*4+3];
- const distance=signedShoreDistance(mask,size,size,RADIUS,{wrapLongitude:false,pixelKm:spanKm/size}),data=new Uint8Array(pixels.length);
- for(let y=0;y<size;y++)for(let x=0;x<size;x++){
-  const i=y*size+x,j=((size-1-y)*size+x)*4;
-  const encoded=Math.round(Math.max(0,Math.min(1,.5+distance[i]/4))*65535);data[j]=encoded>>>8;data[j+1]=mask[i];data[j+2]=0;data[j+3]=encoded&255;
- }
+ const distance=signedShoreDistance(mask,size,size,RADIUS,{wrapLongitude:false,pixelKm:spanKm/size}),data=packShorePixels(pixels,mask,distance,size,size,2);
  const texture=new THREE.DataTexture(data,size,size);texture.minFilter=texture.magFilter=THREE.LinearFilter;texture.needsUpdate=true;
  return texture;
 }

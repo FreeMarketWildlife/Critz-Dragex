@@ -72,3 +72,11 @@ The Tear’s return ends Age 3; life returns during the opening of Age 4. Fallou
 **Latest continental revision (October 12):** the second continent is now **Zealand**, with half its earlier app area (**3.25% of Libriam**). Alaska loses **15% of its earlier app area** (**4.675%**) and receives a southern mainland and northern island chain along the author’s arc toward Hokkaido’s northern tip. The supplied Age-5/unit-4564 context does not date these shapes or establish a new historical event.
 
 **Latest Zealand orientation (October 12):** rotate 90° and then flip north–south. The app uses a clockwise quarter-turn around its existing reference center; area stays 3.25%. The new east–west orientation supersedes its preceding polar-reaching layout without dating a geographic-change event.
+
+## Kronos solar system — October 13, 2026
+
+Source: Phil's direct solar-system development request.
+
+**Libriam is a moon orbiting Kronos**, a Saturn-like planet, and its sub-satellite is named **Moon**. **Zuhal** is the system's only other planet, also Saturn-like with a different appearance and complementary color. The sun is an **orange dwarf**. Zuhal has a moon and sub-satellite; their names remain unspecified. Occasional comets are requested. Phil authorizes proposed orbital paths and appearances. Libriam's passage through Kronos's ring/asteroid fields is requested every **1,000 years**; the physical mechanism remains unresolved.
+
+For the globe experiment, **one viewing frame temporarily represents one year**. This is not a final age-duration decision; Age 7 is still eternal. No novel events or game eras are reassigned. Numerical orbital settings and the sparse outer-ring encounter mechanism are implementation proposals. This supersedes the earlier standalone-planet classification and the unnamed-moon entry. See [system decisions and research](../world/kronos-system.md).

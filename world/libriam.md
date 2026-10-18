@@ -1,4 +1,4 @@
-# Libriam — the planet
+# Libriam — the inhabited moon of Kronos
 
 ## Lake Moana’s skull-island — author decision, October 12, 2026
 
@@ -8,7 +8,7 @@ Phil names the central lake island **Moana’s Tear** and identifies it as **Moa
 
 **Status:** Canonically named by the author on October 12, 2026. Spelling: **L-I-B-R-I-A-M**.
 
-## Planet and geography
+## World and geography
 
 **Libriam** is the entire world on which the Dragex book series and Critz games occur. **Hokkaido** is only one of its **three major continents**, with a few small nearby islands; there are **two other great continents**, first discovered by Hokkaido's critters in Age 4. Their explorers never return, for unknown reasons. Birds (hosts of heaven) travel between the lands; certain great ocean creatures have seen them.
 
@@ -102,3 +102,7 @@ Its **54,224.443 km² / 3.25%** area and reference location are preserved. The n
 Source: Phil's direct request while revising the Libriam globe lighting.
 
 Libriam has a relatively large moon that orbits it. Phil explicitly leaves it unnamed. Exact dimensions, orbital distance, period, surface features and formation era are unspecified; numerical globe settings are visual proposals. This supersedes the earlier moon-free visualization and any blanket statement that the presence of a moon is undecided. No age boundary or game placement changes. Soft, even lighting is a visualization preference.
+
+## Moon of Kronos — October 13, 2026
+
+Phil now classifies **Libriam as a moon of Kronos**. Its sub-satellite is named **Moon**. Earlier planet/unnamed-moon descriptions below and in older sources are superseded astronomical classifications, not a change to the world name or its three continents. The orange-dwarf system has exactly two planets, Kronos and Zuhal; see [author decisions and physical proposals](kronos-system.md). The millennium ring passage is requested; its mechanism and actual age durations remain unresolved. One frame equals one year only for the current globe experiment.

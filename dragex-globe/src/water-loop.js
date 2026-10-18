@@ -31,9 +31,10 @@ export function signedShoreDistance(mask,width,height,radiusKm,options={}){
  if(mask.length!==width*height)throw Error('Coast mask dimensions do not match.');
  const distances=new Float32Array(mask.length);distances.fill(1e6);
  const dy=options.pixelKm??Math.PI*radiusKm/height;
- const neighbor=(x,y)=>y*width+(options.wrapLongitude===false?Math.max(0,Math.min(width-1,x)):(x+width)%width);
+ const wrap=options.wrapLongitude!==false;
  for(let y=0;y<height;y++)for(let x=0;x<width;x++){
-  const i=y*width+x,v=mask[i]>127,left=neighbor(x-1,y),right=neighbor(x+1,y);
+  const row=y*width,i=row+x,v=mask[i]>127;
+  const left=x>0?i-1:wrap?row+width-1:i,right=x<width-1?i+1:wrap?row:i;
   if(v!==(mask[left]>127)||v!==(mask[right]>127)||(y>0&&v!==(mask[i-width]>127))||(y<height-1&&v!==(mask[i+width]>127)))distances[i]=dy*.5;
  }
  // Repeat to propagate across the seam in either direction.
@@ -41,10 +42,12 @@ export function signedShoreDistance(mask,width,height,radiusKm,options={}){
   for(let k=0;k<height;k++){
    const y=forward?k:height-1-k,dx=options.pixelKm??2*Math.PI*radiusKm/width*Math.max(.01,Math.cos((y+.5)/height*Math.PI-Math.PI/2)),diagonal=Math.hypot(dx,dy);
    for(let j=0;j<width;j++){
-    const x=forward?j:width-1-j,i=y*width+x,previous=neighbor(x+(forward?-1:1),y);
+    const x=forward?j:width-1-j,row=y*width,i=row+x;
+    const left=x>0?i-1:wrap?row+width-1:i,right=x<width-1?i+1:wrap?row:i;
+    const previous=forward?left:right;
     let best=Math.min(distances[i],distances[previous]+dx);
     const py=y+(forward?-1:1);
-    if(py>=0&&py<height){best=Math.min(best,distances[py*width+x]+dy,distances[neighbor(x-1,py)]+diagonal,distances[neighbor(x+1,py)]+diagonal);}
+    if(py>=0&&py<height){const vertical=forward?-width:width;best=Math.min(best,distances[i+vertical]+dy,distances[left+vertical]+diagonal,distances[right+vertical]+diagonal);}
     distances[i]=best;
    }
   }

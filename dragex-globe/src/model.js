@@ -1,3 +1,4 @@
+import {canonicalProjectBodies} from './orbital-model.js';
 import {validateTerrain} from './terrain.js';
 import {emptyAnnotations,validateAnnotations} from './annotations.js';
 import { geoArea } from 'd3-geo';
@@ -6,7 +7,7 @@ export const SURFACE_AREA = HOKKAIDO_AREA / 0.05;
 export const RADIUS = Math.sqrt(SURFACE_AREA / (4 * Math.PI));
 export const EARTH_RADIUS = 6371;
 export const rad = Math.PI / 180;
-export const planet = { id: 'libriam', name: 'Libriam', type: 'planet', radiusKm: RADIUS, orbitAU: null, parentId: null, color: '#64c7bd', status: 'author-confirmed dimensions; spherical model' };
+export const planet = { id: 'libriam', name: 'Libriam', type: 'moon', radiusKm: RADIUS, orbitAU: null, parentId: null, color: '#64c7bd', status: 'author-confirmed dimensions; spherical model' };
 export function distance(a, b, radius = RADIUS) {
  const p=a.lat*rad,q=b.lat*rad,dl=(b.lon-a.lon)*rad;
  const h=Math.sin((q-p)/2)**2+Math.cos(p)*Math.cos(q)*Math.sin(dl/2)**2;
@@ -32,7 +33,7 @@ export function makeHokkaido(feature, center={lat:20,lon:0}) {
  let r=ring((lo+hi)/2); if(geoArea({type:'Polygon',coordinates:[r]})>2*Math.PI)r=r.reverse();
  return {type:'Feature',properties:{name:'Hokkaido',areaKm2:HOKKAIDO_AREA,center,status:'reference coastline; provisional globe placement'},geometry:{type:'Polygon',coordinates:[r]}};
 }
-export function newProject(){return {schemaVersion:1,name:'Libriam atlas',terrain:validateTerrain(),annotations:emptyAnnotations(),pins:[],bodies:[{...planet}],placement:{lat:20,lon:0},timeline:{frame:2900}};}
+export function newProject(){return {schemaVersion:1,name:'Libriam atlas',terrain:validateTerrain(),annotations:emptyAnnotations(),pins:[],bodies:canonicalProjectBodies(),solarRevision:1,legacyBodies:[],placement:{lat:20,lon:0},timeline:{frame:2900}};}
 export function validateProject(value){
  if(!value||value.schemaVersion!==1||!Array.isArray(value.pins)||!Array.isArray(value.bodies)||value.pins.length>500||value.bodies.length>50)throw new Error('Use a Libriam Globe project file (version 1, up to 500 pins / 50 bodies).');
  const str=(s,n=80)=>typeof s==='string'&&s.trim().length>0&&s.length<=n;
@@ -42,8 +43,11 @@ export function validateProject(value){
  const ids=new Set();for(const b of value.bodies){
   if(!str(b.id)||ids.has(b.id)||!str(b.name)||!['planet','moon','star'].includes(b.type)||!Number.isFinite(b.radiusKm)||b.radiusKm<=0||b.radiusKm>1e8||!(b.orbitAU===null||(Number.isFinite(b.orbitAU)&&b.orbitAU>0&&b.orbitAU<=10000))||!/^#[0-9a-f]{6}$/i.test(b.color))throw new Error('Invalid celestial body.');ids.add(b.id);
  }
- const lib=value.bodies.find(b=>b.id==='libriam');if(!lib||Math.abs(lib.radiusKm-RADIUS)>1e-6||lib.type!=='planet')throw new Error('Libriam’s radius must match the confirmed surface area.');
+ const lib=value.bodies.find(b=>b.id==='libriam');if(!lib||Math.abs(lib.radiusKm-RADIUS)>1e-6||!['planet','moon'].includes(lib.type))throw new Error('Libriam’s radius must match the confirmed surface area.');
  for(const b of value.bodies){if(b.parentId!==null&&!ids.has(b.parentId))throw new Error('Unknown orbital parent.');let id=b.parentId,seen=new Set([b.id]);while(id!==null){if(seen.has(id))throw new Error('Orbital parents cannot form a cycle.');seen.add(id);id=value.bodies.find(p=>p.id===id)?.parentId??null;}}
  if(value.timeline!==undefined&&(!value.timeline||!Number.isInteger(value.timeline.frame)||value.timeline.frame<0||value.timeline.frame>6999))throw new Error('Timeline must use an integer design unit from 0 to 6999.');
- return {schemaVersion:1,terrain:validateTerrain(value.terrain),annotations:validateAnnotations(value.annotations),timeline:{frame:value.timeline?.frame??2900},name:typeof value.name==='string'?value.name.slice(0,80):'Libriam atlas',placement:{...value.placement},pins:value.pins.map(p=>({id:p.id,name:p.name,lat:p.lat,lon:p.lon})),bodies:value.bodies.map(b=>({id:b.id,name:b.name,type:b.type,radiusKm:b.radiusKm,orbitAU:b.orbitAU,parentId:b.parentId,color:b.color,status:b.id==='libriam'?planet.status:'design proposal'}))};
+ const migrated=value.solarRevision!==1;
+ const legacyBodies=migrated?value.bodies.map(b=>({...b})):Array.isArray(value.legacyBodies)?value.legacyBodies.slice(0,50):[];
+ const bodies=migrated?canonicalProjectBodies():value.bodies;
+ return {schemaVersion:1,solarRevision:1,legacyBodies,terrain:validateTerrain(value.terrain),annotations:validateAnnotations(value.annotations),timeline:{frame:value.timeline?.frame??2900},name:typeof value.name==='string'?value.name.slice(0,80):'Libriam atlas',placement:{...value.placement},pins:value.pins.map(p=>({id:p.id,name:p.name,lat:p.lat,lon:p.lon})),bodies:bodies.map(b=>({id:b.id,name:b.name,type:b.type,radiusKm:b.radiusKm,orbitAU:b.orbitAU,parentId:b.parentId,color:b.color,status:b.id==='libriam'?planet.status:'design proposal'}))};
 }
