@@ -18,7 +18,7 @@ This expands the Age-2 account rather than changing its boundary: the death of t
 
 Shortly after the Battle of Mount Yokai, **Naboo**, a **first-generation owl who drank from the River of Blood**, took over the archive and runs the library.
 
-The earlier phrase “first-generation fey owl” was clarified as “first generation owl who drank from the river of blood.” Existing lore uses **first-generation Fey-blooded** for animals such as Archaíos who personally drank blood-tainted water. That provides context, but Naboo's precise generation/species terminology remains an **open question**; do not establish him as literally an original Fey. His relationship to the older owl **Lady Wisdom** is also unresolved; do not silently merge them.
+**Author clarification, October 19, 2026:** A **fey animal** is an animal/critter with humanlike qualities because of the **fey blood inside it**. This describes a Fey-blooded critter, not an original Fey being. The spellings **feysian / feyjian** remain unsettled; neither is selected as canonical. Calling Naboo a **fey owl** is therefore consistent with his being a first-generation owl who drank from the River of Blood. This resolves the former classification question. His relationship to the older owl **Lady Wisdom** remains unresolved; do not silently merge them.
 
 ## Creative references
 
@@ -30,4 +30,4 @@ The Jedi archive on Coruscant inspires the scale and knowledge collection. A Mir
 
 ## Superseded interpretations and open questions
 
-The current Grandfather Tree is the archive/school in Grimroot Grove. Older Rootport/Woodland Inn tree accounts remain version-specific evidence, not an additional current identity. The proposed lake library is not established as this archive. The school's formal name, Naboo–Lady Wisdom identity, Naboo's precise generation terminology, and the archive's near-destruction cause/date remain open.
+The current Grandfather Tree is the archive/school in Grimroot Grove. Older Rootport/Woodland Inn tree accounts remain version-specific evidence, not an additional current identity. The proposed lake library is not established as this archive. The school's formal name, Naboo–Lady Wisdom identity, the spelling feysian / feyjian, and the archive's near-destruction cause/date remain open.

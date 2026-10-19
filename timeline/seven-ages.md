@@ -20,7 +20,7 @@
 - **Early Age 4 / Arcane:** *Critz: Treetop Trebuchet* takes place at the archive's school/academy.
 - **Undated:** the archive was nearly destroyed. Its cause and timing relative to the departure, tower and battle remain open.
 
-Source: Phil’s explicit update, recorded October 19, 2026. See [Grandfather Tree](../world/grandfather-tree.md) and [game registry](../games/registry.md#critz-treetop-trebuchet). The institution's formal name and Naboo's precise generation terminology remain undecided.
+Source: Phil’s explicit update, recorded October 19, 2026. See [Grandfather Tree](../world/grandfather-tree.md) and [game registry](../games/registry.md#critz-treetop-trebuchet). The institution's formal name and the spelling feysian / feyjian remain undecided. The author clarified that a fey animal is a critter with humanlike qualities because of fey blood inside it; Naboo's description as a fey owl is consistent with drinking from the River of Blood and does not make him an original Fey being.
 
 ## Boundary notes and precise semantics
 

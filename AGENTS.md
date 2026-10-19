@@ -45,3 +45,5 @@ Keep facts attributable to a source ID, a named version, or a dated author decis
 ## Grandfather Tree — October 19, 2026
 
 Read `world/grandfather-tree.md` for the current archive/school and Naboo account. Do not identify Naboo as an original Fey or merge him with Lady Wisdom without confirmation. The archive’s near-destruction cause/date and school’s formal name are open. Treetop Trebuchet is explicitly early Age 4; points and bells are distinct, with no specified conversion.
+
+**Later October 19 terminology clarification:** A fey animal is an animal/critter with humanlike qualities because of fey blood inside it. Naboo is a first-generation Fey-blooded owl who drank from the River of Blood; “fey owl” does not mean an original Fey being. The spelling feysian / feyjian remains unsettled. This resolves the classification question only; the Lady Wisdom relationship remains open.

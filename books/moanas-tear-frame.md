@@ -22,7 +22,7 @@
 - A **19-year-old** girl/descendant of Archaíos.
 - Wants to become a **historian**.
 - Attends **Hokkaido's most legendary historical school**, situated in the **Great Library of the Grandfather Tree**, in the middle of **Grimroot Grove**, a dark forest.
-- **October 19, 2026 update:** **Naboo** runs the archive/library, having taken over shortly after Mount Yokai. He is a first-generation owl who drank from the River of Blood; exact generation terminology and any identity with **Lady Wisdom** remain unresolved. The school’s formal name is undecided. See [Grandfather Tree and Naboo](../world/grandfather-tree.md).
+- **October 19, 2026 update:** **Naboo** runs the archive/library, having taken over shortly after Mount Yokai. He is a first-generation owl who drank from the River of Blood; “fey owl” means a Fey-blooded animal with humanlike qualities, not an original Fey being (author clarification, October 19). The spelling **feysian / feyjian** and any identity with **Lady Wisdom** remain unresolved. The school’s formal name is undecided. See [Grandfather Tree and Naboo](../world/grandfather-tree.md).
 - Her **species**, immediate family, appearance, exact curriculum, and reactions to the letters are **not given**. Do not assume that she is a tortoise solely because she descends from Archaíos.
 
 ## Open literary decisions
