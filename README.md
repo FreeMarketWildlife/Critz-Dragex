@@ -7,7 +7,7 @@ The lore and continuity repository for Phil's **Dragex** books and **Critz** gam
 1. [Agent rules](AGENTS.md): source precedence, spelling, continuity, and safe updates.
 2. [Author-confirmed canon](canon/author-confirmed.md): the facts explicitly established in the October 11, 2026 conversation.
 3. [Seven ages](timeline/seven-ages.md): author-confirmed transitions, latest placements, and unsettled Seventh Age.
-4. [Game registry](games/registry.md): ten current game concepts; age assignments await Phil.
+4. [Game registry](games/registry.md): the October 9 concepts plus **Critz: Treetop Trebuchet**, explicitly set in early Age 4; other age assignments await Phil.
 5. [Moana's Tear](books/moanas-tear.md), [its narrative frame](books/moanas-tear-frame.md), [Hokkaido](world/hokkaido-geography-and-ages.md), [planet Libriam](world/libriam.md), and [cosmic creation](world/allohim-and-cosmic-creation.md).
 6. [Google Drive research archive](research/drive-2026-10-11/README.md): findings from the available text of 71 distinct source files, with a source catalog, manuscript versions, character and place indexes, game worldbuilding, and a conflict register.
 
@@ -26,3 +26,7 @@ The Google Drive originals were read, not edited. This repository contains organ
 ## Libriam Globe
 
 The [Libriam Globe program](dragex-globe/README.md) provides an interactive 3D Libriam atlas, an area-calibrated Hokkaido silhouette, surface-distance measurement, saved proposed places, and a solar-system design workspace. The October 12 author decision sets Hokkaido at **83,422.22 km²**, exactly **5%** of a **1,668,444.4 km²** Libriam. Run it with `npm ci` and `npm run dev` inside `dragex-globe/`. Design choices in the app remain proposals until author-confirmed.
+
+## Grandfather Tree and Treetop Trebuchet
+
+The [Grandfather Tree and Naboo record](world/grandfather-tree.md) covers the archive/school, Fey departure, Tower of Babel and current open questions. [Critz: Treetop Trebuchet](games/registry.md#critz-treetop-trebuchet) records the early Fourth Age game concept and approved core loop (October 19, 2026).

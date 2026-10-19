@@ -96,3 +96,8 @@ Implementation proposals: Alaska’s mainland center is approximately **21.56° 
 The author requests a **90° rotation of Zealand, followed by a north–south flip in the rotated orientation**, so that it curves the other way. The app chooses **clockwise** for the unspecified rotation direction, then reflects local north/south around Zealand’s existing **40° S, 124° E** reference center. That choice is an implementation interpretation; the sequence and flip direction are explicit author inputs.
 
 Its **54,224.443 km² / 3.25%** area and reference location are preserved. The new orientation supersedes the preceding upright layout and approximately 84.5° S southern reach: the same centered shape now runs broadly east–west in southern latitudes, with its southernmost coast around **48.9° S**. Alaska, Hokkaido, Eden’s Isle and the northern island arc are unchanged. This adds no historical event or climate-date claim.
+
+
+## Grandfather Tree and Fey departure — October 19, 2026
+
+Phil’s latest update places the archive/school at the Creation-planted Grandfather Tree deep in Grimroot Grove. Faithful good Fey converted it during their rule; its former custodians left under Allohim's command for all Fey to sail to Zealand. Rebels stayed and built the very tall Tower of Babel near Sapporo; Allohim leveled it. Subsequent communication difficulties and power struggles led toward Mount Yokai. This Fey voyage precedes the established Age-4 discovery of other continents **by Hokkaido's critters**; the accounts concern different travelers. Fey survival outside the battle remains canon. Naboo took over the archive shortly afterward. See [Grandfather Tree](grandfather-tree.md) for the full account, unresolved near-destruction timing and Naboo terminology.

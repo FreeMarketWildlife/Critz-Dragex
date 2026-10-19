@@ -17,7 +17,7 @@ These are author-confirmed outcomes, not evidence that the complete final manusc
 
 The text of *Moana's Tear* is written **by Archaíos during Age 4 as he nears death**. He is a first-generation Fey-blooded tortoise, among those who personally drank the blood-tainted river after the final Fey battle. He lives on **Eden's Isle**, west of Hokkaido. Each year migratory birds help send his letters to the mainland. Knowing he only has one more annual opportunity, he writes to **Olivia (“Olive”)**, his extraordinarily distant female descendant, aged **19**, who aspires to be a historian.
 
-Olive attends the famous school and Great Library **inside the Grandfather Tree in the middle of Grimroot Grove** under a legendary owl. The exact number of generations between Archaíos and Olive is not known. Whether the book is framed as one letter, a collection, or an attached account is not yet established.
+Olive attends the famous school and Great Library **inside the Grandfather Tree in the middle of Grimroot Grove** at the archive/library run by **Naboo** (author update, October 19, 2026). His relationship to Lady Wisdom remains unresolved; see [Grandfather Tree](../world/grandfather-tree.md). The exact number of generations between Archaíos and Olive is not known. Whether the book is framed as one letter, a collection, or an attached account is not yet established.
 
 Further details: [narrative frame](moanas-tear-frame.md), [master ages](../timeline/seven-ages.md), [current canon](../canon/author-confirmed.md).
 

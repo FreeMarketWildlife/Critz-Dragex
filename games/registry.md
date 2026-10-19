@@ -1,9 +1,9 @@
 # Critz game registry and age-placement queue
 
-**Status:** Current named concepts recovered from Phil's October 9, 2026 game-planning conversation; all fictional-age assignments await Phil. **Latest seven-age definitions:** [timeline/seven-ages.md](../timeline/seven-ages.md), updated October 11, 2026.  
+**Status:** Current named concepts recovered from Phil's October 9, 2026 game-planning conversation; the October 9 titles’ fictional-age assignments await Phil; Treetop Trebuchet is explicitly placed below. **Latest seven-age definitions:** [timeline/seven-ages.md](../timeline/seven-ages.md), updated October 11, 2026.
 **Conversation source:** Retrieved prior user messages in “Guessing Critz Games,” October 9, 2026 (including messages at 20:10 and 20:30 UTC). This is conversation evidence, not a claim that ten standalone design documents were found in Drive.
 
-## Ten current game concepts
+## Game concepts
 
 | Stable ID | Game | Identity / intended experience | Primary age | Other eras / flashbacks |
 |---|---|---|---|---|
@@ -17,12 +17,13 @@
 | critz-runner | **Critz Runner** | Runner concept in the Temple Run / Subway Surfers family of experiences. | Awaiting Phil | Unspecified |
 | critz-party | **Critz Party** | Social/tabletop-game hub associated with Liarsville; cards, boards, and related games. | Awaiting Phil | Unspecified |
 | critz-empire | **Critz Empire** | Real-time strategy: grow from a settlement into an empire, in the StarCraft-style strategic family. | Awaiting Phil | Unspecified |
+| critz-treetop-trebuchet | **Critz: Treetop Trebuchet** | Academy trebuchet project; earliest launch-and-upgrade ideas. | **Early Age 4 / Arcane** (October 19, 2026) | Unspecified |
 
 Genre comparisons describe intended gameplay, not shared fictional continuity with those reference franchises.
 
 ## Names and rejected duplicates
 
-- **Critz Valley** is not an eleventh current title: that concept was folded into / identified with **Critz Tycoon**.
+- **Critz Valley** is not a separate current title: that concept was folded into / identified with **Critz Tycoon**.
 - Earlier **Critz Arena** naming for the MOBA was replaced by **Critz Kingdom Conquest**; “Arena” is used in the fighter's **Critz Duel Arena** name.
 - **Stacker** is the earlier concept/name behind **Critz Tower Defense**, not another active row.
 - **Critz Kingdoms** was renamed **Critz Empire**.
@@ -51,3 +52,16 @@ The Kingdom Conquest game's appearances of Dragex and Moana as objectives do not
 For each stable game ID record: **primary age**, **position within the age**, **major before/after events**, **historical missions or flashbacks**, **framing era**, **literal canon versus stylized/noncanonical gameplay**, and the **dated author statement**. Unknown fields remain unknown. A title can span several ages; do not force it into one when Phil describes multiple eras.
 
 See [seven ages](../timeline/seven-ages.md), [game worldbuilding](../research/drive-2026-10-11/game-worldbuilding.md), and source catalog entries C02–C12, G01, and X01.
+
+
+## Critz: Treetop Trebuchet
+
+**Source:** Phil’s explicit early-game decisions, recorded October 19, 2026. **Tagline:** “We're going places.” **Primary setting:** early Fourth Age / Age of Arcane; other eras, missions and framing remain unspecified.
+
+The player is a critter attending the school/academy at the [Grandfather Tree](../world/grandfather-tree.md). Its formal name is undecided. The academy project is to develop a trebuchet launching objects as far as possible, starting with the most basic trebuchet and progressively upgrading.
+
+1. Launch a critter, watch it bounce around, and earn **points**.
+2. See how many **bells** were earned and spend money in the **shop**.
+3. Customize the trebuchet using **owned equipment** and decide whether to use **special items** for the next launch.
+
+Points and bells are distinct; conversion is unspecified. No player species, detailed upgrades, equipment list, additional currencies, mechanics or implementation scope are established. The earlier proposed acorn helmet and woodland crew are not approved canon. These remain earliest ideas. [Game repository](https://github.com/FreeMarketWildlife/critz-treetop-trebuchet).

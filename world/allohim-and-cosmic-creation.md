@@ -30,3 +30,8 @@ During **Age 6 (Man)**, Allohim charges mankind, both men and women, to **fill a
 The instant that final enemy is defeated begins **Age 7, everlasting Peace/Perfection**. Every creature lives in perfect relationship with Allohim and obeys his will; the **Kingdom of Allohim descends to Libriam**. Allohim promises that sin can never return to Libriam. Mankind rules and harnesses the planet's resources to explore reachable planets, assisting other worlds still fighting sin. Details of starships, technology, specific worlds and campaigns are undecided.
 
 See [Hokkaido geography](hokkaido-geography-and-ages.md) and [seven ages](../timeline/seven-ages.md).
+
+
+## Grandfather Tree and Fey departure — October 19, 2026
+
+Phil’s latest update places the archive/school at the Creation-planted Grandfather Tree deep in Grimroot Grove. Faithful good Fey converted it during their rule; its former custodians left under Allohim's command for all Fey to sail to Zealand. Rebels stayed and built the very tall Tower of Babel near Sapporo; Allohim leveled it. Subsequent communication difficulties and power struggles led toward Mount Yokai. This Fey voyage precedes the established Age-4 discovery of other continents **by Hokkaido's critters**; the accounts concern different travelers. Fey survival outside the battle remains canon. Naboo took over the archive shortly afterward. See [Grandfather Tree](grandfather-tree.md) for the full account, unresolved near-destruction timing and Naboo terminology.

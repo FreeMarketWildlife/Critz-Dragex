@@ -1,5 +1,16 @@
 # Author-confirmed canon — 2026-10-11
 
+## Grandfather Tree, Naboo and Treetop Trebuchet — October 19, 2026
+
+**Source:** Phil’s explicit author update, recorded October 19, 2026. This supersedes older conflicting current summaries; recovered manuscripts remain historical evidence.
+
+The **Grandfather Tree**, planted in **Creation**, is the immense archive, museum, library, artifact collection and school/academy hidden deep in **Grimroot Grove**. Faithful good Fey converted it during Fey rule. The archive was nearly destroyed, with cause/date unspecified; its former Fey custodians left under Allohim's command. All Fey were commanded to sail to **Zealand**; rebels stayed, built the very tall **Tower of Babel near Sapporo** to war against Allohim, and he leveled it. Subsequent communication difficulties and struggles for power led toward Mount Yokai. Fey survival beyond that battle remains canon.
+
+**Naboo**, a **first-generation owl who drank from the River of Blood**, took over the archive shortly after the battle and runs the library. His exact generation terminology and relationship to Lady Wisdom remain open; he is not established as an original Fey. The institution's formal name is undecided. See [place and character record](../world/grandfather-tree.md), including creative references and superseded draft identities.
+
+**Critz: Treetop Trebuchet**, tagline **“We're going places.”**, is set in the **early Fourth Age / Arcane**. The critter player attends this academy and develops a trebuchet, beginning with the most basic and progressively upgrading. The [registry](../games/registry.md#critz-treetop-trebuchet) records the exact launch/points → bells/shop → owned-equipment customization/special-item loop. Points-to-bells conversion is unspecified. These are earliest ideas, not implementation scope.
+
+
 ## Moana and Dragex dragon appearance — October 12, 2026
 
 Source: Phil's direct correction and approval during the Moana 3D concept session.
@@ -73,7 +84,7 @@ Source: Phil's request for the first paired Blender animation on a correctly sca
 - The restored area becomes the fertile **Kingdom of Moana**, with **Veratus as its ruler at the beginning of Age 4**.
 - **Archaíos** (author-confirmed spelling, including accent) is a very ancient tortoise and **first-generation Fey-blooded critter**, having personally drunk from the blood-tainted river following the Fey's fall. He dwells on **Eden's Isle**, west of Hokkaido.
 - He sends letters **once per year** with the help of **migrating birds** passing the island. He knows he has **only one more annual opportunity** to send letters to the mainland before he dies, and chooses to write to his very distant female descendant **Olivia**, whom he calls **Olive**. The number of generations between them is not yet established; the author's “great-great-very great granddaughter” is deliberately non-numeric.
-- **Olivia is 19** and wants to become a historian. She studies at the famous **school and Great Library in the Grandfather Tree, in the middle of Grimroot Grove**, under a legendary owl. Her exact relation to **Lady Wisdom** from older draft material has not been explicitly reconfirmed.
+- **Olivia is 19** and wants to become a historian. She studies at the famous **school and Great Library in the Grandfather Tree, in the middle of Grimroot Grove**, at the archive now identified as run by **Naboo**. Naboo’s relationship to **Lady Wisdom** from older draft material remains unresolved.
 - It is **not established** whether the book comprises the text of a single letter, multiple letters, a chronicle accompanying his letters, or another presentation format. Do not invent the literary structure.
 
 ## Humans — latest resolution
@@ -84,7 +95,7 @@ Source: Phil's request for the first paired Blender animation on a correctly sca
 
 ## Editorial boundaries
 
-- Exact age lengths, calendar conversion, technological inventions, politics beyond those explicitly given, other continent names, the cause of disappearances, the full narration format, the identity of the legendary owl, the specific last enemy, and the individual identities and political roles of surviving ancient Fey in Age 6 are not canon. The **trigger ending Age 6** is confirmed even though its absolute date is not.
+- Exact age lengths, calendar conversion, technological inventions, politics beyond those explicitly given, other continent names, the cause of disappearances, the full narration format, Naboo’s relationship to Lady Wisdom and precise generation terminology, the specific last enemy, and the individual identities and political roles of surviving ancient Fey in Age 6 are not canon. The **trigger ending Age 6** is confirmed even though its absolute date is not.
 - **Critz game-to-age placement remains reserved to the author**. No genre, period-like props, or technological level is adequate evidence on its own.
 - Old source details survive as source-specific research, not automatic canon; spelling uncertainty should be checked rather than silently fixed.
 

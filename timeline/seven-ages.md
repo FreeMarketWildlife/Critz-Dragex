@@ -12,6 +12,16 @@
 | 6 | **Man** | Allohim has purified and raised Hokkaido from the ocean and established the first humans on Eden's Isle | **The last enemy on Libriam is defeated**, ending sin and death | Mankind (men and women) is commissioned to **fill and subdue Libriam**, conquering its **three continents** with Allohim's indispensable help, battling mutated Fallout creatures and figures called ancient Fey; humanity stumbles repeatedly before fulfilling the mission. |
 | 7 | **Peace / Perfection** | **The exact moment the last enemy on Libriam is defeated** | **Never: everlasting** | Every creature on Libriam willingly submits to Allohim; sin and death are abolished and can never return under his promise. Allohim's Kingdom comes down to Libriam; mankind rules in perfect peace and explores other planets to help them overcome sin and know Allohim. |
 
+## Grandfather Tree and Fey rebellion — October 19, 2026
+
+- **Age 1 / Creation:** the massive Grandfather Tree is planted.
+- **Fey rule / Age 2:** faithful good Fey convert it into a knowledge archive. Allohim commands all Fey to sail to Zealand; the former archive custodians depart. Rebels stay and build the very tall Tower of Babel near Sapporo to wage war against him. Allohim levels it; subsequent communication difficulties and power struggles lead toward Mount Yokai. Worldwide Fey survival and the existing battle boundary remain unchanged.
+- **Shortly after Mount Yokai / early Age 3:** Naboo, a first-generation owl who drank from the River of Blood, takes over the archive/library. This age placement follows the existing battle boundary; no year is assigned.
+- **Early Age 4 / Arcane:** *Critz: Treetop Trebuchet* takes place at the archive's school/academy.
+- **Undated:** the archive was nearly destroyed. Its cause and timing relative to the departure, tower and battle remain open.
+
+Source: Phil’s explicit update, recorded October 19, 2026. See [Grandfather Tree](../world/grandfather-tree.md) and [game registry](../games/registry.md#critz-treetop-trebuchet). The institution's formal name and Naboo's precise generation terminology remain undecided.
+
 ## Boundary notes and precise semantics
 
 - **Later October 12 animation account:** Dragex attacks Moana at the lake, then burrows beneath Mount Yokai. His **complete sleep**, not the start of digging, still ends Age 1. Moana's remains should be predominantly **bones by roughly halfway through Age 2**, refining the previously open decay timing; no equal design-unit spans are converted to years. The immense ribs remain visible in Ages 3 and 4. Clip timing and attack choreography are proposals.

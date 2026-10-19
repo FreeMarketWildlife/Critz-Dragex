@@ -34,10 +34,14 @@ Official spellings explicitly given: **Dragex**, **Critz**, **Koric**, **Veratus
 
 ## Cross-media boundaries
 
-The current ten-game registry comes from the retrieved October 9 game-planning conversation. Most older Drive game documents describe the original shooter. A Conquest match is not a new game title; the shooter's Duel mode is not automatically the standalone platform fighter. The 2025 `[Critz] Campaign` missions are not automatically the final scope of the 2026 standalone Campaign concept.
+The original ten-game registry comes from the retrieved October 9 game-planning conversation; the October 19 update adds Critz: Treetop Trebuchet with an explicit early-Age-4 setting. Most older Drive game documents describe the original shooter. A Conquest match is not a new game title; the shooter's Duel mode is not automatically the standalone platform fighter. The 2025 `[Critz] Campaign` missions are not automatically the final scope of the 2026 standalone Campaign concept.
 
 The Dragex tabletop rulebook and PowPass–Dragex collaboration have separate records. Their currencies, elemental icons, reward eggs, and mechanics do not establish novel-world biology or chronology. Reference images from other franchises are design inspirations, not inhabitants of Hokkaido.
 
 ## Writing and maintenance
 
 Keep facts attributable to a source ID, a named version, or a dated author decision. Label inference as inference and proposals as proposals. Do not invent missing chapters, identities, genealogies, motivations, species, maps, or age boundaries. Do not import personal finance, credentials, contact information, or unrelated private material into this public repository. Verify a write before saying it was saved.
+
+## Grandfather Tree — October 19, 2026
+
+Read `world/grandfather-tree.md` for the current archive/school and Naboo account. Do not identify Naboo as an original Fey or merge him with Lady Wisdom without confirmation. The archive’s near-destruction cause/date and school’s formal name are open. Treetop Trebuchet is explicitly early Age 4; points and bells are distinct, with no specified conversion.
